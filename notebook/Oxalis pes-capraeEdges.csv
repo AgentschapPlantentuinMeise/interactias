@@ -20,11 +20,6 @@ Id,Source,Target,Interaction,Type
 1584402,Apis mellifera,Oxalis pes-caprae,eats,directed
 1595300,Pieris marginalis,Oxalis pes-caprae,visitsFlowersOf,directed
 1611086,Callophrys viridis,Oxalis pes-caprae,visitsFlowersOf,directed
-1612481,Vanessa cardui,Oxalis pes-caprae,visitsFlowersOf,directed
-1624398,Oxythyrea cinctella,Oxalis pes-caprae,pollinates,directed
-2734293,,Oxalis pes-caprae,pollinates,directed
-2757400,Apis mellifera,Oxalis pes-caprae,pollinates,directed
-3877140,Orobanche ramosa,Oxalis pes-caprae,parasiteOf,directed
 3877146,Orobanche mutelii,Oxalis pes-caprae,parasiteOf,directed
 639333,Rediviva rufipes,Cysticapnos vesicaria,visitsFlowersOf,directed
 639337,Rediviva rufipes,Hemimeris gracilis,visitsFlowersOf,directed

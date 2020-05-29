@@ -1,0 +1,680 @@
+ <!DOCTYPE html> <html> <head> <script src='../../../GitHub\cytoscape.js\dist\cytoscape.min.js'></script> <script src='https://unpkg.com/layout-base/layout-base.js'></script> <script src='https://unpkg.com/cose-base/cose-base.js'></script> <script src='../../../GitHub\cytoscape.js-cose-bilkent\cytoscape-cose-bilkent.js'></script> </head> <style>#cy {width: 90%; height: 90%; position: absolute; top: 50px; left: 150px;}body {font-family: 'times; font-size: 6px;}</style> <body> <h1><em font-style: italic;>Pipistrellus pipistrellus</em></h1><table align='left' style='margin-left: 0px'><tbody><tr><td width='20%'><table><th>Species</th><tr><td><a target='_blank' href=https://www.gbif.org/species/1638184>Phthiridium biarticulatum</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/1639169>Nycteribia kolenatii</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/1638644>Basilia nana</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/4487133>Cimex pipistrelli</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/1417597>Ischnopsyllus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/1417549>Nycteridopsylla longiceps</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/1417563>Nycteridopsylla eusarca</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/False>Betacoronavirus Coronavirus P.pipi/VM314/2008/NLD</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/False>Betacoronavirus Coronavirus P.pipi/VM312/2008/NLD</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/False>Alphacoronavirus Alphacoronavirus Pip3_M_FR_2014</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/False>Alphacoronavirus Alphacoronavirus Pip2_Cr_FR_2014</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/False>Alphacoronavirus Alphacoronavirus Pip1_Cr_FR_2014</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/False>Alphacoronavirus Coronavirus PREDICT CoV-61</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/False>Betacoronavirus Coronavirus PREDICT CoV-57</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/False>Betacoronavirus Pipistrellus bat coronavirus HKU5</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/False>Alphacoronavirus Coronavirus PREDICT CoV-60</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/False>Alphacoronavirus Alphacoronavirus sp.</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/False>Bat coronavirus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/False>Sokoluk virus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/False>Cripavirus NB-1/2011/HUN</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/False>Bat adenovirus 2</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/4630900>Litomosoides</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/8144113>Pycnoporus heteroporus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/3222236>Pasteurella multocida</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/4415240>Lecithodendrium linstowi</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5427626>Yersinia enterocolitica</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2610498>Arthrorhynchus eucampsipodae</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/9857235>Pasteurella virus F108</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/False>Yersinia phage vB_YenP_ISAO8</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/False>Yersinia phage vB_YenP_AP5</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/False>Yersinia phage vB_YenP_AP10</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/False>Yersinia phage vB_YenM_TG1</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/False>Yersinia phage PY54</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/False>Yersinia phage phiYeO3-12</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/False>Yersinia phage phiR201</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/False>Yersinia phage phiR1-RT</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/False>Yersinia phage phiR1-37</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5218465>Pipistrellus pipistrellus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5218507>Plecotus auritus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432416>Myotis myotis</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432614>Rhinolophus hipposideros</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432655>Rhinolophus ferrumequinum</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5218471>Pipistrellus nathusii</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432359>Eptesicus serotinus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432564>Vespertilio murinus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432389>Myotis nattereri</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/9754263>Myotis mystacinus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432439>Myotis daubentonii</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432452>Myotis dasycneme</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432427>Myotis bechsteinii</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5218524>Nyctalus noctula</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/734>Chiroptera</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5428957>Plecotus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5218522>Nyctalus leisleri</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432439>Myotis daubentoni</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432582>Barbastella barbastellus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2497295>Asio flammeus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/False>Unknown host</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432427>Myotis bechsteini</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2233030>Henia</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432410>Myotis ricketti</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5707125>Pipistrellus abramus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432467>Myotis longipes</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5218528>Scotophilus kuhlii</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432388>Myotis horsfieldii</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2436940>Oryctolagus cuniculus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432218>Pipistrellus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432470>Myotis emarginatus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/9796816>Miniopterus schreibersi</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432621>Rhinolophus euryale</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432430>Myotis capaccinii</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/4266337>Myotis punicus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/4265910>Neoromicia capensis</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2433271>Artibeus planirostris</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5218781>Crocuta crocuta</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5219216>Canis mesomelas</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432658>Rhinolophus pearsonii</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5218582>Hipposideros lekaguli</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432836>Cynopterus sphinx</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2433351>Megaderma lyra</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432503>Miniopterus magnater</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432837>Cynopterus brachyotis</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432506>Miniopterus pusillus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5218572>Hipposideros armiger</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5218745>Taphozous melanopogon</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5218600>Hipposideros larvatus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432623>Rhinolophus shameli</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5707090>Scotophilus heathii</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2433258>Artibeus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432953>Rousettus aegyptiacus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/7261759>Rousettus leschenaultii</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/7261959>Rhinolophus sinicus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5218587>Hipposideros cineraceus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432918>Megaerops kusnotoi</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432330>Murina leucogaster</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432968>Eonycteris spelaea</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432832>Cynopterus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432851>Eidolon helvum</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/4266430>Myotis fimbriatus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432454>Myotis pequinius</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432639>Rhinolophus pusillus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/7261801>Vespertilio sinensis</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/4266349>Myotis davidii</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432577>Ia io</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432449>Myotis siligorensis</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432652>Rhinolophus macrotis</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432343>Tylonycteris pachypus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432406>Myotis lucifugus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5218725>Molossus molossus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2433194>Glossophaga soricina</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/4266394>Myotis oxygnathus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5218464>Pipistrellus kuhlii</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5218678>Pteropus lylei</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5218553>Hipposideros</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5218575>Hipposideros caffer</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2433028>Chaerephon</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2433022>Otomops martiensseni</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2433075>Mops condylurus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432510>Miniopterus minor</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432611>Rhinolophus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5707228>Chaerephon leucogaster</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5707150>Pipistrellus pygmaeus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5706915>Hipposideros gigas</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432641>Rhinolophus affinis</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5218742>Taphozous perforatus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432453>Myotis macrodactylus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432431>Myotis ikonnikovi</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432627>Rhinolophus cornutus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/7261816>Eptesicus nilssoni</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5707248>Molossus rufus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432345>Eptesicus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2433280>Phyllostomus discolor</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/8149385>Myotis petax</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432384>Myotis</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/4266280>Hypsugo alaschanicus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432611>Rhinolophus rhodesiae</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/7540870>Triaenops menamena</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/8094400>Triaenops afer</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2433076>Mops midas</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2433059>Mormopterus jugularis</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432950>Rousettus madagascariensis</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5218614>Nycteris thebaica</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2433048>Mormopterus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/4266752>Rhinolophus landeri lobatus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/7930627>Miniopterus mossambicus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5787333>Chaerephon pusillus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/1458943>Trichina</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2432352>Eptesicus fuscus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2439920>Didelphis marsupialis</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2433272>Artibeus jamaicensis</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/7705930>Sus scrofa</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2441119>Ovis canadensis</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2434793>Phoca vitulina</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5220136>Dama dama</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2440954>Cervus nippon</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2440958>Cervus elaphus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5219173>Canis lupus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2441176>Bison bison</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2440902>Antilocapra americana</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2440940>Alces alces</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/6164210>Canis lupus familiaris</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/9104700>Sus scrofa domesticus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2441022>Bos taurus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/9326020>Gallus gallus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2436436>Homo sapiens</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2441110>Ovis aries</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/9606290>Meleagris gallopavo</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/9761484>Anas platyrhynchos</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2441056>Capra hircus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2440886>Equus caballus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2435035>Felis catus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5219534>Pan troglodytes</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2705851>Brachiaria mutica</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2441019>Bos grunniens</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2479798>Melopsittacus undulatus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/7429082>Mus musculus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5073712>Drosophila macquarti</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2441010>Naemorhedus crispus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5219243>Vulpes vulpes</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5219219>Canis aureus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/7964291>Felis silvestris</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5218887>Martes foina</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/1459>Rodentia</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5302>Suidae</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2436661>Saimiri sciureus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/5219550>Hylobates agilis</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2439261>Rattus norvegicus</a></td>
+<tr><td><a target='_blank' href=https://www.gbif.org/species/2438828>Tscherskia triton</a></td>
+</table></td><td='80%'> <div id='cy'></div> <script> var cy = cytoscape({   container: document.getElementById('cy'), 
+   elements: [ { data: { id: 'Phthiridium biarticulatum', href: 'https://www.gbif.org/species/1638184', occnum: 2 }, },
+{ data: { id: 'Nycteribia kolenatii', href: 'https://www.gbif.org/species/1639169', occnum: 2 }, },
+{ data: { id: 'Basilia nana', href: 'https://www.gbif.org/species/1638644', occnum: 2 }, },
+{ data: { id: 'Cimex pipistrelli', href: 'https://www.gbif.org/species/4487133', occnum: 2 }, },
+{ data: { id: 'Ischnopsyllus', href: 'https://www.gbif.org/species/1417597', occnum: 2 }, },
+{ data: { id: 'Nycteridopsylla longiceps', href: 'https://www.gbif.org/species/1417549', occnum: 2 }, },
+{ data: { id: 'Nycteridopsylla eusarca', href: 'https://www.gbif.org/species/1417563', occnum: 2 }, },
+{ data: { id: 'Betacoronavirus Coronavirus P.pipi/VM314/2008/NLD', href: 'https://www.gbif.org/species/False', occnum: 2 }, },
+{ data: { id: 'Betacoronavirus Coronavirus P.pipi/VM312/2008/NLD', href: 'https://www.gbif.org/species/False', occnum: 2 }, },
+{ data: { id: 'Alphacoronavirus Alphacoronavirus Pip3_M_FR_2014', href: 'https://www.gbif.org/species/False', occnum: 2 }, },
+{ data: { id: 'Alphacoronavirus Alphacoronavirus Pip2_Cr_FR_2014', href: 'https://www.gbif.org/species/False', occnum: 2 }, },
+{ data: { id: 'Alphacoronavirus Alphacoronavirus Pip1_Cr_FR_2014', href: 'https://www.gbif.org/species/False', occnum: 2 }, },
+{ data: { id: 'Alphacoronavirus Coronavirus PREDICT CoV-61', href: 'https://www.gbif.org/species/False', occnum: 2 }, },
+{ data: { id: 'Betacoronavirus Coronavirus PREDICT CoV-57', href: 'https://www.gbif.org/species/False', occnum: 2 }, },
+{ data: { id: 'Betacoronavirus Pipistrellus bat coronavirus HKU5', href: 'https://www.gbif.org/species/False', occnum: 2 }, },
+{ data: { id: 'Alphacoronavirus Coronavirus PREDICT CoV-60', href: 'https://www.gbif.org/species/False', occnum: 2 }, },
+{ data: { id: 'Alphacoronavirus Alphacoronavirus sp.', href: 'https://www.gbif.org/species/False', occnum: 2 }, },
+{ data: { id: 'Bat coronavirus', href: 'https://www.gbif.org/species/False', occnum: 2 }, },
+{ data: { id: 'Sokoluk virus', href: 'https://www.gbif.org/species/False', occnum: 2 }, },
+{ data: { id: 'Cripavirus NB-1/2011/HUN', href: 'https://www.gbif.org/species/False', occnum: 2 }, },
+{ data: { id: 'Bat adenovirus 2', href: 'https://www.gbif.org/species/False', occnum: 2 }, },
+{ data: { id: 'Litomosoides', href: 'https://www.gbif.org/species/4630900', occnum: 2 }, },
+{ data: { id: 'Pycnoporus heteroporus', href: 'https://www.gbif.org/species/8144113', occnum: 2 }, },
+{ data: { id: 'Pasteurella multocida', href: 'https://www.gbif.org/species/3222236', occnum: 2 }, },
+{ data: { id: 'Lecithodendrium linstowi', href: 'https://www.gbif.org/species/4415240', occnum: 2 }, },
+{ data: { id: 'Yersinia enterocolitica', href: 'https://www.gbif.org/species/5427626', occnum: 2 }, },
+{ data: { id: 'Arthrorhynchus eucampsipodae', href: 'https://www.gbif.org/species/2610498', occnum: 2 }, },
+{ data: { id: 'Pasteurella virus F108', href: 'https://www.gbif.org/species/9857235', occnum: 2 }, },
+{ data: { id: 'Yersinia phage vB_YenP_ISAO8', href: 'https://www.gbif.org/species/False', occnum: 2 }, },
+{ data: { id: 'Yersinia phage vB_YenP_AP5', href: 'https://www.gbif.org/species/False', occnum: 2 }, },
+{ data: { id: 'Yersinia phage vB_YenP_AP10', href: 'https://www.gbif.org/species/False', occnum: 2 }, },
+{ data: { id: 'Yersinia phage vB_YenM_TG1', href: 'https://www.gbif.org/species/False', occnum: 2 }, },
+{ data: { id: 'Yersinia phage PY54', href: 'https://www.gbif.org/species/False', occnum: 2 }, },
+{ data: { id: 'Yersinia phage phiYeO3-12', href: 'https://www.gbif.org/species/False', occnum: 2 }, },
+{ data: { id: 'Yersinia phage phiR201', href: 'https://www.gbif.org/species/False', occnum: 2 }, },
+{ data: { id: 'Yersinia phage phiR1-RT', href: 'https://www.gbif.org/species/False', occnum: 2 }, },
+{ data: { id: 'Yersinia phage phiR1-37', href: 'https://www.gbif.org/species/False', occnum: 2 }, },
+{ data: { id: 'Pipistrellus pipistrellus', href: 'https://www.gbif.org/species/5218465', occnum: 2 }, },
+{ data: { id: 'Plecotus auritus', href: 'https://www.gbif.org/species/5218507', occnum: 2 }, },
+{ data: { id: 'Myotis myotis', href: 'https://www.gbif.org/species/2432416', occnum: 2 }, },
+{ data: { id: 'Rhinolophus hipposideros', href: 'https://www.gbif.org/species/2432614', occnum: 2 }, },
+{ data: { id: 'Rhinolophus ferrumequinum', href: 'https://www.gbif.org/species/2432655', occnum: 2 }, },
+{ data: { id: 'Pipistrellus nathusii', href: 'https://www.gbif.org/species/5218471', occnum: 2 }, },
+{ data: { id: 'Eptesicus serotinus', href: 'https://www.gbif.org/species/2432359', occnum: 2 }, },
+{ data: { id: 'Vespertilio murinus', href: 'https://www.gbif.org/species/2432564', occnum: 2 }, },
+{ data: { id: 'Myotis nattereri', href: 'https://www.gbif.org/species/2432389', occnum: 2 }, },
+{ data: { id: 'Myotis mystacinus', href: 'https://www.gbif.org/species/9754263', occnum: 2 }, },
+{ data: { id: 'Myotis daubentonii', href: 'https://www.gbif.org/species/2432439', occnum: 2 }, },
+{ data: { id: 'Myotis dasycneme', href: 'https://www.gbif.org/species/2432452', occnum: 2 }, },
+{ data: { id: 'Myotis bechsteinii', href: 'https://www.gbif.org/species/2432427', occnum: 2 }, },
+{ data: { id: 'Nyctalus noctula', href: 'https://www.gbif.org/species/5218524', occnum: 2 }, },
+{ data: { id: 'Chiroptera', href: 'https://www.gbif.org/species/734', occnum: 2 }, },
+{ data: { id: 'Plecotus', href: 'https://www.gbif.org/species/5428957', occnum: 2 }, },
+{ data: { id: 'Nyctalus leisleri', href: 'https://www.gbif.org/species/5218522', occnum: 2 }, },
+{ data: { id: 'Myotis daubentoni', href: 'https://www.gbif.org/species/2432439', occnum: 2 }, },
+{ data: { id: 'Barbastella barbastellus', href: 'https://www.gbif.org/species/2432582', occnum: 2 }, },
+{ data: { id: 'Asio flammeus', href: 'https://www.gbif.org/species/2497295', occnum: 2 }, },
+{ data: { id: 'Unknown host', href: 'https://www.gbif.org/species/False', occnum: 2 }, },
+{ data: { id: 'Myotis bechsteini', href: 'https://www.gbif.org/species/2432427', occnum: 2 }, },
+{ data: { id: 'Henia', href: 'https://www.gbif.org/species/2233030', occnum: 2 }, },
+{ data: { id: 'Myotis ricketti', href: 'https://www.gbif.org/species/2432410', occnum: 2 }, },
+{ data: { id: 'Pipistrellus abramus', href: 'https://www.gbif.org/species/5707125', occnum: 2 }, },
+{ data: { id: 'Myotis longipes', href: 'https://www.gbif.org/species/2432467', occnum: 2 }, },
+{ data: { id: 'Scotophilus kuhlii', href: 'https://www.gbif.org/species/5218528', occnum: 2 }, },
+{ data: { id: 'Myotis horsfieldii', href: 'https://www.gbif.org/species/2432388', occnum: 2 }, },
+{ data: { id: 'Oryctolagus cuniculus', href: 'https://www.gbif.org/species/2436940', occnum: 2 }, },
+{ data: { id: 'Pipistrellus', href: 'https://www.gbif.org/species/2432218', occnum: 2 }, },
+{ data: { id: 'Myotis emarginatus', href: 'https://www.gbif.org/species/2432470', occnum: 2 }, },
+{ data: { id: 'Miniopterus schreibersi', href: 'https://www.gbif.org/species/9796816', occnum: 2 }, },
+{ data: { id: 'Rhinolophus euryale', href: 'https://www.gbif.org/species/2432621', occnum: 2 }, },
+{ data: { id: 'Myotis capaccinii', href: 'https://www.gbif.org/species/2432430', occnum: 2 }, },
+{ data: { id: 'Myotis punicus', href: 'https://www.gbif.org/species/4266337', occnum: 2 }, },
+{ data: { id: 'Neoromicia capensis', href: 'https://www.gbif.org/species/4265910', occnum: 2 }, },
+{ data: { id: 'Artibeus planirostris', href: 'https://www.gbif.org/species/2433271', occnum: 2 }, },
+{ data: { id: 'Crocuta crocuta', href: 'https://www.gbif.org/species/5218781', occnum: 2 }, },
+{ data: { id: 'Canis mesomelas', href: 'https://www.gbif.org/species/5219216', occnum: 2 }, },
+{ data: { id: 'Rhinolophus pearsonii', href: 'https://www.gbif.org/species/2432658', occnum: 2 }, },
+{ data: { id: 'Hipposideros lekaguli', href: 'https://www.gbif.org/species/5218582', occnum: 2 }, },
+{ data: { id: 'Cynopterus sphinx', href: 'https://www.gbif.org/species/2432836', occnum: 2 }, },
+{ data: { id: 'Megaderma lyra', href: 'https://www.gbif.org/species/2433351', occnum: 2 }, },
+{ data: { id: 'Miniopterus magnater', href: 'https://www.gbif.org/species/2432503', occnum: 2 }, },
+{ data: { id: 'Cynopterus brachyotis', href: 'https://www.gbif.org/species/2432837', occnum: 2 }, },
+{ data: { id: 'Miniopterus pusillus', href: 'https://www.gbif.org/species/2432506', occnum: 2 }, },
+{ data: { id: 'Hipposideros armiger', href: 'https://www.gbif.org/species/5218572', occnum: 2 }, },
+{ data: { id: 'Taphozous melanopogon', href: 'https://www.gbif.org/species/5218745', occnum: 2 }, },
+{ data: { id: 'Hipposideros larvatus', href: 'https://www.gbif.org/species/5218600', occnum: 2 }, },
+{ data: { id: 'Rhinolophus shameli', href: 'https://www.gbif.org/species/2432623', occnum: 2 }, },
+{ data: { id: 'Scotophilus heathii', href: 'https://www.gbif.org/species/5707090', occnum: 2 }, },
+{ data: { id: 'Artibeus', href: 'https://www.gbif.org/species/2433258', occnum: 2 }, },
+{ data: { id: 'Rousettus aegyptiacus', href: 'https://www.gbif.org/species/2432953', occnum: 2 }, },
+{ data: { id: 'Rousettus leschenaultii', href: 'https://www.gbif.org/species/7261759', occnum: 2 }, },
+{ data: { id: 'Rhinolophus sinicus', href: 'https://www.gbif.org/species/7261959', occnum: 2 }, },
+{ data: { id: 'Hipposideros cineraceus', href: 'https://www.gbif.org/species/5218587', occnum: 2 }, },
+{ data: { id: 'Megaerops kusnotoi', href: 'https://www.gbif.org/species/2432918', occnum: 2 }, },
+{ data: { id: 'Murina leucogaster', href: 'https://www.gbif.org/species/2432330', occnum: 2 }, },
+{ data: { id: 'Eonycteris spelaea', href: 'https://www.gbif.org/species/2432968', occnum: 2 }, },
+{ data: { id: 'Cynopterus', href: 'https://www.gbif.org/species/2432832', occnum: 2 }, },
+{ data: { id: 'Eidolon helvum', href: 'https://www.gbif.org/species/2432851', occnum: 2 }, },
+{ data: { id: 'Myotis fimbriatus', href: 'https://www.gbif.org/species/4266430', occnum: 2 }, },
+{ data: { id: 'Myotis pequinius', href: 'https://www.gbif.org/species/2432454', occnum: 2 }, },
+{ data: { id: 'Rhinolophus pusillus', href: 'https://www.gbif.org/species/2432639', occnum: 2 }, },
+{ data: { id: 'Vespertilio sinensis', href: 'https://www.gbif.org/species/7261801', occnum: 2 }, },
+{ data: { id: 'Myotis davidii', href: 'https://www.gbif.org/species/4266349', occnum: 2 }, },
+{ data: { id: 'Ia io', href: 'https://www.gbif.org/species/2432577', occnum: 2 }, },
+{ data: { id: 'Myotis siligorensis', href: 'https://www.gbif.org/species/2432449', occnum: 2 }, },
+{ data: { id: 'Rhinolophus macrotis', href: 'https://www.gbif.org/species/2432652', occnum: 2 }, },
+{ data: { id: 'Tylonycteris pachypus', href: 'https://www.gbif.org/species/2432343', occnum: 2 }, },
+{ data: { id: 'Myotis lucifugus', href: 'https://www.gbif.org/species/2432406', occnum: 2 }, },
+{ data: { id: 'Molossus molossus', href: 'https://www.gbif.org/species/5218725', occnum: 2 }, },
+{ data: { id: 'Glossophaga soricina', href: 'https://www.gbif.org/species/2433194', occnum: 2 }, },
+{ data: { id: 'Myotis oxygnathus', href: 'https://www.gbif.org/species/4266394', occnum: 2 }, },
+{ data: { id: 'Pipistrellus kuhlii', href: 'https://www.gbif.org/species/5218464', occnum: 2 }, },
+{ data: { id: 'Pteropus lylei', href: 'https://www.gbif.org/species/5218678', occnum: 2 }, },
+{ data: { id: 'Hipposideros', href: 'https://www.gbif.org/species/5218553', occnum: 2 }, },
+{ data: { id: 'Hipposideros caffer', href: 'https://www.gbif.org/species/5218575', occnum: 2 }, },
+{ data: { id: 'Chaerephon', href: 'https://www.gbif.org/species/2433028', occnum: 2 }, },
+{ data: { id: 'Otomops martiensseni', href: 'https://www.gbif.org/species/2433022', occnum: 2 }, },
+{ data: { id: 'Mops condylurus', href: 'https://www.gbif.org/species/2433075', occnum: 2 }, },
+{ data: { id: 'Miniopterus minor', href: 'https://www.gbif.org/species/2432510', occnum: 2 }, },
+{ data: { id: 'Rhinolophus', href: 'https://www.gbif.org/species/2432611', occnum: 2 }, },
+{ data: { id: 'Chaerephon leucogaster', href: 'https://www.gbif.org/species/5707228', occnum: 2 }, },
+{ data: { id: 'Pipistrellus pygmaeus', href: 'https://www.gbif.org/species/5707150', occnum: 2 }, },
+{ data: { id: 'Hipposideros gigas', href: 'https://www.gbif.org/species/5706915', occnum: 2 }, },
+{ data: { id: 'Rhinolophus affinis', href: 'https://www.gbif.org/species/2432641', occnum: 2 }, },
+{ data: { id: 'Taphozous perforatus', href: 'https://www.gbif.org/species/5218742', occnum: 2 }, },
+{ data: { id: 'Myotis macrodactylus', href: 'https://www.gbif.org/species/2432453', occnum: 2 }, },
+{ data: { id: 'Myotis ikonnikovi', href: 'https://www.gbif.org/species/2432431', occnum: 2 }, },
+{ data: { id: 'Rhinolophus cornutus', href: 'https://www.gbif.org/species/2432627', occnum: 2 }, },
+{ data: { id: 'Eptesicus nilssoni', href: 'https://www.gbif.org/species/7261816', occnum: 2 }, },
+{ data: { id: 'Molossus rufus', href: 'https://www.gbif.org/species/5707248', occnum: 2 }, },
+{ data: { id: 'Eptesicus', href: 'https://www.gbif.org/species/2432345', occnum: 2 }, },
+{ data: { id: 'Phyllostomus discolor', href: 'https://www.gbif.org/species/2433280', occnum: 2 }, },
+{ data: { id: 'Myotis petax', href: 'https://www.gbif.org/species/8149385', occnum: 2 }, },
+{ data: { id: 'Myotis', href: 'https://www.gbif.org/species/2432384', occnum: 2 }, },
+{ data: { id: 'Hypsugo alaschanicus', href: 'https://www.gbif.org/species/4266280', occnum: 2 }, },
+{ data: { id: 'Rhinolophus rhodesiae', href: 'https://www.gbif.org/species/2432611', occnum: 2 }, },
+{ data: { id: 'Triaenops menamena', href: 'https://www.gbif.org/species/7540870', occnum: 2 }, },
+{ data: { id: 'Triaenops afer', href: 'https://www.gbif.org/species/8094400', occnum: 2 }, },
+{ data: { id: 'Mops midas', href: 'https://www.gbif.org/species/2433076', occnum: 2 }, },
+{ data: { id: 'Mormopterus jugularis', href: 'https://www.gbif.org/species/2433059', occnum: 2 }, },
+{ data: { id: 'Rousettus madagascariensis', href: 'https://www.gbif.org/species/2432950', occnum: 2 }, },
+{ data: { id: 'Nycteris thebaica', href: 'https://www.gbif.org/species/5218614', occnum: 2 }, },
+{ data: { id: 'Mormopterus', href: 'https://www.gbif.org/species/2433048', occnum: 2 }, },
+{ data: { id: 'Rhinolophus landeri lobatus', href: 'https://www.gbif.org/species/4266752', occnum: 2 }, },
+{ data: { id: 'Miniopterus mossambicus', href: 'https://www.gbif.org/species/7930627', occnum: 2 }, },
+{ data: { id: 'Chaerephon pusillus', href: 'https://www.gbif.org/species/5787333', occnum: 2 }, },
+{ data: { id: 'Trichina', href: 'https://www.gbif.org/species/1458943', occnum: 2 }, },
+{ data: { id: 'Eptesicus fuscus', href: 'https://www.gbif.org/species/2432352', occnum: 2 }, },
+{ data: { id: 'Didelphis marsupialis', href: 'https://www.gbif.org/species/2439920', occnum: 2 }, },
+{ data: { id: 'Artibeus jamaicensis', href: 'https://www.gbif.org/species/2433272', occnum: 2 }, },
+{ data: { id: 'Sus scrofa', href: 'https://www.gbif.org/species/7705930', occnum: 2 }, },
+{ data: { id: 'Ovis canadensis', href: 'https://www.gbif.org/species/2441119', occnum: 2 }, },
+{ data: { id: 'Phoca vitulina', href: 'https://www.gbif.org/species/2434793', occnum: 2 }, },
+{ data: { id: 'Dama dama', href: 'https://www.gbif.org/species/5220136', occnum: 2 }, },
+{ data: { id: 'Cervus nippon', href: 'https://www.gbif.org/species/2440954', occnum: 2 }, },
+{ data: { id: 'Cervus elaphus', href: 'https://www.gbif.org/species/2440958', occnum: 2 }, },
+{ data: { id: 'Canis lupus', href: 'https://www.gbif.org/species/5219173', occnum: 2 }, },
+{ data: { id: 'Bison bison', href: 'https://www.gbif.org/species/2441176', occnum: 2 }, },
+{ data: { id: 'Antilocapra americana', href: 'https://www.gbif.org/species/2440902', occnum: 2 }, },
+{ data: { id: 'Alces alces', href: 'https://www.gbif.org/species/2440940', occnum: 2 }, },
+{ data: { id: 'Canis lupus familiaris', href: 'https://www.gbif.org/species/6164210', occnum: 2 }, },
+{ data: { id: 'Sus scrofa domesticus', href: 'https://www.gbif.org/species/9104700', occnum: 2 }, },
+{ data: { id: 'Bos taurus', href: 'https://www.gbif.org/species/2441022', occnum: 2 }, },
+{ data: { id: 'Gallus gallus', href: 'https://www.gbif.org/species/9326020', occnum: 2 }, },
+{ data: { id: 'Homo sapiens', href: 'https://www.gbif.org/species/2436436', occnum: 2 }, },
+{ data: { id: 'Ovis aries', href: 'https://www.gbif.org/species/2441110', occnum: 2 }, },
+{ data: { id: 'Meleagris gallopavo', href: 'https://www.gbif.org/species/9606290', occnum: 2 }, },
+{ data: { id: 'Anas platyrhynchos', href: 'https://www.gbif.org/species/9761484', occnum: 2 }, },
+{ data: { id: 'Capra hircus', href: 'https://www.gbif.org/species/2441056', occnum: 2 }, },
+{ data: { id: 'Equus caballus', href: 'https://www.gbif.org/species/2440886', occnum: 2 }, },
+{ data: { id: 'Felis catus', href: 'https://www.gbif.org/species/2435035', occnum: 2 }, },
+{ data: { id: 'Pan troglodytes', href: 'https://www.gbif.org/species/5219534', occnum: 2 }, },
+{ data: { id: 'Brachiaria mutica', href: 'https://www.gbif.org/species/2705851', occnum: 2 }, },
+{ data: { id: 'Bos grunniens', href: 'https://www.gbif.org/species/2441019', occnum: 2 }, },
+{ data: { id: 'Melopsittacus undulatus', href: 'https://www.gbif.org/species/2479798', occnum: 2 }, },
+{ data: { id: 'Mus musculus', href: 'https://www.gbif.org/species/7429082', occnum: 2 }, },
+{ data: { id: 'Drosophila macquarti', href: 'https://www.gbif.org/species/5073712', occnum: 2 }, },
+{ data: { id: 'Naemorhedus crispus', href: 'https://www.gbif.org/species/2441010', occnum: 2 }, },
+{ data: { id: 'Vulpes vulpes', href: 'https://www.gbif.org/species/5219243', occnum: 2 }, },
+{ data: { id: 'Canis aureus', href: 'https://www.gbif.org/species/5219219', occnum: 2 }, },
+{ data: { id: 'Felis silvestris', href: 'https://www.gbif.org/species/7964291', occnum: 2 }, },
+{ data: { id: 'Martes foina', href: 'https://www.gbif.org/species/5218887', occnum: 2 }, },
+{ data: { id: 'Rodentia', href: 'https://www.gbif.org/species/1459', occnum: 2 }, },
+{ data: { id: 'Suidae', href: 'https://www.gbif.org/species/5302', occnum: 2 }, },
+{ data: { id: 'Saimiri sciureus', href: 'https://www.gbif.org/species/2436661', occnum: 2 }, },
+{ data: { id: 'Hylobates agilis', href: 'https://www.gbif.org/species/5219550', occnum: 2 }, },
+{ data: { id: 'Rattus norvegicus', href: 'https://www.gbif.org/species/2439261', occnum: 2 }, },
+{ data: { id: 'Tscherskia triton', href: 'https://www.gbif.org/species/2438828', occnum: 2 }, },
+{data: {id: 'Nycteribia kolenatiiArthrorhynchus eucampsipodae', source: 'Nycteribia kolenatii', target: 'Arthrorhynchus eucampsipodae', label: 'parasiteOf'}},
+{data: {id: 'Pasteurella multocidaPasteurella virus F108', source: 'Pasteurella multocida', target: 'Pasteurella virus F108', label: 'pathogenOf'}},
+{data: {id: 'Yersinia enterocoliticaYersinia phage vB_YenP_ISAO8', source: 'Yersinia enterocolitica', target: 'Yersinia phage vB_YenP_ISAO8', label: 'pathogenOf'}},
+{data: {id: 'Yersinia enterocoliticaYersinia phage vB_YenP_AP5', source: 'Yersinia enterocolitica', target: 'Yersinia phage vB_YenP_AP5', label: 'pathogenOf'}},
+{data: {id: 'Yersinia enterocoliticaYersinia phage vB_YenP_AP10', source: 'Yersinia enterocolitica', target: 'Yersinia phage vB_YenP_AP10', label: 'pathogenOf'}},
+{data: {id: 'Yersinia enterocoliticaYersinia phage vB_YenM_TG1', source: 'Yersinia enterocolitica', target: 'Yersinia phage vB_YenM_TG1', label: 'pathogenOf'}},
+{data: {id: 'Yersinia enterocoliticaYersinia phage PY54', source: 'Yersinia enterocolitica', target: 'Yersinia phage PY54', label: 'pathogenOf'}},
+{data: {id: 'Yersinia enterocoliticaYersinia phage phiYeO3-12', source: 'Yersinia enterocolitica', target: 'Yersinia phage phiYeO3-12', label: 'pathogenOf'}},
+{data: {id: 'Yersinia enterocoliticaYersinia phage phiR201', source: 'Yersinia enterocolitica', target: 'Yersinia phage phiR201', label: 'pathogenOf'}},
+{data: {id: 'Yersinia enterocoliticaYersinia phage phiR1-RT', source: 'Yersinia enterocolitica', target: 'Yersinia phage phiR1-RT', label: 'pathogenOf'}},
+{data: {id: 'Yersinia enterocoliticaYersinia phage phiR1-37', source: 'Yersinia enterocolitica', target: 'Yersinia phage phiR1-37', label: 'pathogenOf'}},
+{data: {id: 'Pipistrellus pipistrellusPhthiridium biarticulatum', source: 'Pipistrellus pipistrellus', target: 'Phthiridium biarticulatum', label: 'ectoparasiteOf'}},
+{data: {id: 'Pipistrellus pipistrellusNycteribia kolenatii', source: 'Pipistrellus pipistrellus', target: 'Nycteribia kolenatii', label: 'ectoparasiteOf'}},
+{data: {id: 'Pipistrellus pipistrellusBasilia nana', source: 'Pipistrellus pipistrellus', target: 'Basilia nana', label: 'ectoparasiteOf'}},
+{data: {id: 'Pipistrellus pipistrellusCimex pipistrelli', source: 'Pipistrellus pipistrellus', target: 'Cimex pipistrelli', label: 'ectoparasiteOf'}},
+{data: {id: 'Pipistrellus pipistrellusIschnopsyllus', source: 'Pipistrellus pipistrellus', target: 'Ischnopsyllus', label: 'ectoparasiteOf'}},
+{data: {id: 'Pipistrellus pipistrellusNycteridopsylla longiceps', source: 'Pipistrellus pipistrellus', target: 'Nycteridopsylla longiceps', label: 'ectoparasiteOf'}},
+{data: {id: 'Pipistrellus pipistrellusNycteridopsylla eusarca', source: 'Pipistrellus pipistrellus', target: 'Nycteridopsylla eusarca', label: 'ectoparasiteOf'}},
+{data: {id: 'Pipistrellus pipistrellusBetacoronavirus Coronavirus P.pipi/VM314/2008/NLD', source: 'Pipistrellus pipistrellus', target: 'Betacoronavirus Coronavirus P.pipi/VM314/2008/NLD', label: 'hasHost'}},
+{data: {id: 'Pipistrellus pipistrellusBetacoronavirus Coronavirus P.pipi/VM312/2008/NLD', source: 'Pipistrellus pipistrellus', target: 'Betacoronavirus Coronavirus P.pipi/VM312/2008/NLD', label: 'hasHost'}},
+{data: {id: 'Pipistrellus pipistrellusAlphacoronavirus Alphacoronavirus Pip3_M_FR_2014', source: 'Pipistrellus pipistrellus', target: 'Alphacoronavirus Alphacoronavirus Pip3_M_FR_2014', label: 'hasHost'}},
+{data: {id: 'Pipistrellus pipistrellusAlphacoronavirus Alphacoronavirus Pip2_Cr_FR_2014', source: 'Pipistrellus pipistrellus', target: 'Alphacoronavirus Alphacoronavirus Pip2_Cr_FR_2014', label: 'hasHost'}},
+{data: {id: 'Pipistrellus pipistrellusAlphacoronavirus Alphacoronavirus Pip1_Cr_FR_2014', source: 'Pipistrellus pipistrellus', target: 'Alphacoronavirus Alphacoronavirus Pip1_Cr_FR_2014', label: 'hasHost'}},
+{data: {id: 'Pipistrellus pipistrellusAlphacoronavirus Coronavirus PREDICT CoV-61', source: 'Pipistrellus pipistrellus', target: 'Alphacoronavirus Coronavirus PREDICT CoV-61', label: 'hasHost'}},
+{data: {id: 'Pipistrellus pipistrellusBetacoronavirus Coronavirus PREDICT CoV-57', source: 'Pipistrellus pipistrellus', target: 'Betacoronavirus Coronavirus PREDICT CoV-57', label: 'hasHost'}},
+{data: {id: 'Pipistrellus pipistrellusBetacoronavirus Pipistrellus bat coronavirus HKU5', source: 'Pipistrellus pipistrellus', target: 'Betacoronavirus Pipistrellus bat coronavirus HKU5', label: 'hasHost'}},
+{data: {id: 'Pipistrellus pipistrellusAlphacoronavirus Coronavirus PREDICT CoV-60', source: 'Pipistrellus pipistrellus', target: 'Alphacoronavirus Coronavirus PREDICT CoV-60', label: 'hasHost'}},
+{data: {id: 'Pipistrellus pipistrellusAlphacoronavirus Alphacoronavirus sp.', source: 'Pipistrellus pipistrellus', target: 'Alphacoronavirus Alphacoronavirus sp.', label: 'hasHost'}},
+{data: {id: 'Pipistrellus pipistrellusBat coronavirus', source: 'Pipistrellus pipistrellus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Pipistrellus pipistrellusSokoluk virus', source: 'Pipistrellus pipistrellus', target: 'Sokoluk virus', label: 'pathogenOf'}},
+{data: {id: 'Pipistrellus pipistrellusCripavirus NB-1/2011/HUN', source: 'Pipistrellus pipistrellus', target: 'Cripavirus NB-1/2011/HUN', label: 'pathogenOf'}},
+{data: {id: 'Pipistrellus pipistrellusBat adenovirus 2', source: 'Pipistrellus pipistrellus', target: 'Bat adenovirus 2', label: 'pathogenOf'}},
+{data: {id: 'Pipistrellus pipistrellusLitomosoides', source: 'Pipistrellus pipistrellus', target: 'Litomosoides', label: 'parasiteOf'}},
+{data: {id: 'Pipistrellus pipistrellusPycnoporus heteroporus', source: 'Pipistrellus pipistrellus', target: 'Pycnoporus heteroporus', label: 'hasHost'}},
+{data: {id: 'Pipistrellus pipistrellusPasteurella multocida', source: 'Pipistrellus pipistrellus', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Pipistrellus pipistrellusLecithodendrium linstowi', source: 'Pipistrellus pipistrellus', target: 'Lecithodendrium linstowi', label: 'hasHost'}},
+{data: {id: 'Pipistrellus pipistrellusYersinia enterocolitica', source: 'Pipistrellus pipistrellus', target: 'Yersinia enterocolitica', label: 'hasHost'}},
+{data: {id: 'Plecotus auritusPhthiridium biarticulatum', source: 'Plecotus auritus', target: 'Phthiridium biarticulatum', label: 'ectoparasiteOf'}},
+{data: {id: 'Plecotus auritusNycteribia kolenatii', source: 'Plecotus auritus', target: 'Nycteribia kolenatii', label: 'ectoparasiteOf'}},
+{data: {id: 'Plecotus auritusBasilia nana', source: 'Plecotus auritus', target: 'Basilia nana', label: 'ectoparasiteOf'}},
+{data: {id: 'Plecotus auritusIschnopsyllus', source: 'Plecotus auritus', target: 'Ischnopsyllus', label: 'ectoparasiteOf'}},
+{data: {id: 'Plecotus auritusNycteridopsylla longiceps', source: 'Plecotus auritus', target: 'Nycteridopsylla longiceps', label: 'ectoparasiteOf'}},
+{data: {id: 'Plecotus auritusBat coronavirus', source: 'Plecotus auritus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Plecotus auritusPasteurella multocida', source: 'Plecotus auritus', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Myotis myotisPhthiridium biarticulatum', source: 'Myotis myotis', target: 'Phthiridium biarticulatum', label: 'ectoparasiteOf'}},
+{data: {id: 'Myotis myotisNycteribia kolenatii', source: 'Myotis myotis', target: 'Nycteribia kolenatii', label: 'ectoparasiteOf'}},
+{data: {id: 'Myotis myotisBasilia nana', source: 'Myotis myotis', target: 'Basilia nana', label: 'ectoparasiteOf'}},
+{data: {id: 'Myotis myotisAlphacoronavirus Alphacoronavirus sp.', source: 'Myotis myotis', target: 'Alphacoronavirus Alphacoronavirus sp.', label: 'hasHost'}},
+{data: {id: 'Myotis myotisBat coronavirus', source: 'Myotis myotis', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Rhinolophus hipposiderosPhthiridium biarticulatum', source: 'Rhinolophus hipposideros', target: 'Phthiridium biarticulatum', label: 'ectoparasiteOf'}},
+{data: {id: 'Rhinolophus hipposiderosNycteribia kolenatii', source: 'Rhinolophus hipposideros', target: 'Nycteribia kolenatii', label: 'ectoparasiteOf'}},
+{data: {id: 'Rhinolophus hipposiderosIschnopsyllus', source: 'Rhinolophus hipposideros', target: 'Ischnopsyllus', label: 'ectoparasiteOf'}},
+{data: {id: 'Rhinolophus ferrumequinumPhthiridium biarticulatum', source: 'Rhinolophus ferrumequinum', target: 'Phthiridium biarticulatum', label: 'ectoparasiteOf'}},
+{data: {id: 'Rhinolophus ferrumequinumBasilia nana', source: 'Rhinolophus ferrumequinum', target: 'Basilia nana', label: 'ectoparasiteOf'}},
+{data: {id: 'Rhinolophus ferrumequinumIschnopsyllus', source: 'Rhinolophus ferrumequinum', target: 'Ischnopsyllus', label: 'ectoparasiteOf'}},
+{data: {id: 'Rhinolophus ferrumequinumAlphacoronavirus Alphacoronavirus sp.', source: 'Rhinolophus ferrumequinum', target: 'Alphacoronavirus Alphacoronavirus sp.', label: 'hasHost'}},
+{data: {id: 'Rhinolophus ferrumequinumBat coronavirus', source: 'Rhinolophus ferrumequinum', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Pipistrellus nathusiiNycteribia kolenatii', source: 'Pipistrellus nathusii', target: 'Nycteribia kolenatii', label: 'ectoparasiteOf'}},
+{data: {id: 'Pipistrellus nathusiiIschnopsyllus', source: 'Pipistrellus nathusii', target: 'Ischnopsyllus', label: 'ectoparasiteOf'}},
+{data: {id: 'Pipistrellus nathusiiPasteurella multocida', source: 'Pipistrellus nathusii', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Eptesicus serotinusNycteribia kolenatii', source: 'Eptesicus serotinus', target: 'Nycteribia kolenatii', label: 'ectoparasiteOf'}},
+{data: {id: 'Eptesicus serotinusCimex pipistrelli', source: 'Eptesicus serotinus', target: 'Cimex pipistrelli', label: 'ectoparasiteOf'}},
+{data: {id: 'Eptesicus serotinusIschnopsyllus', source: 'Eptesicus serotinus', target: 'Ischnopsyllus', label: 'ectoparasiteOf'}},
+{data: {id: 'Eptesicus serotinusNycteridopsylla longiceps', source: 'Eptesicus serotinus', target: 'Nycteridopsylla longiceps', label: 'ectoparasiteOf'}},
+{data: {id: 'Eptesicus serotinusAlphacoronavirus Alphacoronavirus sp.', source: 'Eptesicus serotinus', target: 'Alphacoronavirus Alphacoronavirus sp.', label: 'hasHost'}},
+{data: {id: 'Eptesicus serotinusBat coronavirus', source: 'Eptesicus serotinus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Eptesicus serotinusPasteurella multocida', source: 'Eptesicus serotinus', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Vespertilio murinusNycteribia kolenatii', source: 'Vespertilio murinus', target: 'Nycteribia kolenatii', label: 'ectoparasiteOf'}},
+{data: {id: 'Vespertilio murinusPasteurella multocida', source: 'Vespertilio murinus', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Myotis nattereriNycteribia kolenatii', source: 'Myotis nattereri', target: 'Nycteribia kolenatii', label: 'ectoparasiteOf'}},
+{data: {id: 'Myotis nattereriBasilia nana', source: 'Myotis nattereri', target: 'Basilia nana', label: 'ectoparasiteOf'}},
+{data: {id: 'Myotis nattereriIschnopsyllus', source: 'Myotis nattereri', target: 'Ischnopsyllus', label: 'ectoparasiteOf'}},
+{data: {id: 'Myotis nattereriNycteridopsylla longiceps', source: 'Myotis nattereri', target: 'Nycteridopsylla longiceps', label: 'ectoparasiteOf'}},
+{data: {id: 'Myotis nattereriAlphacoronavirus Alphacoronavirus sp.', source: 'Myotis nattereri', target: 'Alphacoronavirus Alphacoronavirus sp.', label: 'hasHost'}},
+{data: {id: 'Myotis nattereriBat coronavirus', source: 'Myotis nattereri', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Myotis mystacinusNycteribia kolenatii', source: 'Myotis mystacinus', target: 'Nycteribia kolenatii', label: 'ectoparasiteOf'}},
+{data: {id: 'Myotis mystacinusBasilia nana', source: 'Myotis mystacinus', target: 'Basilia nana', label: 'ectoparasiteOf'}},
+{data: {id: 'Myotis mystacinusIschnopsyllus', source: 'Myotis mystacinus', target: 'Ischnopsyllus', label: 'ectoparasiteOf'}},
+{data: {id: 'Myotis mystacinusPasteurella multocida', source: 'Myotis mystacinus', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Myotis daubentoniiNycteribia kolenatii', source: 'Myotis daubentonii', target: 'Nycteribia kolenatii', label: 'ectoparasiteOf'}},
+{data: {id: 'Myotis daubentoniiAlphacoronavirus Alphacoronavirus sp.', source: 'Myotis daubentonii', target: 'Alphacoronavirus Alphacoronavirus sp.', label: 'hasHost'}},
+{data: {id: 'Myotis daubentoniiBat coronavirus', source: 'Myotis daubentonii', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Myotis dasycnemeNycteribia kolenatii', source: 'Myotis dasycneme', target: 'Nycteribia kolenatii', label: 'ectoparasiteOf'}},
+{data: {id: 'Myotis dasycnemeBasilia nana', source: 'Myotis dasycneme', target: 'Basilia nana', label: 'ectoparasiteOf'}},
+{data: {id: 'Myotis dasycnemeBat coronavirus', source: 'Myotis dasycneme', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Myotis bechsteiniiNycteribia kolenatii', source: 'Myotis bechsteinii', target: 'Nycteribia kolenatii', label: 'ectoparasiteOf'}},
+{data: {id: 'Myotis bechsteiniiBasilia nana', source: 'Myotis bechsteinii', target: 'Basilia nana', label: 'ectoparasiteOf'}},
+{data: {id: 'Nyctalus noctulaCimex pipistrelli', source: 'Nyctalus noctula', target: 'Cimex pipistrelli', label: 'ectoparasiteOf'}},
+{data: {id: 'Nyctalus noctulaIschnopsyllus', source: 'Nyctalus noctula', target: 'Ischnopsyllus', label: 'ectoparasiteOf'}},
+{data: {id: 'Nyctalus noctulaNycteridopsylla eusarca', source: 'Nyctalus noctula', target: 'Nycteridopsylla eusarca', label: 'ectoparasiteOf'}},
+{data: {id: 'Nyctalus noctulaLecithodendrium linstowi', source: 'Nyctalus noctula', target: 'Lecithodendrium linstowi', label: 'hasHost'}},
+{data: {id: 'ChiropteraIschnopsyllus', source: 'Chiroptera', target: 'Ischnopsyllus', label: 'ectoparasiteOf'}},
+{data: {id: 'ChiropteraBetacoronavirus Pipistrellus bat coronavirus HKU5', source: 'Chiroptera', target: 'Betacoronavirus Pipistrellus bat coronavirus HKU5', label: 'hasHost'}},
+{data: {id: 'ChiropteraBat coronavirus', source: 'Chiroptera', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'PlecotusIschnopsyllus', source: 'Plecotus', target: 'Ischnopsyllus', label: 'ectoparasiteOf'}},
+{data: {id: 'Nyctalus leisleriIschnopsyllus', source: 'Nyctalus leisleri', target: 'Ischnopsyllus', label: 'ectoparasiteOf'}},
+{data: {id: 'Nyctalus leisleriNycteridopsylla longiceps', source: 'Nyctalus leisleri', target: 'Nycteridopsylla longiceps', label: 'ectoparasiteOf'}},
+{data: {id: 'Myotis daubentoniIschnopsyllus', source: 'Myotis daubentoni', target: 'Ischnopsyllus', label: 'ectoparasiteOf'}},
+{data: {id: 'Barbastella barbastellusIschnopsyllus', source: 'Barbastella barbastellus', target: 'Ischnopsyllus', label: 'ectoparasiteOf'}},
+{data: {id: 'Asio flammeusIschnopsyllus', source: 'Asio flammeus', target: 'Ischnopsyllus', label: 'ectoparasiteOf'}},
+{data: {id: 'Unknown hostIschnopsyllus', source: 'Unknown host', target: 'Ischnopsyllus', label: 'ectoparasiteOf'}},
+{data: {id: 'Myotis bechsteiniIschnopsyllus', source: 'Myotis bechsteini', target: 'Ischnopsyllus', label: 'ectoparasiteOf'}},
+{data: {id: 'HeniaNycteridopsylla longiceps', source: 'Henia', target: 'Nycteridopsylla longiceps', label: 'parasiteOf'}},
+{data: {id: 'Myotis rickettiBetacoronavirus Coronavirus PREDICT CoV-57', source: 'Myotis ricketti', target: 'Betacoronavirus Coronavirus PREDICT CoV-57', label: 'hasHost'}},
+{data: {id: 'Myotis rickettiBat coronavirus', source: 'Myotis ricketti', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Pipistrellus abramusBetacoronavirus Pipistrellus bat coronavirus HKU5', source: 'Pipistrellus abramus', target: 'Betacoronavirus Pipistrellus bat coronavirus HKU5', label: 'hasHost'}},
+{data: {id: 'Pipistrellus abramusBat coronavirus', source: 'Pipistrellus abramus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Pipistrellus abramusPycnoporus heteroporus', source: 'Pipistrellus abramus', target: 'Pycnoporus heteroporus', label: 'parasiteOf'}},
+{data: {id: 'Myotis longipesAlphacoronavirus Coronavirus PREDICT CoV-60', source: 'Myotis longipes', target: 'Alphacoronavirus Coronavirus PREDICT CoV-60', label: 'hasHost'}},
+{data: {id: 'Scotophilus kuhliiAlphacoronavirus Alphacoronavirus sp.', source: 'Scotophilus kuhlii', target: 'Alphacoronavirus Alphacoronavirus sp.', label: 'hasHost'}},
+{data: {id: 'Scotophilus kuhliiBat coronavirus', source: 'Scotophilus kuhlii', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Myotis horsfieldiiAlphacoronavirus Alphacoronavirus sp.', source: 'Myotis horsfieldii', target: 'Alphacoronavirus Alphacoronavirus sp.', label: 'hasHost'}},
+{data: {id: 'Oryctolagus cuniculusAlphacoronavirus Alphacoronavirus sp.', source: 'Oryctolagus cuniculus', target: 'Alphacoronavirus Alphacoronavirus sp.', label: 'hasHost'}},
+{data: {id: 'Oryctolagus cuniculusPasteurella multocida', source: 'Oryctolagus cuniculus', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'PipistrellusAlphacoronavirus Alphacoronavirus sp.', source: 'Pipistrellus', target: 'Alphacoronavirus Alphacoronavirus sp.', label: 'hasHost'}},
+{data: {id: 'PipistrellusBat coronavirus', source: 'Pipistrellus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Myotis emarginatusAlphacoronavirus Alphacoronavirus sp.', source: 'Myotis emarginatus', target: 'Alphacoronavirus Alphacoronavirus sp.', label: 'hasHost'}},
+{data: {id: 'Myotis emarginatusBat coronavirus', source: 'Myotis emarginatus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Miniopterus schreibersiAlphacoronavirus Alphacoronavirus sp.', source: 'Miniopterus schreibersi', target: 'Alphacoronavirus Alphacoronavirus sp.', label: 'hasHost'}},
+{data: {id: 'Miniopterus schreibersiBat coronavirus', source: 'Miniopterus schreibersi', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Rhinolophus euryaleAlphacoronavirus Alphacoronavirus sp.', source: 'Rhinolophus euryale', target: 'Alphacoronavirus Alphacoronavirus sp.', label: 'hasHost'}},
+{data: {id: 'Myotis capacciniiAlphacoronavirus Alphacoronavirus sp.', source: 'Myotis capaccinii', target: 'Alphacoronavirus Alphacoronavirus sp.', label: 'hasHost'}},
+{data: {id: 'Myotis punicusAlphacoronavirus Alphacoronavirus sp.', source: 'Myotis punicus', target: 'Alphacoronavirus Alphacoronavirus sp.', label: 'hasHost'}},
+{data: {id: 'Neoromicia capensisAlphacoronavirus Alphacoronavirus sp.', source: 'Neoromicia capensis', target: 'Alphacoronavirus Alphacoronavirus sp.', label: 'hasHost'}},
+{data: {id: 'Artibeus planirostrisAlphacoronavirus Alphacoronavirus sp.', source: 'Artibeus planirostris', target: 'Alphacoronavirus Alphacoronavirus sp.', label: 'hasHost'}},
+{data: {id: 'Crocuta crocutaAlphacoronavirus Alphacoronavirus sp.', source: 'Crocuta crocuta', target: 'Alphacoronavirus Alphacoronavirus sp.', label: 'hasHost'}},
+{data: {id: 'Canis mesomelasAlphacoronavirus Alphacoronavirus sp.', source: 'Canis mesomelas', target: 'Alphacoronavirus Alphacoronavirus sp.', label: 'hasHost'}},
+{data: {id: 'Rhinolophus pearsoniiBat coronavirus', source: 'Rhinolophus pearsonii', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Hipposideros lekaguliBat coronavirus', source: 'Hipposideros lekaguli', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Cynopterus sphinxBat coronavirus', source: 'Cynopterus sphinx', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Megaderma lyraBat coronavirus', source: 'Megaderma lyra', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Miniopterus magnaterBat coronavirus', source: 'Miniopterus magnater', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Cynopterus brachyotisBat coronavirus', source: 'Cynopterus brachyotis', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Miniopterus pusillusBat coronavirus', source: 'Miniopterus pusillus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Hipposideros armigerBat coronavirus', source: 'Hipposideros armiger', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Taphozous melanopogonBat coronavirus', source: 'Taphozous melanopogon', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Hipposideros larvatusBat coronavirus', source: 'Hipposideros larvatus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Rhinolophus shameliBat coronavirus', source: 'Rhinolophus shameli', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Scotophilus heathiiBat coronavirus', source: 'Scotophilus heathii', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'ArtibeusBat coronavirus', source: 'Artibeus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Rousettus aegyptiacusBat coronavirus', source: 'Rousettus aegyptiacus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Rousettus leschenaultiiBat coronavirus', source: 'Rousettus leschenaultii', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Rhinolophus sinicusBat coronavirus', source: 'Rhinolophus sinicus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Hipposideros cineraceusBat coronavirus', source: 'Hipposideros cineraceus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Megaerops kusnotoiBat coronavirus', source: 'Megaerops kusnotoi', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Murina leucogasterBat coronavirus', source: 'Murina leucogaster', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Eonycteris spelaeaBat coronavirus', source: 'Eonycteris spelaea', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'CynopterusBat coronavirus', source: 'Cynopterus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Eidolon helvumBat coronavirus', source: 'Eidolon helvum', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Myotis fimbriatusBat coronavirus', source: 'Myotis fimbriatus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Myotis pequiniusBat coronavirus', source: 'Myotis pequinius', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Rhinolophus pusillusBat coronavirus', source: 'Rhinolophus pusillus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Vespertilio sinensisBat coronavirus', source: 'Vespertilio sinensis', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Myotis davidiiBat coronavirus', source: 'Myotis davidii', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Ia ioBat coronavirus', source: 'Ia io', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Myotis siligorensisBat coronavirus', source: 'Myotis siligorensis', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Rhinolophus macrotisBat coronavirus', source: 'Rhinolophus macrotis', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Tylonycteris pachypusBat coronavirus', source: 'Tylonycteris pachypus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Myotis lucifugusBat coronavirus', source: 'Myotis lucifugus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Molossus molossusBat coronavirus', source: 'Molossus molossus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Glossophaga soricinaBat coronavirus', source: 'Glossophaga soricina', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Myotis oxygnathusBat coronavirus', source: 'Myotis oxygnathus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Pipistrellus kuhliiBat coronavirus', source: 'Pipistrellus kuhlii', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Pipistrellus kuhliiPasteurella multocida', source: 'Pipistrellus kuhlii', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Pteropus lyleiBat coronavirus', source: 'Pteropus lylei', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'HipposiderosBat coronavirus', source: 'Hipposideros', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Hipposideros cafferBat coronavirus', source: 'Hipposideros caffer', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'ChaerephonBat coronavirus', source: 'Chaerephon', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Otomops martiensseniBat coronavirus', source: 'Otomops martiensseni', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Mops condylurusBat coronavirus', source: 'Mops condylurus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Miniopterus minorBat coronavirus', source: 'Miniopterus minor', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'RhinolophusBat coronavirus', source: 'Rhinolophus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Chaerephon leucogasterBat coronavirus', source: 'Chaerephon leucogaster', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Pipistrellus pygmaeusBat coronavirus', source: 'Pipistrellus pygmaeus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Pipistrellus pygmaeusPasteurella multocida', source: 'Pipistrellus pygmaeus', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Hipposideros gigasBat coronavirus', source: 'Hipposideros gigas', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Rhinolophus affinisBat coronavirus', source: 'Rhinolophus affinis', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Taphozous perforatusBat coronavirus', source: 'Taphozous perforatus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Myotis macrodactylusBat coronavirus', source: 'Myotis macrodactylus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Myotis ikonnikoviBat coronavirus', source: 'Myotis ikonnikovi', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Rhinolophus cornutusBat coronavirus', source: 'Rhinolophus cornutus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Eptesicus nilssoniBat coronavirus', source: 'Eptesicus nilssoni', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Molossus rufusBat coronavirus', source: 'Molossus rufus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'EptesicusBat coronavirus', source: 'Eptesicus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Phyllostomus discolorBat coronavirus', source: 'Phyllostomus discolor', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Myotis petaxBat coronavirus', source: 'Myotis petax', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'MyotisBat coronavirus', source: 'Myotis', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Hypsugo alaschanicusBat coronavirus', source: 'Hypsugo alaschanicus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Rhinolophus rhodesiaeBat coronavirus', source: 'Rhinolophus rhodesiae', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Triaenops menamenaBat coronavirus', source: 'Triaenops menamena', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Triaenops aferBat coronavirus', source: 'Triaenops afer', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Mops midasBat coronavirus', source: 'Mops midas', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Mormopterus jugularisBat coronavirus', source: 'Mormopterus jugularis', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Rousettus madagascariensisBat coronavirus', source: 'Rousettus madagascariensis', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Nycteris thebaicaBat coronavirus', source: 'Nycteris thebaica', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'MormopterusBat coronavirus', source: 'Mormopterus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Rhinolophus landeri lobatusBat coronavirus', source: 'Rhinolophus landeri lobatus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Miniopterus mossambicusBat coronavirus', source: 'Miniopterus mossambicus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'Chaerephon pusillusBat coronavirus', source: 'Chaerephon pusillus', target: 'Bat coronavirus', label: 'hasHost'}},
+{data: {id: 'TrichinaBat coronavirus', source: 'Trichina', target: 'Bat coronavirus', label: 'pathogenOf'}},
+{data: {id: 'Eptesicus fuscusLitomosoides', source: 'Eptesicus fuscus', target: 'Litomosoides', label: 'parasiteOf'}},
+{data: {id: 'Didelphis marsupialisLitomosoides', source: 'Didelphis marsupialis', target: 'Litomosoides', label: 'parasiteOf'}},
+{data: {id: 'Artibeus jamaicensisLitomosoides', source: 'Artibeus jamaicensis', target: 'Litomosoides', label: 'parasiteOf'}},
+{data: {id: 'Sus scrofaPasteurella multocida', source: 'Sus scrofa', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Sus scrofaYersinia enterocolitica', source: 'Sus scrofa', target: 'Yersinia enterocolitica', label: 'pathogenOf'}},
+{data: {id: 'Ovis canadensisPasteurella multocida', source: 'Ovis canadensis', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Phoca vitulinaPasteurella multocida', source: 'Phoca vitulina', target: 'Pasteurella multocida', label: 'parasiteOf'}},
+{data: {id: 'Dama damaPasteurella multocida', source: 'Dama dama', target: 'Pasteurella multocida', label: 'parasiteOf'}},
+{data: {id: 'Cervus nipponPasteurella multocida', source: 'Cervus nippon', target: 'Pasteurella multocida', label: 'parasiteOf'}},
+{data: {id: 'Cervus elaphusPasteurella multocida', source: 'Cervus elaphus', target: 'Pasteurella multocida', label: 'parasiteOf'}},
+{data: {id: 'Cervus elaphusYersinia enterocolitica', source: 'Cervus elaphus', target: 'Yersinia enterocolitica', label: 'parasiteOf'}},
+{data: {id: 'Canis lupusPasteurella multocida', source: 'Canis lupus', target: 'Pasteurella multocida', label: 'parasiteOf'}},
+{data: {id: 'Bison bisonPasteurella multocida', source: 'Bison bison', target: 'Pasteurella multocida', label: 'parasiteOf'}},
+{data: {id: 'Antilocapra americanaPasteurella multocida', source: 'Antilocapra americana', target: 'Pasteurella multocida', label: 'parasiteOf'}},
+{data: {id: 'Alces alcesPasteurella multocida', source: 'Alces alces', target: 'Pasteurella multocida', label: 'parasiteOf'}},
+{data: {id: 'Canis lupus familiarisPasteurella multocida', source: 'Canis lupus familiaris', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Canis lupus familiarisYersinia enterocolitica', source: 'Canis lupus familiaris', target: 'Yersinia enterocolitica', label: 'pathogenOf'}},
+{data: {id: 'Sus scrofa domesticusPasteurella multocida', source: 'Sus scrofa domesticus', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Sus scrofa domesticusYersinia enterocolitica', source: 'Sus scrofa domesticus', target: 'Yersinia enterocolitica', label: 'hasHost'}},
+{data: {id: 'Bos taurusPasteurella multocida', source: 'Bos taurus', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Bos taurusYersinia enterocolitica', source: 'Bos taurus', target: 'Yersinia enterocolitica', label: 'pathogenOf'}},
+{data: {id: 'Gallus gallusPasteurella multocida', source: 'Gallus gallus', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Homo sapiensPasteurella multocida', source: 'Homo sapiens', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Homo sapiensYersinia enterocolitica', source: 'Homo sapiens', target: 'Yersinia enterocolitica', label: 'pathogenOf'}},
+{data: {id: 'Ovis ariesPasteurella multocida', source: 'Ovis aries', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Ovis ariesYersinia enterocolitica', source: 'Ovis aries', target: 'Yersinia enterocolitica', label: 'pathogenOf'}},
+{data: {id: 'Meleagris gallopavoPasteurella multocida', source: 'Meleagris gallopavo', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Anas platyrhynchosPasteurella multocida', source: 'Anas platyrhynchos', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Capra hircusPasteurella multocida', source: 'Capra hircus', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Capra hircusYersinia enterocolitica', source: 'Capra hircus', target: 'Yersinia enterocolitica', label: 'pathogenOf'}},
+{data: {id: 'Equus caballusPasteurella multocida', source: 'Equus caballus', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Equus caballusYersinia enterocolitica', source: 'Equus caballus', target: 'Yersinia enterocolitica', label: 'hasHost'}},
+{data: {id: 'Felis catusPasteurella multocida', source: 'Felis catus', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Felis catusYersinia enterocolitica', source: 'Felis catus', target: 'Yersinia enterocolitica', label: 'pathogenOf'}},
+{data: {id: 'Pan troglodytesPasteurella multocida', source: 'Pan troglodytes', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Brachiaria muticaPasteurella multocida', source: 'Brachiaria mutica', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Bos grunniensPasteurella multocida', source: 'Bos grunniens', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Melopsittacus undulatusPasteurella multocida', source: 'Melopsittacus undulatus', target: 'Pasteurella multocida', label: 'hasHost'}},
+{data: {id: 'Mus musculusYersinia enterocolitica', source: 'Mus musculus', target: 'Yersinia enterocolitica', label: 'pathogenOf'}},
+{data: {id: 'Drosophila macquartiYersinia enterocolitica', source: 'Drosophila macquarti', target: 'Yersinia enterocolitica', label: 'pathogenOf'}},
+{data: {id: 'Naemorhedus crispusYersinia enterocolitica', source: 'Naemorhedus crispus', target: 'Yersinia enterocolitica', label: 'parasiteOf'}},
+{data: {id: 'Vulpes vulpesYersinia enterocolitica', source: 'Vulpes vulpes', target: 'Yersinia enterocolitica', label: 'parasiteOf'}},
+{data: {id: 'Canis aureusYersinia enterocolitica', source: 'Canis aureus', target: 'Yersinia enterocolitica', label: 'parasiteOf'}},
+{data: {id: 'Felis silvestrisYersinia enterocolitica', source: 'Felis silvestris', target: 'Yersinia enterocolitica', label: 'parasiteOf'}},
+{data: {id: 'Martes foinaYersinia enterocolitica', source: 'Martes foina', target: 'Yersinia enterocolitica', label: 'parasiteOf'}},
+{data: {id: 'RodentiaYersinia enterocolitica', source: 'Rodentia', target: 'Yersinia enterocolitica', label: 'pathogenOf'}},
+{data: {id: 'SuidaeYersinia enterocolitica', source: 'Suidae', target: 'Yersinia enterocolitica', label: 'pathogenOf'}},
+{data: {id: 'Saimiri sciureusYersinia enterocolitica', source: 'Saimiri sciureus', target: 'Yersinia enterocolitica', label: 'pathogenOf'}},
+{data: {id: 'Hylobates agilisYersinia enterocolitica', source: 'Hylobates agilis', target: 'Yersinia enterocolitica', label: 'pathogenOf'}},
+{data: {id: 'Rattus norvegicusYersinia enterocolitica', source: 'Rattus norvegicus', target: 'Yersinia enterocolitica', label: 'hasHost'}},
+{data: {id: 'Tscherskia tritonYersinia enterocolitica', source: 'Tscherskia triton', target: 'Yersinia enterocolitica', label: 'hasHost'}},
+], style: [ 
+        { 
+            selector: 'node', 
+            style: { 
+                shape: 'circle', 
+                'background-color': 'darkgreen', 
+                label: 'data(id)', 
+                'font-family': 'helvetica', 
+                'font-style': 'italic', 
+                'font-size': '8px', 
+                'width': 'mapData(occnum, 0, 400, 3, 150)', 
+                'height': 'mapData(occnum, 0, 400, 3, 150)' 
+            } 
+        },  
+        {  
+            selector: 'edge',  
+            style: {  
+                label: 'data(label)', 
+                'font-family': 'helvetica', 
+                'font-size': '8px', 
+                'color': 'blue', 
+                'curve-style': 'bezier', 
+                'target-arrow-shape': 'triangle',  
+                'width': '1' 
+                } 
+            },  
+            {  
+              selector: ':selected',   
+              css: {  
+                'line-color': 'red',  
+                'background-color': 'red'  
+            }  
+        }], 
+layout:  { 
+            name: 'circle', padding: 10, animate: true, gravity: 30, animationDuration: 1000 
+     } 
+} 
+); 
+cy.userZoomingEnabled( true ); 
+</script> 
+</td></tr></tbody></table>
+<h2>References</h2><ul>
+<li>Food Webs and Species Interactions in the Biodiversity of UK and Ireland (Online). 2017. Data provided by Malcolm Storey. Also available from http://bioinfo.org.uk.</li>
+<li>Ed Baker; Ian J. Kitching; George W. Beccaloni; Amoret Whitaker et al. (2016). Dataset: NHM Interactions Bank. Natural History Museum Data Portal (data.nhm.ac.uk). https://doi.org/10.5519/0060767</li>
+<li>Eneida L. Hatcher, Sergey A. Zhdanov, Yiming Bao, Olga Blinkova, Eric P. Nawrocki, Yuri Ostapchuck, Alejandro A. Schäffer, J. Rodney Brister, Virus Variation Resource – improved response to emergent viral outbreaks, Nucleic Acids Research, Volume 45, Issue D1, January 2017, Pages D482–D490, https://doi.org/10.1093/nar/gkw1065 . Data downloaded via https://www.ncbi.nlm.nih.gov/labs/virus/vssi on 2020-03-14</li>
+<li>Mihara, T., Nishimura, Y., Shimizu, Y., Nishiyama, H., Yoshikawa, G., Uehara, H., Hingamp, P., Goto, S., and Ogata, H.; Linking virus genomes with host taxonomy. Viruses 8, 66 doi:10.3390/v8030066 (2016).</li>
+<li>http://invertebrates.si.edu/parasites.htm</li>
+<li>Sarah E Miller. 4/18/2016. Species associations from Wardeh, M. et al. Database of host-pathogen and related species interactions, and their global distribution. Sci. Data 2:150049 doi: 10.1038/sdata.2015.49 (2015)</li>
+<li>Stephens, P. R., Pappalardo, P. , Huang, S. , Byers, J. E., Farrell, M. J., Gehman, A. , Ghai, R. R., Haas, S. E., Han, B. , Park, A. W., Schmidt, J. P., Altizer, S. , Ezenwa, V. O. and Nunn, C. L. (2017), Global Mammal Parasite Database version 2.0. Ecology, 98: 1476-1476. doi:10.1002/ecy.1799</li>
+<li>Urban M, Cuzick A, Rutherford K, Irvine A, Pedro H, Pant R, Sadanadan V, Khamari L, Billal S, Mohanty S, Hammond-Kosack KE. PHI-base: a new interface and further additions for the multi-species pathogen-host interactions database. Nucleic Acids Res. 2017 Jan 4;45(D1):D604-D610. doi: 10.1093/nar/gkw1089. Epub 2016 Dec 3. PMID:27915230</li>
+<li>Schriml, L. M., Arze, C., Nadendla, S., Ganapathy, A., Felix, V., Mahurkar, A., … Hall, N. (2009). GeMInA, Genomic Metadata for Infectious Agents, a geospatial surveillance pathogen database. Nucleic Acids Research, 38(Database), D754–D764. doi:10.1093/nar/gkp832</li>
+</ul>         </body>         </html>

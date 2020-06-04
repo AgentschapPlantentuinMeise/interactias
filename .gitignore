@@ -1,0 +1,7 @@
+*.tsv
+*.db
+*.gz
+*.csv
+*.html
+*.dot
+interactias-checkpoint.ipynb

@@ -1,7 +1,7 @@
 # interactias
 ## To extract and study species interation data for invasive species impact assessment
 
-![Diagram of the Interactias workflow](./images/interactias.png)
+![Diagram of the Interactias workflow](./images/interactias.svg
  
 ## pygbif needs to be installed
 

@@ -1,5 +1,5 @@
-# interactias
-## To extract and study species interation data for invasive species impact assessment
+# Interactias
+## A Jupyter notebook to extract and study species interation data for alien species
 
 ## Methods
 * The script takes a single species as input and searches for all primary interacting species on GloBI (https://www.globalbioticinteractions.org/).

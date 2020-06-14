@@ -12,6 +12,7 @@
 * These outputs can then be provided to expert risk assessors who can use them the evaluate what interactions might occur between an alien species and resident organisms, but also evaluate, to some extent, the impact of the interaction with reference to the occupancy.
 
 ![Diagram of the Interactias workflow](./images/interactias.png)
+Figure 1. A flow diagram to explain the script and the sources of the data. Steps after the Visualization are manual steps conducted with expert risk assessors.
 
 ![An example created for *Rousettus aegyptiacus* and its interacting species were it to occur in Belgium]
 (./images/Rousettusaegyptiacus.png)

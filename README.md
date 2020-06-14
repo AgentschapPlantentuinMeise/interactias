@@ -14,7 +14,7 @@
 ![Diagram of the Interactias workflow](./images/interactias.png)
 
 ![An example created for *Rousettus aegyptiacus* and its interacting species were it to occur in Belgium]
-(./images/Rousettus aegyptiacus.png)
+(./images/Rousettusaegyptiacus.png)
 
 ## pygbif needs to be installed
 

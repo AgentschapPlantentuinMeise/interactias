@@ -15,7 +15,7 @@
 Figure 1. A flow diagram to explain the script and the sources of the data. Steps after the Visualization are manual steps conducted with expert risk assessors.
 
 ![An example created for *Rousettus aegyptiacus* and its interacting species were it to occur in Belgium]
-(./images/Rousettusaegyptiacus.png)
+(./images/interactias.png)
 
 ## pygbif needs to be installed
 

@@ -3,6 +3,7 @@
 *.gz
 *.csv
 *.html
+!Procambarus%20clarkiiBelgium.html
 *.dot
 interactias-checkpoint.ipynb
 apicache-py3/

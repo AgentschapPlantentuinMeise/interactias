@@ -4,6 +4,10 @@
 *.csv
 *.html
 !Procambarus clarkiiBelgium.html
+!Muntiacus reevesiBelgium.html
+!Threskiornis aethiopicusBelgium.html
+!Impatiens glanduliferaBelgium.html
+!Callosciurus erythraeus.html
 *.dot
 interactias-checkpoint.ipynb
 apicache-py3/

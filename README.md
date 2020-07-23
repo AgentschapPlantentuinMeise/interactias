@@ -1,6 +1,9 @@
 # Interactias
 ## A Jupyter notebook to extract and study species interation data for alien species
 
+## Example outputs
+* *[Procambarus clarkii](https://agentschapplantentuinmeise.github.io/interactias/docs/Procambarus%20clarkiiBelgium.html)*
+
 ## Methods
 * The script takes a single species as input and searches for all primary interacting species on [GloBI](https://www.globalbioticinteractions.org/).
 * Then it goes back to GloBI to get all the interacting species of those primary interacting species.

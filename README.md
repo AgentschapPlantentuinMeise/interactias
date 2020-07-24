@@ -1,5 +1,5 @@
-# Interactias
-## A Jupyter notebook to extract and study species interation data for alien species
+# InteractIAS
+## A Jupyter notebook to extract and study species interation data for invasive alien species
 
 ## Example outputs
 * *[Procambarus clarkii](https://agentschapplantentuinmeise.github.io/interactias/docs/Procambarus%20clarkiiBelgium.html)*

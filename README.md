@@ -18,10 +18,11 @@
 
 The large amounts of data required for this script mean that we have used local copies of much of the data and only use the GBIF API to consult the GBIF Taxonomic Backbone.
 
-### GloBI Data
+### GloBI Interaction Data
 * The latest interactions.tsv.gz file can be downloaded from GloBI at https://www.globalbioticinteractions.org/data.html or there is a published snapshot of the file on Zenodo (http://doi.org/10.5281/zenodo.3950590).
 * Interactions.tsv is then made into an SQLite (https://www.sqlite.org/) database using a script. https://github.com/AgentschapPlantentuinMeise/createGlobiDB. This database can then be recreated whenever it is felt necessary to use a newer version.
-### Occurrence Data
+
+### GBIF Occurrence Data
 * We use a preconstructed Belgian occurrence cube built from GBIF observations following the methodology of Oldoni et al. (2020a). Occurrence cubes for Belgium and Italy are currently available online (Oldoni et al. 2020b). http://doi.org/10.5281/zenodo.3637911
 * To create your own occurrence cube instructions are available in Oldoni et al. (2020a) and all code is available on GitHub (https://github.com/trias-project/occ-cube).
 * To query the occurrence cube it is then made into an SQLite (https://www.sqlite.org/) database using a script. https://github.com/AgentschapPlantentuinMeise/occcube

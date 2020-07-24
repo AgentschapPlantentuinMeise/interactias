@@ -67,8 +67,8 @@ Anyone can push additions to this repository or raise issues with citations of p
 
 
 ## References
-* Cains, Mariana, Altimir, Nuria, Anand, Srini, Liao, William, & Shiverick, Sean. (2017). IVMOOC 2017 - Gap Analysis of GloBI: Identifying Research and Data Sharing Opportunities for Species Interactions. Zenodo. https://doi.org/10.5281/zenodo.814978
-* Oldoni, D., Groom, Q., Adriaens, T., Davis, A.J.S., Reyserhove, L., Strubbe, D., Vanderhoeven, S. & Desmet, P. (2020a). Occurrence cubes: a new paradigm for aggregating species occurrence data. BioRxiv. 2020.03.23.983601; doi: https://doi.org/10.1101/2020.03.23.983601
-* Oldoni, D., Groom, Q., Adriaens, T., Davis, A.J.S., Reyserhove, L., Strubbe, D., Vanderhoeven, S. & Desmet, P. (2020b). Occurrence cubes at species level for European countries (Version 20200205) [Data set]. Zenodo. http://doi.org/10.5281/zenodo.3637911
-* Poelen, J.H., Simons, J.D. & Mungall, C.J. (2014). Global Biotic Interactions: An open infrastructure to share and analyze species-interaction datasets. Ecological Informatics. https://doi.org/10.1016/j.ecoinf.2014.08.005.
+* Cains, Mariana, Altimir, Nuria, Anand, Srini, Liao, William, & Shiverick, Sean. (2017). IVMOOC 2017 - Gap Analysis of GloBI: Identifying Research and Data Sharing Opportunities for Species Interactions. Zenodo. [https://doi.org/10.1101/2020.03.23.983601](https://doi.org/10.5281/zenodo.814978)
+* Oldoni, D., Groom, Q., Adriaens, T., Davis, A.J.S., Reyserhove, L., Strubbe, D., Vanderhoeven, S. & Desmet, P. (2020a). Occurrence cubes: a new paradigm for aggregating species occurrence data. BioRxiv. 2020.03.23.983601; doi: [https://doi.org/10.1101/2020.03.23.983601](https://doi.org/10.1101/2020.03.23.983601)
+* Oldoni, D., Groom, Q., Adriaens, T., Davis, A.J.S., Reyserhove, L., Strubbe, D., Vanderhoeven, S. & Desmet, P. (2020b). Occurrence cubes at species level for European countries (Version 20200205) [Data set]. Zenodo. [http://doi.org/10.5281/zenodo.3637911](http://doi.org/10.5281/zenodo.3637911)
+* Poelen, J.H., Simons, J.D. & Mungall, C.J. (2014). Global Biotic Interactions: An open infrastructure to share and analyze species-interaction datasets. Ecological Informatics. [https://doi.org/10.1016/j.ecoinf.2014.08.005](https://doi.org/10.1016/j.ecoinf.2014.08.005).
 

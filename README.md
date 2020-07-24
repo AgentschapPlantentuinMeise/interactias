@@ -1,6 +1,9 @@
 # InteractIAS
 ## A Jupyter notebook to extract and study species interation data for invasive alien species
 
+InteractIAS has many uses, but was specifically developed to inform invasive species risk assessment. InteractIAS takes interaction data from the Global Biotic Interactions (GloBI) database. It then combines these interactions with occupancy data derived from GBIF to create a species interaction network with nodes weighted by their occupancy. This allows users to evaluate if there are species that might be impacted directly or indirectly by an invasive species. By weighing the nodes by the occupancy it allows users to evaluate whether the interaction is likely to have a major impact or not.
+Interactions between species are the most important way that invasive species impact other biodiversity. Ecosystem models are not yet sophisticated enough to interpret complex interaction networks, so we must rely on expert opinion to evaluate the potential risks of a new invasive species. Yet experts in the country were the species is invasive are not likely to have expertise in a species that may come from another continent. Therefore, we need tools to support risk assessors do their job and support their conclusions.
+
 ## Example outputs
 * *[Procambarus clarkii](https://agentschapplantentuinmeise.github.io/interactias/docs/Procambarus%20clarkiiBelgium.html)*
 * *[Muntiacus reevesi](https://agentschapplantentuinmeise.github.io/interactias/docs/Muntiacus%20reevesiBelgium.html)*
@@ -8,12 +11,14 @@
 * *[Impatiens glandulifera](https://agentschapplantentuinmeise.github.io/interactias/docs/Impatiens%20glanduliferaBelgium.html)*
 * *[Callosciurus erythraeus](https://agentschapplantentuinmeise.github.io/interactias/docs/Callosciurus%20erythraeus.html)*
 
+In addition to an HTML output the script generates a .dot file. This format can be opened directly by the network visulization tool Gephi (https://gephi.org/).
+
 ## Methods
-* The script takes a single species as input and searches for all primary interacting species on [GloBI](https://www.globalbioticinteractions.org/).
+* The script takes a single species as input and searches for all primary interacting species in [GloBI](https://www.globalbioticinteractions.org/).
 * Then it goes back to GloBI to get all the interacting species of those primary interacting species.
 * The script then checks to see if all those species exist on [GBIF](https://www.gbif.org/) and it outputs a list of missing species.
-* We then use a occurrence cube of species, 1km grid square and year to evaluate the 1km occupancy of each species in the country of interest.
-* Any interactions that can't occur in the country are removed.
+* We then use a occurrence cube of species from the country of interest. This is a data cube of taxa, 1km grid squares and years from which the 1km occupancy is calculated.
+* Any interactions that cannot occur in the country are removed.
 * Visualizations are then created to display the result in a way that allows exploration of the network.
 
 The large amounts of data required for this script mean that we have used local copies of much of the data and only use the GBIF API to consult the GBIF Taxonomic Backbone.
@@ -27,7 +32,9 @@ The large amounts of data required for this script mean that we have used local 
 * To create your own occurrence cube instructions are available in Oldoni et al. (2020a) and all code is available on GitHub (https://github.com/trias-project/occ-cube).
 * To query the occurrence cube it is then made into an SQLite (https://www.sqlite.org/) database using a script. https://github.com/AgentschapPlantentuinMeise/occcube
 
-* These outputs can then be provided to expert risk assessors who can use them the evaluate what interactions might occur between an alien species and resident organisms, but also evaluate, to some extent, the impact of the interaction with reference to the occupancy.
+### pygbif needs to be installed
+
+e.g. Using the Anaconda Prompt run `pip install pygbif`
 
 ![Diagram of the Interactias workflow](./images/interactias.png)
 Figure 1. A flow diagram to explain the script and the sources of the data. Steps after the Visualization are manual steps conducted with expert risk assessors.
@@ -36,13 +43,30 @@ Figure 1. A flow diagram to explain the script and the sources of the data. Step
 
 Figure 2. An example of a network create by this notebook and then visualized in [Gephi](https://gephi.org/). The target species was the Egyptian fruit bat (*Rousettus aegyptiacus* (Geoffroy, 1810)) and the target country was Belgium. Egyptian fruit bat does not naturally occur in Belgium, but should they escape from a zoo it can be seen that they are unlikely to survive. Not only are their only food plants rare in Belgium, but they have a common predator, cats (*Felis catus* L.). In this illustration the node radius is proportional to the occupancy of that species in Belgium. The colours are modularity classes of the network. Although this is rather an extreme example, it illustrates how networks can be used to inform and evidence ecological understanding.
 
+## Other potential applications
+* Comparing networks of current ecosystems versus those under future climate senarios
+* Comparing networks with or without keystone species
+* Evaluating the impact of pesticide or herbicide usage
+* Understanding the biotic pressures on rare and endangered species
 
-## pygbif needs to be installed
+## Adaptions, improvements and adaptions
+* The script could be adapted to adapted to size the nodes based on occupancy cooccurence.
+* Users can edit the parameters of the script to omit interactions they are not interested in (e.g. visitsFlowersOf), or non-specific interactions (e.g. interactsWith).
+* Pregenerated data cubes for all countries would streamline setting up of the notebook.
+* The notebook could be used for user generated data on interactions for just a small area.
+* The notebook only works at the species level, but can be easily adapted to create higher taxon networks. These can be a useful simplification of some complex networks.
 
-e.g. Using the Anaconda Prompt run `pip install pygbif`
+## Adding additional interactions
+GloBI is an enormous database of species interactions, but there are many missing (Cains et al. 2017). If you have additional interactions to add to GloBI you can do so editing a simple tab-delimited text file in a GitHub repository. Instructions are here https://github.com/globalbioticinteractions/template-dataset
+
+Using this template I have set up a repository specifically to collect interaction data for species on the List of Invasive Alien Species of Union concern (https://ec.europa.eu/environment/nature/invasivealien/list/index_en.htm).
+This repository can be found here... https://github.com/trias-project/eu-species-of-concern-interactions
+Anyone can push additions to this repository or raise issues with citations of publications that describe the interaction.
+
 
 ## References
+" Cains, Mariana, Altimir, Nuria, Anand, Srini, Liao, William, & Shiverick, Sean. (2017). IVMOOC 2017 - Gap Analysis of GloBI: Identifying Research and Data Sharing Opportunities for Species Interactions. Zenodo. https://doi.org/10.5281/zenodo.814978
 * Oldoni, D., Groom, Q., Adriaens, T., Davis, A.J.S., Reyserhove, L., Strubbe, D., Vanderhoeven, S. & Desmet, P. (2020a). Occurrence cubes: a new paradigm for aggregating species occurrence data. BioRxiv. 2020.03.23.983601; doi: https://doi.org/10.1101/2020.03.23.983601
-* Oldoni, D., Groom, Q., Adriaens, T. & Davis, A.J.S., Reyserhove, L., Strubbe, D., Vanderhoeven, S. & Desmet, P. (2020b). Occurrence cubes at species level for European countries (Version 20200205) [Data set]. Zenodo. http://doi.org/10.5281/zenodo.3637911
+* Oldoni, D., Groom, Q., Adriaens, T., Davis, A.J.S., Reyserhove, L., Strubbe, D., Vanderhoeven, S. & Desmet, P. (2020b). Occurrence cubes at species level for European countries (Version 20200205) [Data set]. Zenodo. http://doi.org/10.5281/zenodo.3637911
 * Poelen, J.H., Simons, J.D. & Mungall, C.J. (2014). Global Biotic Interactions: An open infrastructure to share and analyze species-interaction datasets. Ecological Informatics. https://doi.org/10.1016/j.ecoinf.2014.08.005.
 

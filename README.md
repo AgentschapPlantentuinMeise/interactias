@@ -3,10 +3,10 @@
 
 ## Example outputs
 * *[Procambarus clarkii](https://agentschapplantentuinmeise.github.io/interactias/docs/Procambarus%20clarkiiBelgium.html)*
-* *[Muntiacus reevesi](https://agentschapplantentuinmeise.github.io/interactias/docs/Muntiacus reevesiBelgium.html)*
-* *[Threskiornis aethiopicus](https://agentschapplantentuinmeise.github.io/interactias/docs/Threskiornis aethiopicusBelgium.html)*
-* *[Impatiens glandulifera](https://agentschapplantentuinmeise.github.io/interactias/docs/Impatiens glanduliferaBelgium.html)*
-* *[Callosciurus erythraeus](https://agentschapplantentuinmeise.github.io/interactias/docs/Callosciurus erythraeus.html)*
+* *[Muntiacus reevesi](https://agentschapplantentuinmeise.github.io/interactias/docs/Muntiacus%20reevesiBelgium.html)*
+* *[Threskiornis aethiopicus](https://agentschapplantentuinmeise.github.io/interactias/docs/Threskiornis%20aethiopicusBelgium.html)*
+* *[Impatiens glandulifera](https://agentschapplantentuinmeise.github.io/interactias/docs/Impatiens%20glanduliferaBelgium.html)*
+* *[Callosciurus erythraeus](https://agentschapplantentuinmeise.github.io/interactias/docs/Callosciurus%20erythraeus.html)*
 
 ## Methods
 * The script takes a single species as input and searches for all primary interacting species on [GloBI](https://www.globalbioticinteractions.org/).

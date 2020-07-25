@@ -1,6 +1,8 @@
 # InteractIAS
 ## A Jupyter notebook to extract and study species interaction data for invasive alien species
 
+[A video explanation](https://youtu.be/LXlilo2B19I)
+
 InteractIAS has many uses, but was specifically developed to inform invasive species risk assessment. InteractIAS takes interaction data from the Global Biotic Interactions (GloBI) database. It then combines these interactions with occupancy data derived from GBIF to create a species interaction network with nodes weighted by their occupancy. This allows users to evaluate if there are species that might be impacted directly or indirectly by an invasive species. By weighing the nodes by the occupancy, it allows users to evaluate whether the interaction is likely to have a major impact or not.
 Interactions between species are the most important way that invasive species impact other biodiversity. Ecosystem models are not yet sophisticated enough to interpret complex interaction networks, so we must rely on expert opinion to evaluate the potential risks of a new invasive species. Yet experts in the country were the species is invasive are not likely to have expertise in a species that may come from another continent. Therefore, we need tools to support risk assessors do their job and support their conclusions.
 
@@ -8,7 +10,7 @@ Interactions between species are the most important way that invasive species im
 * *[Impatiens glandulifera](https://agentschapplantentuinmeise.github.io/interactias/docs/Impatiens%20glanduliferaBelgium.html)* (Himalayan balsam)
 * *[Muntiacus reevesi](https://agentschapplantentuinmeise.github.io/interactias/docs/Muntiacus%20reevesiBelgium.html)* (Reeves's muntjac)
 * *[Procambarus clarkii](https://agentschapplantentuinmeise.github.io/interactias/docs/Procambarus%20clarkiiBelgium.html)* (Louisiana crawfish)
-* *[Pueraria montana](https://agentschapplantentuinmeise.github.io/interactias/docs/Pueraria%20montana.html)* (Kudzu)
+* *[Pueraria montana](https://agentschapplantentuinmeise.github.io/interactias/docs/Pueraria%20montanaBelgium.html)* (Kudzu)
 * *[Threskiornis aethiopicus](https://agentschapplantentuinmeise.github.io/interactias/docs/Threskiornis%20aethiopicusBelgium.html)* (African sacred ibis)
 
 In addition to an HTML output the script generates a .dot file. This format can be opened directly by the network visualization tool Gephi (https://gephi.org/).
@@ -67,8 +69,8 @@ Anyone can push additions to this repository or raise issues with citations of p
 
 
 ## References
-* Cains, Mariana, Altimir, Nuria, Anand, Srini, Liao, William, & Shiverick, Sean. (2017). IVMOOC 2017 - Gap Analysis of GloBI: Identifying Research and Data Sharing Opportunities for Species Interactions. Zenodo. https://doi.org/10.5281/zenodo.814978
-* Oldoni, D., Groom, Q., Adriaens, T., Davis, A.J.S., Reyserhove, L., Strubbe, D., Vanderhoeven, S. & Desmet, P. (2020a). Occurrence cubes: a new paradigm for aggregating species occurrence data. BioRxiv. 2020.03.23.983601; doi: https://doi.org/10.1101/2020.03.23.983601
-* Oldoni, D., Groom, Q., Adriaens, T., Davis, A.J.S., Reyserhove, L., Strubbe, D., Vanderhoeven, S. & Desmet, P. (2020b). Occurrence cubes at species level for European countries (Version 20200205) [Data set]. Zenodo. http://doi.org/10.5281/zenodo.3637911
-* Poelen, J.H., Simons, J.D. & Mungall, C.J. (2014). Global Biotic Interactions: An open infrastructure to share and analyze species-interaction datasets. Ecological Informatics. https://doi.org/10.1016/j.ecoinf.2014.08.005.
+* Cains, Mariana, Altimir, Nuria, Anand, Srini, Liao, William, & Shiverick, Sean. (2017). IVMOOC 2017 - Gap Analysis of GloBI: Identifying Research and Data Sharing Opportunities for Species Interactions. Zenodo. [https://doi.org/10.1101/2020.03.23.983601](https://doi.org/10.5281/zenodo.814978)
+* Oldoni, D., Groom, Q., Adriaens, T., Davis, A.J.S., Reyserhove, L., Strubbe, D., Vanderhoeven, S. & Desmet, P. (2020a). Occurrence cubes: a new paradigm for aggregating species occurrence data. BioRxiv. 2020.03.23.983601; doi: [https://doi.org/10.1101/2020.03.23.983601](https://doi.org/10.1101/2020.03.23.983601)
+* Oldoni, D., Groom, Q., Adriaens, T., Davis, A.J.S., Reyserhove, L., Strubbe, D., Vanderhoeven, S. & Desmet, P. (2020b). Occurrence cubes at species level for European countries (Version 20200205) [Data set]. Zenodo. [http://doi.org/10.5281/zenodo.3637911](http://doi.org/10.5281/zenodo.3637911)
+* Poelen, J.H., Simons, J.D. & Mungall, C.J. (2014). Global Biotic Interactions: An open infrastructure to share and analyze species-interaction datasets. Ecological Informatics. [https://doi.org/10.1016/j.ecoinf.2014.08.005](https://doi.org/10.1016/j.ecoinf.2014.08.005).
 

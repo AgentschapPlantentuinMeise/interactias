@@ -1,6 +1,8 @@
 # InteractIAS
 ## A Jupyter notebook to extract and study species interaction data for invasive alien species
 
+[A video explanation](https://youtu.be/LXlilo2B19I)
+
 InteractIAS has many uses, but was specifically developed to inform invasive species risk assessment. InteractIAS takes interaction data from the Global Biotic Interactions (GloBI) database. It then combines these interactions with occupancy data derived from GBIF to create a species interaction network with nodes weighted by their occupancy. This allows users to evaluate if there are species that might be impacted directly or indirectly by an invasive species. By weighing the nodes by the occupancy, it allows users to evaluate whether the interaction is likely to have a major impact or not.
 Interactions between species are the most important way that invasive species impact other biodiversity. Ecosystem models are not yet sophisticated enough to interpret complex interaction networks, so we must rely on expert opinion to evaluate the potential risks of a new invasive species. Yet experts in the country were the species is invasive are not likely to have expertise in a species that may come from another continent. Therefore, we need tools to support risk assessors do their job and support their conclusions.
 

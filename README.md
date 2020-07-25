@@ -51,7 +51,7 @@ Figure 2. An example of a network created by this notebook and then visualized i
 * Evaluating the impact of pesticide or herbicide usage
 * Understanding the biotic pressures on rare and endangered species
 
-## Adaptions, improvements and adaptions
+## Improvements and adaptions
 * The script could be adapted to size the nodes based on occupancy cooccurence.
 * Users can edit the parameters of the script to omit interactions they are not interested in (e.g. visitsFlowersOf), or non-specific interactions (e.g. interactsWith).
 * Pre-generated data cubes for all countries would streamline setting up of the notebook for other countries.

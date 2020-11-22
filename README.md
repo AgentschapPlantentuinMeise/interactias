@@ -13,6 +13,8 @@ Interactions between species are the most important way that invasive species im
 * *[Pueraria montana](https://agentschapplantentuinmeise.github.io/interactias/docs/Pueraria%20montanaBelgium.html)* (Kudzu)
 * *[Threskiornis aethiopicus](https://agentschapplantentuinmeise.github.io/interactias/docs/Threskiornis%20aethiopicusBelgium.html)* (African sacred ibis)
 
+* *[Fraxinus excelsior](https://agentschapplantentuinmeise.github.io/interactias/docs/Fraxinus%20excelsiorBelgium.html)* (European Ash)
+
 In addition to an HTML output the script generates a .dot file. This format can be opened directly by the network visualization tool Gephi (https://gephi.org/).
 
 ## Methods

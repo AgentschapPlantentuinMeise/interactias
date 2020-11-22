@@ -1,0 +1,161 @@
+ <!DOCTYPE html> <html> <head> <script src='cytoscape.min.js'></script> <script src='https://unpkg.com/layout-base/layout-base.js'></script> <script src='https://unpkg.com/cose-base/cose-base.js'></script> <script src='cytoscape-cose-bilkent.js'></script> </head> <style>#cy {width: 90%; height: 90%; position: absolute; top: 50px; left: 150px;}.red {color: red; font-style: bold;} .green {color: green; font-style: bold;} .blue {color: blue; font-style: bold;} .brown {color: brown; font-style: bold;} table, th, td {border: 1px solid black;} body {font-family: 'times; font-size: 6px;}</style> <body> <h1><em font-style: italic;>Vespa velutina</em> in Belgium</h1><p>Nodes and edges can be moved and if clicked, open a tab with species or interaction details</p><p>The target species is the <SPAN CLASS='red'>red node</SPAN>. <em>Plantae</em> are <SPAN CLASS='green'>green</SPAN>, <em>Animalia</em> are <SPAN CLASS='blue'>blue</SPAN> and everything else is <SPAN CLASS='brown'>brown</SPAN></p><p>Node area is proportional to the 1 km<sup>2</sup> occupancy</p><p>Below is a table of all <a href='https://www.globalbioticinteractions.org/'>GloBI</a> interaction records that <em>Vespa velutina</em> has with other taxa</p><table><th>Interaction</th><th>number</th><tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Vespa%20velutina>eats</a></td><td>2</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Vespa%20velutina>interactsWith</a></td><td>1</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=visitsFlowersOf&sourceTaxon=Vespa%20velutina>visitsFlowersOf</a></td><td>5</td>
+</table> <div id='cy'></div> <script> var cy = cytoscape({   container: document.getElementById('cy'), 
+   elements: [ { data: { id: 'Vespa velutina', href: 'https://www.gbif.org/species/1311477', occnum: 14.142135623730951 }, selectable: true,},
+{ data: { id: 'Apis mellifera', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1341976', occnum: 68.55654600401044 }, selectable: false,},
+{ data: { id: 'Hyadaphis foeniculi', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2074115', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Pieris brassicae', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1920506', occnum: 92.73618495495704 }, selectable: false,},
+{ data: { id: 'Lampides boeticus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1924713', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Osmia rufa', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5039314', occnum: 50.0 }, selectable: false,},
+{ data: { id: 'Papilio machaon', kingdom: 'Animalia', href: 'https://www.gbif.org/species/8225376', occnum: 77.45966692414834 }, selectable: false,},
+{ data: { id: 'Syritta pipiens', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1544431', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Bombus terrestris', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1340503', occnum: 69.28203230275508 }, selectable: false,},
+{ data: { id: 'Theba pisana', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2294277', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Cornu aspersum', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5858758', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Graphosoma italicum', kingdom: 'Animalia', href: 'https://www.gbif.org/species/7437802', occnum: 47.958315233127195 }, selectable: false,},
+{ data: { id: 'Diphyus quadripunctorius', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1296299', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Ancistrocerus gazella', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5037434', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Polistes dominula', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5871389', occnum: 47.958315233127195 }, selectable: false,},
+{ data: { id: 'Eristalis tenax', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1541217', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Gymnomerus laevipes', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1330062', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Harmonia axyridis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/4989904', occnum: 70.71067811865476 }, selectable: false,},
+{ data: { id: 'Anthrenus verbasci', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1095895', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Diplazon laetatorius', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5025857', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Cytisus scoparius', kingdom: 'Plantae', href: 'https://www.gbif.org/species/5354656', occnum: 61.64414002968976 }, selectable: false,},
+{ data: { id: 'Vespula germanica', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1311649', occnum: 24.49489742783178 }, selectable: false,},
+{ data: { id: 'Lygaeus equestris', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2007862', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Coccinella septempunctata', kingdom: 'Animalia', href: 'https://www.gbif.org/species/4990191', occnum: 50.0 }, selectable: false,},
+{ data: { id: 'Vespula vulgaris', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1311671', occnum: 40.0 }, selectable: false,},
+{ data: { id: 'Vicia sativa', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2975014', occnum: 64.03124237432849 }, selectable: false,},
+{ data: { id: 'Rumex crispus', kingdom: 'Plantae', href: 'https://www.gbif.org/species/8195144', occnum: 61.64414002968976 }, selectable: false,},
+{ data: { id: 'Raphanus sativus', kingdom: 'Plantae', href: 'https://www.gbif.org/species/7678610', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Aulacorthum solani', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2076745', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Foeniculum vulgare', kingdom: 'Plantae', href: 'https://www.gbif.org/species/3034922', occnum: 20.0 }, selectable: false,},
+{ data: { id: 'Sturnus vulgaris', kingdom: 'Animalia', href: 'https://www.gbif.org/species/9809229', occnum: 98.48857801796103 }, selectable: false,},
+{ data: { id: 'Vanessa atalanta', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1898286', occnum: 100.0 }, selectable: false,},
+{ data: { id: 'Calamobius filum', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1149372', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Brachymeria tibialis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1362207', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Lymantria dispar', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1820406', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Anaspis maculata', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5878447', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Philaenus spumarius', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2016038', occnum: 26.457513110645905 }, selectable: false,},
+{ data: { id: 'Vitis vinifera', kingdom: 'Plantae', href: 'https://www.gbif.org/species/5372392', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Forficula auricularia', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1419845', occnum: 28.284271247461902 }, selectable: false,},
+{ data: { id: 'Fatsia japonica', kingdom: 'Plantae', href: 'https://www.gbif.org/species/3039046', occnum: 0.0 }, selectable: false,},
+{data: {id: 'Vespa velutinaFoeniculum vulgare', source: 'Vespa velutina', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=visitsFlowersOf&sourceTaxon=Vespa velutina&targetTaxon=Foeniculum vulgare', label: 'visitsFlowersOf'}},
+{data: {id: 'Vespa velutinaVitis vinifera', source: 'Vespa velutina', target: 'Vitis vinifera', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Vespa velutina&targetTaxon=Vitis vinifera', label: 'eats'}},
+{data: {id: 'Vespa velutinaFatsia japonica', source: 'Vespa velutina', target: 'Fatsia japonica', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Vespa velutina&targetTaxon=Fatsia japonica', label: 'eats'}},
+{data: {id: 'Apis melliferaFoeniculum vulgare', source: 'Apis mellifera', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=visitsFlowersOf&sourceTaxon=Apis mellifera&targetTaxon=Foeniculum vulgare', label: 'visitsFlowersOf'}},
+{data: {id: 'Apis melliferaFatsia japonica', source: 'Apis mellifera', target: 'Fatsia japonica', href: 'https://www.globalbioticinteractions.org/?interactionType=visitsFlowersOf&sourceTaxon=Apis mellifera&targetTaxon=Fatsia japonica', label: 'visitsFlowersOf'}},
+{data: {id: 'Hyadaphis foeniculiFoeniculum vulgare', source: 'Hyadaphis foeniculi', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Hyadaphis foeniculi&targetTaxon=Foeniculum vulgare', label: 'interactsWith'}},
+{data: {id: 'Pieris brassicaeFoeniculum vulgare', source: 'Pieris brassicae', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=visitsFlowersOf&sourceTaxon=Pieris brassicae&targetTaxon=Foeniculum vulgare', label: 'visitsFlowersOf'}},
+{data: {id: 'Lampides boeticusFoeniculum vulgare', source: 'Lampides boeticus', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=visitsFlowersOf&sourceTaxon=Lampides boeticus&targetTaxon=Foeniculum vulgare', label: 'visitsFlowersOf'}},
+{data: {id: 'Osmia rufaFoeniculum vulgare', source: 'Osmia rufa', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=visitsFlowersOf&sourceTaxon=Osmia rufa&targetTaxon=Foeniculum vulgare', label: 'visitsFlowersOf'}},
+{data: {id: 'Papilio machaonFoeniculum vulgare', source: 'Papilio machaon', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Papilio machaon&targetTaxon=Foeniculum vulgare', label: 'eats'}},
+{data: {id: 'Syritta pipiensFoeniculum vulgare', source: 'Syritta pipiens', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Syritta pipiens&targetTaxon=Foeniculum vulgare', label: 'interactsWith'}},
+{data: {id: 'Bombus terrestrisFoeniculum vulgare', source: 'Bombus terrestris', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Bombus terrestris&targetTaxon=Foeniculum vulgare', label: 'interactsWith'}},
+{data: {id: 'Theba pisanaFoeniculum vulgare', source: 'Theba pisana', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Theba pisana&targetTaxon=Foeniculum vulgare', label: 'interactsWith'}},
+{data: {id: 'Cornu aspersumFoeniculum vulgare', source: 'Cornu aspersum', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Cornu aspersum&targetTaxon=Foeniculum vulgare', label: 'interactsWith'}},
+{data: {id: 'Graphosoma italicumFoeniculum vulgare', source: 'Graphosoma italicum', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=hasHost&sourceTaxon=Graphosoma italicum&targetTaxon=Foeniculum vulgare', label: 'hasHost'}},
+{data: {id: 'Diphyus quadripunctoriusFoeniculum vulgare', source: 'Diphyus quadripunctorius', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Diphyus quadripunctorius&targetTaxon=Foeniculum vulgare', label: 'interactsWith'}},
+{data: {id: 'Ancistrocerus gazellaFoeniculum vulgare', source: 'Ancistrocerus gazella', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=visitsFlowersOf&sourceTaxon=Ancistrocerus gazella&targetTaxon=Foeniculum vulgare', label: 'visitsFlowersOf'}},
+{data: {id: 'Polistes dominulaFoeniculum vulgare', source: 'Polistes dominula', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=visitsFlowersOf&sourceTaxon=Polistes dominula&targetTaxon=Foeniculum vulgare', label: 'visitsFlowersOf'}},
+{data: {id: 'Polistes dominulaVitis vinifera', source: 'Polistes dominula', target: 'Vitis vinifera', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Polistes dominula&targetTaxon=Vitis vinifera', label: 'eats'}},
+{data: {id: 'Eristalis tenaxFoeniculum vulgare', source: 'Eristalis tenax', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=visitsFlowersOf&sourceTaxon=Eristalis tenax&targetTaxon=Foeniculum vulgare', label: 'visitsFlowersOf'}},
+{data: {id: 'Gymnomerus laevipesFoeniculum vulgare', source: 'Gymnomerus laevipes', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Gymnomerus laevipes&targetTaxon=Foeniculum vulgare', label: 'interactsWith'}},
+{data: {id: 'Harmonia axyridisFoeniculum vulgare', source: 'Harmonia axyridis', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Harmonia axyridis&targetTaxon=Foeniculum vulgare', label: 'eats'}},
+{data: {id: 'Anthrenus verbasciFoeniculum vulgare', source: 'Anthrenus verbasci', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Anthrenus verbasci&targetTaxon=Foeniculum vulgare', label: 'interactsWith'}},
+{data: {id: 'Diplazon laetatoriusFoeniculum vulgare', source: 'Diplazon laetatorius', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=visitsFlowersOf&sourceTaxon=Diplazon laetatorius&targetTaxon=Foeniculum vulgare', label: 'visitsFlowersOf'}},
+{data: {id: 'Cytisus scopariusFoeniculum vulgare', source: 'Cytisus scoparius', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Cytisus scoparius&targetTaxon=Foeniculum vulgare', label: 'interactsWith'}},
+{data: {id: 'Vespula germanicaFoeniculum vulgare', source: 'Vespula germanica', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Vespula germanica&targetTaxon=Foeniculum vulgare', label: 'eats'}},
+{data: {id: 'Lygaeus equestrisFoeniculum vulgare', source: 'Lygaeus equestris', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Lygaeus equestris&targetTaxon=Foeniculum vulgare', label: 'interactsWith'}},
+{data: {id: 'Coccinella septempunctataFoeniculum vulgare', source: 'Coccinella septempunctata', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Coccinella septempunctata&targetTaxon=Foeniculum vulgare', label: 'interactsWith'}},
+{data: {id: 'Vespula vulgarisFoeniculum vulgare', source: 'Vespula vulgaris', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Vespula vulgaris&targetTaxon=Foeniculum vulgare', label: 'interactsWith'}},
+{data: {id: 'Vespula vulgarisFatsia japonica', source: 'Vespula vulgaris', target: 'Fatsia japonica', href: 'https://www.globalbioticinteractions.org/?interactionType=visitsFlowersOf&sourceTaxon=Vespula vulgaris&targetTaxon=Fatsia japonica', label: 'visitsFlowersOf'}},
+{data: {id: 'Vicia sativaFoeniculum vulgare', source: 'Vicia sativa', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Vicia sativa&targetTaxon=Foeniculum vulgare', label: 'interactsWith'}},
+{data: {id: 'Rumex crispusFoeniculum vulgare', source: 'Rumex crispus', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Rumex crispus&targetTaxon=Foeniculum vulgare', label: 'interactsWith'}},
+{data: {id: 'Raphanus sativusFoeniculum vulgare', source: 'Raphanus sativus', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Raphanus sativus&targetTaxon=Foeniculum vulgare', label: 'interactsWith'}},
+{data: {id: 'Aulacorthum solaniFoeniculum vulgare', source: 'Aulacorthum solani', target: 'Foeniculum vulgare', href: 'https://www.globalbioticinteractions.org/?interactionType=hasHost&sourceTaxon=Aulacorthum solani&targetTaxon=Foeniculum vulgare', label: 'hasHost'}},
+{data: {id: 'Foeniculum vulgareApis mellifera', source: 'Foeniculum vulgare', target: 'Apis mellifera', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Foeniculum vulgare&targetTaxon=Apis mellifera', label: 'interactsWith'}},
+{data: {id: 'Foeniculum vulgareSyritta pipiens', source: 'Foeniculum vulgare', target: 'Syritta pipiens', href: 'https://www.globalbioticinteractions.org/?interactionType=mutualistOf&sourceTaxon=Foeniculum vulgare&targetTaxon=Syritta pipiens', label: 'mutualistOf'}},
+{data: {id: 'Sturnus vulgarisVitis vinifera', source: 'Sturnus vulgaris', target: 'Vitis vinifera', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Sturnus vulgaris&targetTaxon=Vitis vinifera', label: 'eats'}},
+{data: {id: 'Vanessa atalantaVitis vinifera', source: 'Vanessa atalanta', target: 'Vitis vinifera', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Vanessa atalanta&targetTaxon=Vitis vinifera', label: 'eats'}},
+{data: {id: 'Calamobius filumVitis vinifera', source: 'Calamobius filum', target: 'Vitis vinifera', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Calamobius filum&targetTaxon=Vitis vinifera', label: 'interactsWith'}},
+{data: {id: 'Brachymeria tibialisVitis vinifera', source: 'Brachymeria tibialis', target: 'Vitis vinifera', href: 'https://www.globalbioticinteractions.org/?interactionType=parasiteOf&sourceTaxon=Brachymeria tibialis&targetTaxon=Vitis vinifera', label: 'parasiteOf'}},
+{data: {id: 'Lymantria disparVitis vinifera', source: 'Lymantria dispar', target: 'Vitis vinifera', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Lymantria dispar&targetTaxon=Vitis vinifera', label: 'eats'}},
+{data: {id: 'Anaspis maculataVitis vinifera', source: 'Anaspis maculata', target: 'Vitis vinifera', href: 'https://www.globalbioticinteractions.org/?interactionType=hasHost&sourceTaxon=Anaspis maculata&targetTaxon=Vitis vinifera', label: 'hasHost'}},
+{data: {id: 'Philaenus spumariusVitis vinifera', source: 'Philaenus spumarius', target: 'Vitis vinifera', href: 'https://www.globalbioticinteractions.org/?interactionType=hasHost&sourceTaxon=Philaenus spumarius&targetTaxon=Vitis vinifera', label: 'hasHost'}},
+{data: {id: 'Forficula auriculariaFatsia japonica', source: 'Forficula auricularia', target: 'Fatsia japonica', href: 'https://www.globalbioticinteractions.org/?interactionType=visitsFlowersOf&sourceTaxon=Forficula auricularia&targetTaxon=Fatsia japonica', label: 'visitsFlowersOf'}},
+], style: [ 
+        { 
+            selector: 'node', 
+            style: { 
+                shape: 'circle', 
+                'background-color': 'yellow', 
+                label: 'data(id)', 
+                'text-valign': 'center', 
+                'font-family': 'helvetica', 
+                'font-style': 'italic', 
+                'font-size': '8px', 
+                'border-width': '0.5', 
+                'border-color': 'black', 
+                'width': 'mapData(occnum, 0, 400, 3, 200)', 
+                'height': 'mapData(occnum, 0, 400, 3, 200)' 
+            } 
+        },  
+        {  
+            selector: 'edge',  
+            style: {  
+                label: 'data(label)', 
+                'font-family': 'helvetica', 
+                'font-size': '6px', 
+                'color': 'blue', 
+                'curve-style': 'bezier', 
+                'target-arrow-shape': 'triangle',  
+                'width': '1' 
+                } 
+         },  
+         {  
+              selector: '[kingdom = "Plantae"]',   
+              css: {  
+                'background-color': 'lightgreen'  
+                 }  
+        }, 
+        {  
+              selector: '[kingdom = "Animalia"]',   
+              css: {  
+                'background-color': 'lightblue'  
+                 }  
+        }, 
+        {  
+              selector: ':selected',   
+              css: {  
+                'line-color': 'red',  
+                'shape': 'square',  
+                'background-color': 'red'  
+                 }  
+        }], 
+layout:  { 
+            name: 'cose-bilkent', padding: 1, animate: true, gravity: 30, animationDuration: 3000 
+     } 
+} 
+); 
+cy.userZoomingEnabled( true ); 
+    cy.getElementById('Vespa velutina').select(); 
+    document.write('<br />Degree of node <em>Vespa velutina Lepeletier, 1836</em> = '+cy.getElementById('Vespa velutina').degree()); 
+    cy.on('tap', 'node', function(){ 
+        try { // your browser may block popups 
+              window.open( this.data('href') ); 
+            } catch(e){ // fall back on url change 
+        window.location.href = this.data('href'); 
+    } 
+}); 
+    cy.on('tap', 'edge', function(){  
+        try { // your browser may block popups  
+              window.open( this.data('href') );  
+            } catch(e){ // fall back on url change  
+        window.location.href = this.data('href'); 
+    } 
+}); 
+</script> 
+</ul>         <br />         <br />         <a href='https://github.com/AgentschapPlantentuinMeise/interactias'><img src='../images/Octocat.jpg' alt='GitHub logo' width='20'>Source code</a>         </body>         </html>

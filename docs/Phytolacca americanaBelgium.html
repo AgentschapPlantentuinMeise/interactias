@@ -1,0 +1,127 @@
+ <!DOCTYPE html> <html> <head> <script src='cytoscape.min.js'></script> <script src='https://unpkg.com/layout-base/layout-base.js'></script> <script src='https://unpkg.com/cose-base/cose-base.js'></script> <script src='cytoscape-cose-bilkent.js'></script> </head> <style>#cy {width: 90%; height: 90%; position: absolute; top: 50px; left: 150px;}.red {color: red; font-style: bold;} .green {color: green; font-style: bold;} .blue {color: blue; font-style: bold;} .brown {color: brown; font-style: bold;} table, th, td {border: 1px solid black;} body {font-family: 'times; font-size: 6px;}</style> <body> <h1><em font-style: italic;>Phytolacca americana</em> in Belgium</h1><p>Nodes and edges can be moved and if clicked, open a tab with species or interaction details</p><p>The target species is the <SPAN CLASS='red'>red node</SPAN>. <em>Plantae</em> are <SPAN CLASS='green'>green</SPAN>, <em>Animalia</em> are <SPAN CLASS='blue'>blue</SPAN> and everything else is <SPAN CLASS='brown'>brown</SPAN></p><p>Node area is proportional to the 1 km<sup>2</sup> occupancy</p><p>Below is a table of all <a href='https://www.globalbioticinteractions.org/'>GloBI</a> interaction records that <em>Phytolacca americana</em> has with other taxa</p><table><th>Interaction</th><th>number</th><tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Phytolacca%20americana>interactsWith</a></td><td>83</td>
+</table><p>Below is a table of all <a href='https://www.globalbioticinteractions.org/'>GloBI</a> interaction records that other taxa have with <em>Phytolacca americana</em></p><table><th>Interaction</th><th>number</th><tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=eats&targetTaxon=Phytolacca%20americana>eats</a></td><td>127</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=hasHost&targetTaxon=Phytolacca%20americana>hasHost</a></td><td>7</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=interactsWith&targetTaxon=Phytolacca%20americana>interactsWith</a></td><td>119</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=pathogenOf&targetTaxon=Phytolacca%20americana>pathogenOf</a></td><td>1</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=pollinates&targetTaxon=Phytolacca%20americana>pollinates</a></td><td>1</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=visits&targetTaxon=Phytolacca%20americana>visits</a></td><td>4</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=visitsFlowersOf&targetTaxon=Phytolacca%20americana>visitsFlowersOf</a></td><td>12</td>
+</table> <div id='cy'></div> <script> var cy = cytoscape({   container: document.getElementById('cy'), 
+   elements: [ { data: { id: 'Columba livia', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2495414', occnum: 60.0 }, selectable: false,},
+{ data: { id: 'Acalymma vittatum', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1047583', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Meconema thalassinum', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1690432', occnum: 40.0 }, selectable: false,},
+{ data: { id: 'Haliaeetus leucocephalus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2480446', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Tyto alba', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2497921', occnum: 67.0820393249937 }, selectable: false,},
+{ data: { id: 'Falco columbarius', kingdom: 'Animalia', href: 'https://www.gbif.org/species/9813242', occnum: 55.67764362830022 }, selectable: false,},
+{ data: { id: 'Accipiter gentilis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2480589', occnum: 71.41428428542851 }, selectable: false,},
+{ data: { id: 'Buteo jamaicensis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2480542', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Falco peregrinus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2481047', occnum: 84.85281374238569 }, selectable: false,},
+{ data: { id: 'Milvus migrans', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5229167', occnum: 48.98979485566356 }, selectable: false,},
+{ data: { id: 'Accipiter nisus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2480637', occnum: 100.0 }, selectable: false,},
+{ data: { id: 'Felis catus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2435035', occnum: 40.0 }, selectable: false,},
+{ data: { id: 'Phytolacca americana', href: 'https://www.gbif.org/species/3084015', occnum: 10.0 }, selectable: true,},
+{ data: { id: 'Zea mays', kingdom: 'Plantae', href: 'https://www.gbif.org/species/5290052', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Sorghum bicolor', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2705181', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Cucumis melo', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2874570', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Digitaria ischaemum', kingdom: 'Plantae', href: 'https://www.gbif.org/species/5290003', occnum: 24.49489742783178 }, selectable: false,},
+{ data: { id: 'Robinia pseudoacacia', kingdom: 'Plantae', href: 'https://www.gbif.org/species/5352251', occnum: 53.85164807134504 }, selectable: false,},
+{ data: { id: 'Eleusine indica', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2705953', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Polygonum aviculare', kingdom: 'Plantae', href: 'https://www.gbif.org/species/7821030', occnum: 66.33249580710799 }, selectable: false,},
+{ data: { id: 'Symphyotrichum novae-angliae', kingdom: 'Plantae', href: 'https://www.gbif.org/species/3151618', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Cucurbita pepo', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2874508', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Quercus robur', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2878688', occnum: 78.10249675906654 }, selectable: false,},
+{data: {id: 'Columba liviaPhytolacca americana', source: 'Columba livia', target: 'Phytolacca americana', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Columba livia&targetTaxon=Phytolacca americana', label: 'eats'}},
+{data: {id: 'Columba liviaSorghum bicolor', source: 'Columba livia', target: 'Sorghum bicolor', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Columba livia&targetTaxon=Sorghum bicolor', label: 'eats'}},
+{data: {id: 'Columba liviaRobinia pseudoacacia', source: 'Columba livia', target: 'Robinia pseudoacacia', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Columba livia&targetTaxon=Robinia pseudoacacia', label: 'eats'}},
+{data: {id: 'Columba liviaDigitaria ischaemum', source: 'Columba livia', target: 'Digitaria ischaemum', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Columba livia&targetTaxon=Digitaria ischaemum', label: 'eats'}},
+{data: {id: 'Columba liviaEleusine indica', source: 'Columba livia', target: 'Eleusine indica', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Columba livia&targetTaxon=Eleusine indica', label: 'eats'}},
+{data: {id: 'Columba liviaPolygonum aviculare', source: 'Columba livia', target: 'Polygonum aviculare', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Columba livia&targetTaxon=Polygonum aviculare', label: 'eats'}},
+{data: {id: 'Columba liviaZea mays', source: 'Columba livia', target: 'Zea mays', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Columba livia&targetTaxon=Zea mays', label: 'eats'}},
+{data: {id: 'Acalymma vittatumPhytolacca americana', source: 'Acalymma vittatum', target: 'Phytolacca americana', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Acalymma vittatum&targetTaxon=Phytolacca americana', label: 'eats'}},
+{data: {id: 'Acalymma vittatumSymphyotrichum novae-angliae', source: 'Acalymma vittatum', target: 'Symphyotrichum novae-angliae', href: 'https://www.globalbioticinteractions.org/?interactionType=visits&sourceTaxon=Acalymma vittatum&targetTaxon=Symphyotrichum novae-angliae', label: 'visits'}},
+{data: {id: 'Acalymma vittatumCucurbita pepo', source: 'Acalymma vittatum', target: 'Cucurbita pepo', href: 'https://www.globalbioticinteractions.org/?interactionType=visitsFlowersOf&sourceTaxon=Acalymma vittatum&targetTaxon=Cucurbita pepo', label: 'visitsFlowersOf'}},
+{data: {id: 'Acalymma vittatumCucumis melo', source: 'Acalymma vittatum', target: 'Cucumis melo', href: 'https://www.globalbioticinteractions.org/?interactionType=hasHost&sourceTaxon=Acalymma vittatum&targetTaxon=Cucumis melo', label: 'hasHost'}},
+{data: {id: 'Meconema thalassinumPhytolacca americana', source: 'Meconema thalassinum', target: 'Phytolacca americana', href: 'https://www.globalbioticinteractions.org/?interactionType=hasHost&sourceTaxon=Meconema thalassinum&targetTaxon=Phytolacca americana', label: 'hasHost'}},
+{data: {id: 'Meconema thalassinumQuercus robur', source: 'Meconema thalassinum', target: 'Quercus robur', href: 'https://www.globalbioticinteractions.org/?interactionType=hasHost&sourceTaxon=Meconema thalassinum&targetTaxon=Quercus robur', label: 'hasHost'}},
+{data: {id: 'Haliaeetus leucocephalusColumba livia', source: 'Haliaeetus leucocephalus', target: 'Columba livia', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Haliaeetus leucocephalus&targetTaxon=Columba livia', label: 'eats'}},
+{data: {id: 'Tyto albaColumba livia', source: 'Tyto alba', target: 'Columba livia', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Tyto alba&targetTaxon=Columba livia', label: 'eats'}},
+{data: {id: 'Falco columbariusColumba livia', source: 'Falco columbarius', target: 'Columba livia', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Falco columbarius&targetTaxon=Columba livia', label: 'eats'}},
+{data: {id: 'Accipiter gentilisColumba livia', source: 'Accipiter gentilis', target: 'Columba livia', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Accipiter gentilis&targetTaxon=Columba livia', label: 'eats'}},
+{data: {id: 'Buteo jamaicensisColumba livia', source: 'Buteo jamaicensis', target: 'Columba livia', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Buteo jamaicensis&targetTaxon=Columba livia', label: 'eats'}},
+{data: {id: 'Falco peregrinusColumba livia', source: 'Falco peregrinus', target: 'Columba livia', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Falco peregrinus&targetTaxon=Columba livia', label: 'eats'}},
+{data: {id: 'Milvus migransColumba livia', source: 'Milvus migrans', target: 'Columba livia', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Milvus migrans&targetTaxon=Columba livia', label: 'preysOn'}},
+{data: {id: 'Accipiter nisusColumba livia', source: 'Accipiter nisus', target: 'Columba livia', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Accipiter nisus&targetTaxon=Columba livia', label: 'eats'}},
+{data: {id: 'Felis catusColumba livia', source: 'Felis catus', target: 'Columba livia', href: 'https://www.globalbioticinteractions.org/?interactionType=kills&sourceTaxon=Felis catus&targetTaxon=Columba livia', label: 'kills'}},
+], style: [ 
+        { 
+            selector: 'node', 
+            style: { 
+                shape: 'circle', 
+                'background-color': 'yellow', 
+                label: 'data(id)', 
+                'text-valign': 'center', 
+                'font-family': 'helvetica', 
+                'font-style': 'italic', 
+                'font-size': '8px', 
+                'border-width': '0.5', 
+                'border-color': 'black', 
+                'width': 'mapData(occnum, 0, 400, 3, 200)', 
+                'height': 'mapData(occnum, 0, 400, 3, 200)' 
+            } 
+        },  
+        {  
+            selector: 'edge',  
+            style: {  
+                label: 'data(label)', 
+                'font-family': 'helvetica', 
+                'font-size': '6px', 
+                'color': 'blue', 
+                'curve-style': 'bezier', 
+                'target-arrow-shape': 'triangle',  
+                'width': '1' 
+                } 
+         },  
+         {  
+              selector: '[kingdom = "Plantae"]',   
+              css: {  
+                'background-color': 'lightgreen'  
+                 }  
+        }, 
+        {  
+              selector: '[kingdom = "Animalia"]',   
+              css: {  
+                'background-color': 'lightblue'  
+                 }  
+        }, 
+        {  
+              selector: ':selected',   
+              css: {  
+                'line-color': 'red',  
+                'shape': 'square',  
+                'background-color': 'red'  
+                 }  
+        }], 
+layout:  { 
+            name: 'cose-bilkent', padding: 1, animate: true, gravity: 30, animationDuration: 3000 
+     } 
+} 
+); 
+cy.userZoomingEnabled( true ); 
+    cy.getElementById('Phytolacca americana').select(); 
+    document.write('<br />Degree of node <em>Phytolacca americana L.</em> = '+cy.getElementById('Phytolacca americana').degree()); 
+    cy.on('tap', 'node', function(){ 
+        try { // your browser may block popups 
+              window.open( this.data('href') ); 
+            } catch(e){ // fall back on url change 
+        window.location.href = this.data('href'); 
+    } 
+}); 
+    cy.on('tap', 'edge', function(){  
+        try { // your browser may block popups  
+              window.open( this.data('href') );  
+            } catch(e){ // fall back on url change  
+        window.location.href = this.data('href'); 
+    } 
+}); 
+</script> 
+</ul>         <br />         <br />         <a href='https://github.com/AgentschapPlantentuinMeise/interactias'><img src='../images/Octocat.jpg' alt='GitHub logo' width='20'>Source code</a>         </body>         </html>

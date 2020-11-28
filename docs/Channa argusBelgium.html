@@ -1,0 +1,254 @@
+ <!DOCTYPE html> <html> <head> <script src='cytoscape.min.js'></script> <script src='https://unpkg.com/layout-base/layout-base.js'></script> <script src='https://unpkg.com/cose-base/cose-base.js'></script> <script src='cytoscape-cose-bilkent.js'></script> </head> <style>#cy {width: 90%; height: 90%; position: absolute; top: 50px; left: 150px;}.red {color: red; font-style: bold;} .green {color: green; font-style: bold;} .blue {color: blue; font-style: bold;} .brown {color: brown; font-style: bold;} table, th, td {border: 1px solid black;} body {font-family: 'times; font-size: 6px;}</style> <body> <h1><em font-style: italic;>Channa argus</em> in Belgium</h1><p>Nodes and edges can be moved and if clicked, open a tab with species or interaction details</p><p>The target species is the <SPAN CLASS='red'>red node</SPAN>. <em>Plantae</em> are <SPAN CLASS='green'>green</SPAN>, <em>Animalia</em> are <SPAN CLASS='blue'>blue</SPAN> and everything else is <SPAN CLASS='brown'>brown</SPAN></p><p>Node area is proportional to the 1 km<sup>2</sup> occupancy</p><p>Below is a table of all <a href='https://www.globalbioticinteractions.org/'>GloBI</a> interaction records that <em>Channa argus</em> has with other taxa</p><table><th>Interaction</th><th>number</th><tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Channa%20argus>eats</a></td><td>94</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Channa%20argus>preysOn</a></td><td>5</td>
+</table><p>Below is a table of all <a href='https://www.globalbioticinteractions.org/'>GloBI</a> interaction records that other taxa have with <em>Channa argus</em></p><table><th>Interaction</th><th>number</th><tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=endoparasiteOf&targetTaxon=Channa%20argus>endoparasiteOf</a></td><td>5</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=hasHost&targetTaxon=Channa%20argus>hasHost</a></td><td>5</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=interactsWith&targetTaxon=Channa%20argus>interactsWith</a></td><td>3</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=parasiteOf&targetTaxon=Channa%20argus>parasiteOf</a></td><td>28</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=preysOn&targetTaxon=Channa%20argus>preysOn</a></td><td>3</td>
+</table> <div id='cy'></div> <script> var cy = cytoscape({   container: document.getElementById('cy'), 
+   elements: [ { data: { id: 'Larus delawarensis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2481134', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Channa argus', href: 'https://www.gbif.org/species/4284921', occnum: 0.0 }, selectable: true,},
+{ data: { id: 'Haliaeetus leucocephalus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2480446', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Falco peregrinus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2481047', occnum: 82.46211251235322 }, selectable: false,},
+{ data: { id: 'Nycticorax nycticorax', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2480863', occnum: 28.284271247461902 }, selectable: false,},
+{ data: { id: 'Chroicocephalus ridibundus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/6065824', occnum: 92.19544457292886 }, selectable: false,},
+{ data: { id: 'Pandion haliaetus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2480726', occnum: 52.91502622129181 }, selectable: false,},
+{ data: { id: 'Phalacrocorax carbo', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2481890', occnum: 93.27379053088816 }, selectable: false,},
+{ data: { id: 'Carassius auratus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/4286942', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Misgurnus fossilis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2367936', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Sander lucioperca', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2382155', occnum: 20.0 }, selectable: false,},
+{ data: { id: 'Silurus glanis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2337607', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Pelecanus onocrotalus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2480350', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Pseudorasbora parva', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2362868', occnum: 24.49489742783178 }, selectable: false,},
+{ data: { id: 'Esox lucius', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2346633', occnum: 30.0 }, selectable: false,},
+{ data: { id: 'Perca fluviatilis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/8140485', occnum: 36.05551275463989 }, selectable: false,},
+{ data: { id: 'Anguilla anguilla', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5212973', occnum: 34.64101615137754 }, selectable: false,},
+{ data: { id: 'Salmo trutta', kingdom: 'Animalia', href: 'https://www.gbif.org/species/8215487', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Leuciscus idus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/4409643', occnum: 17.32050807568877 }, selectable: false,},
+{ data: { id: 'Lota lota', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2415460', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Squalius cephalus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2365685', occnum: 14.142135623730951 }, selectable: false,},
+{ data: { id: 'Lampetra fluviatilis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2421365', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Ardea cinerea', kingdom: 'Animalia', href: 'https://www.gbif.org/species/9797180', occnum: 97.97958971132712 }, selectable: false,},
+{ data: { id: 'Egretta garzetta', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2480876', occnum: 57.445626465380286 }, selectable: false,},
+{ data: { id: 'Platichthys flesus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2409330', occnum: 17.32050807568877 }, selectable: false,},
+{ data: { id: 'Threskiornis aethiopicus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2480764', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Rutilus rutilus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2359706', occnum: 37.416573867739416 }, selectable: false,},
+{ data: { id: 'Ardea alba', kingdom: 'Animalia', href: 'https://www.gbif.org/species/9752617', occnum: 87.17797887081348 }, selectable: false,},
+{ data: { id: 'Scardinius erythrophthalmus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2362635', occnum: 30.0 }, selectable: false,},
+{ data: { id: 'Cobitis taenia', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2368185', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Lepomis gibbosus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2394486', occnum: 20.0 }, selectable: false,},
+{ data: { id: 'Ctenopharyngodon idella', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2362030', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Neogobius melanostomus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2379089', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Blicca bjoerkna', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2359471', occnum: 22.360679774997898 }, selectable: false,},
+{ data: { id: 'Abramis brama', kingdom: 'Animalia', href: 'https://www.gbif.org/species/9809222', occnum: 24.49489742783178 }, selectable: false,},
+{ data: { id: 'Dreissena polymorpha', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2287072', occnum: 14.142135623730951 }, selectable: false,},
+{ data: { id: 'Dicrotendipes nervosus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1446479', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Osmerus eperlanus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2410854', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Clupea harengus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/8351946', occnum: 14.142135623730951 }, selectable: false,},
+{ data: { id: 'Pomatoschistus minutus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2379300', occnum: 17.32050807568877 }, selectable: false,},
+{ data: { id: 'Gasterosteus aculeatus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/4286327', occnum: 40.0 }, selectable: false,},
+{ data: { id: 'Gymnocephalus cernua', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5209574', occnum: 22.360679774997898 }, selectable: false,},
+{ data: { id: 'Alburnus alburnus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2362925', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Tinca tinca', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2362524', occnum: 22.360679774997898 }, selectable: false,},
+{ data: { id: 'Rhodeus amarus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2360842', occnum: 17.32050807568877 }, selectable: false,},
+{ data: { id: 'Leucaspius delineatus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2362881', occnum: 14.142135623730951 }, selectable: false,},
+{ data: { id: 'Carassius carassius', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2366645', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Sericostoma personatum', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5053104', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Plectrocnemia conspersa', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1438067', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Hydropsyche siltalai', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5054160', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Hydropsyche pellucidula', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5054150', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Hydropsyche instabilis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5054177', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Asellus aquaticus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2206247', occnum: 14.142135623730951 }, selectable: false,},
+{ data: { id: 'Sigara lateralis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/4485427', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Polycentropus flavomaculatus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1437978', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Hydropsyche fulvipes', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5054111', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Halesus radiatus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1441933', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Chaetopteryx villosa', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1442307', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Rhyacophila dorsalis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1434182', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Chydorus sphaericus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2234958', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Pleuroxus aduncus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2235028', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Picripleuroxus denticulatus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2235037', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Alona guttata', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5180066', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Alona affinis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5180060', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Acroperus harpae', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2234979', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Eurycercus lamellatus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2234908', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Scapholeberis mucronata', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2234871', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Bosmina longirostris', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2234694', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Daphnia ambigua', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2234836', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Lemna trisulca', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2867579', occnum: 20.0 }, selectable: false,},
+{ data: { id: 'Potamogeton pusillus', kingdom: 'Plantae', href: 'https://www.gbif.org/species/8351789', occnum: 14.142135623730951 }, selectable: false,},
+{ data: { id: 'Rhithropanopeus harrisii', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2227663', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Chelicorophium curvispinum', kingdom: 'Animalia', href: 'https://www.gbif.org/species/4314683', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Eurytemora affinis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2114319', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Daphnia pulex', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2234840', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Scapholeberis rammneri', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2234878', occnum: 0.0 }, selectable: false,},
+{data: {id: 'Larus delawarensisChanna argus', source: 'Larus delawarensis', target: 'Channa argus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Larus delawarensis&targetTaxon=Channa argus', label: 'preysOn'}},
+{data: {id: 'Larus delawarensisLepomis gibbosus', source: 'Larus delawarensis', target: 'Lepomis gibbosus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Larus delawarensis&targetTaxon=Lepomis gibbosus', label: 'preysOn'}},
+{data: {id: 'Larus delawarensisCarassius auratus', source: 'Larus delawarensis', target: 'Carassius auratus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Larus delawarensis&targetTaxon=Carassius auratus', label: 'eats'}},
+{data: {id: 'Channa argusCarassius auratus', source: 'Channa argus', target: 'Carassius auratus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Channa argus&targetTaxon=Carassius auratus', label: 'preysOn'}},
+{data: {id: 'Channa argusMisgurnus fossilis', source: 'Channa argus', target: 'Misgurnus fossilis', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Channa argus&targetTaxon=Misgurnus fossilis', label: 'eats'}},
+{data: {id: 'Channa argusCobitis taenia', source: 'Channa argus', target: 'Cobitis taenia', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Channa argus&targetTaxon=Cobitis taenia', label: 'eats'}},
+{data: {id: 'Channa argusPseudorasbora parva', source: 'Channa argus', target: 'Pseudorasbora parva', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Channa argus&targetTaxon=Pseudorasbora parva', label: 'eats'}},
+{data: {id: 'Channa argusSander lucioperca', source: 'Channa argus', target: 'Sander lucioperca', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Channa argus&targetTaxon=Sander lucioperca', label: 'eats'}},
+{data: {id: 'Channa argusRutilus rutilus', source: 'Channa argus', target: 'Rutilus rutilus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Channa argus&targetTaxon=Rutilus rutilus', label: 'preysOn'}},
+{data: {id: 'Channa argusScardinius erythrophthalmus', source: 'Channa argus', target: 'Scardinius erythrophthalmus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Channa argus&targetTaxon=Scardinius erythrophthalmus', label: 'preysOn'}},
+{data: {id: 'Haliaeetus leucocephalusLarus delawarensis', source: 'Haliaeetus leucocephalus', target: 'Larus delawarensis', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Haliaeetus leucocephalus&targetTaxon=Larus delawarensis', label: 'eats'}},
+{data: {id: 'Haliaeetus leucocephalusCarassius auratus', source: 'Haliaeetus leucocephalus', target: 'Carassius auratus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Haliaeetus leucocephalus&targetTaxon=Carassius auratus', label: 'eats'}},
+{data: {id: 'Falco peregrinusLarus delawarensis', source: 'Falco peregrinus', target: 'Larus delawarensis', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Falco peregrinus&targetTaxon=Larus delawarensis', label: 'eats'}},
+{data: {id: 'Nycticorax nycticoraxCarassius auratus', source: 'Nycticorax nycticorax', target: 'Carassius auratus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Nycticorax nycticorax&targetTaxon=Carassius auratus', label: 'preysOn'}},
+{data: {id: 'Chroicocephalus ridibundusCarassius auratus', source: 'Chroicocephalus ridibundus', target: 'Carassius auratus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Chroicocephalus ridibundus&targetTaxon=Carassius auratus', label: 'preysOn'}},
+{data: {id: 'Pandion haliaetusCarassius auratus', source: 'Pandion haliaetus', target: 'Carassius auratus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Pandion haliaetus&targetTaxon=Carassius auratus', label: 'eats'}},
+{data: {id: 'Phalacrocorax carboCarassius auratus', source: 'Phalacrocorax carbo', target: 'Carassius auratus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Phalacrocorax carbo&targetTaxon=Carassius auratus', label: 'eats'}},
+{data: {id: 'Phalacrocorax carboPseudorasbora parva', source: 'Phalacrocorax carbo', target: 'Pseudorasbora parva', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Phalacrocorax carbo&targetTaxon=Pseudorasbora parva', label: 'eats'}},
+{data: {id: 'Phalacrocorax carboSander lucioperca', source: 'Phalacrocorax carbo', target: 'Sander lucioperca', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Phalacrocorax carbo&targetTaxon=Sander lucioperca', label: 'eats'}},
+{data: {id: 'Phalacrocorax carboRutilus rutilus', source: 'Phalacrocorax carbo', target: 'Rutilus rutilus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Phalacrocorax carbo&targetTaxon=Rutilus rutilus', label: 'eats'}},
+{data: {id: 'Phalacrocorax carboScardinius erythrophthalmus', source: 'Phalacrocorax carbo', target: 'Scardinius erythrophthalmus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Phalacrocorax carbo&targetTaxon=Scardinius erythrophthalmus', label: 'eats'}},
+{data: {id: 'Sander luciopercaCobitis taenia', source: 'Sander lucioperca', target: 'Cobitis taenia', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Sander lucioperca&targetTaxon=Cobitis taenia', label: 'preysOn'}},
+{data: {id: 'Sander luciopercaPerca fluviatilis', source: 'Sander lucioperca', target: 'Perca fluviatilis', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Sander lucioperca&targetTaxon=Perca fluviatilis', label: 'eats'}},
+{data: {id: 'Sander luciopercaOsmerus eperlanus', source: 'Sander lucioperca', target: 'Osmerus eperlanus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Sander lucioperca&targetTaxon=Osmerus eperlanus', label: 'preysOn'}},
+{data: {id: 'Sander luciopercaClupea harengus', source: 'Sander lucioperca', target: 'Clupea harengus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Sander lucioperca&targetTaxon=Clupea harengus', label: 'preysOn'}},
+{data: {id: 'Sander luciopercaPlatichthys flesus', source: 'Sander lucioperca', target: 'Platichthys flesus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Sander lucioperca&targetTaxon=Platichthys flesus', label: 'preysOn'}},
+{data: {id: 'Sander luciopercaPomatoschistus minutus', source: 'Sander lucioperca', target: 'Pomatoschistus minutus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Sander lucioperca&targetTaxon=Pomatoschistus minutus', label: 'eats'}},
+{data: {id: 'Sander luciopercaGasterosteus aculeatus', source: 'Sander lucioperca', target: 'Gasterosteus aculeatus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Sander lucioperca&targetTaxon=Gasterosteus aculeatus', label: 'preysOn'}},
+{data: {id: 'Sander luciopercaGymnocephalus cernua', source: 'Sander lucioperca', target: 'Gymnocephalus cernua', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Sander lucioperca&targetTaxon=Gymnocephalus cernua', label: 'eats'}},
+{data: {id: 'Sander luciopercaAbramis brama', source: 'Sander lucioperca', target: 'Abramis brama', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Sander lucioperca&targetTaxon=Abramis brama', label: 'eats'}},
+{data: {id: 'Sander luciopercaRutilus rutilus', source: 'Sander lucioperca', target: 'Rutilus rutilus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Sander lucioperca&targetTaxon=Rutilus rutilus', label: 'eats'}},
+{data: {id: 'Sander luciopercaScardinius erythrophthalmus', source: 'Sander lucioperca', target: 'Scardinius erythrophthalmus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Sander lucioperca&targetTaxon=Scardinius erythrophthalmus', label: 'preysOn'}},
+{data: {id: 'Sander luciopercaNeogobius melanostomus', source: 'Sander lucioperca', target: 'Neogobius melanostomus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Sander lucioperca&targetTaxon=Neogobius melanostomus', label: 'preysOn'}},
+{data: {id: 'Sander luciopercaCtenopharyngodon idella', source: 'Sander lucioperca', target: 'Ctenopharyngodon idella', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Sander lucioperca&targetTaxon=Ctenopharyngodon idella', label: 'preysOn'}},
+{data: {id: 'Sander luciopercaAlburnus alburnus', source: 'Sander lucioperca', target: 'Alburnus alburnus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Sander lucioperca&targetTaxon=Alburnus alburnus', label: 'preysOn'}},
+{data: {id: 'Sander luciopercaTinca tinca', source: 'Sander lucioperca', target: 'Tinca tinca', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Sander lucioperca&targetTaxon=Tinca tinca', label: 'preysOn'}},
+{data: {id: 'Sander luciopercaRhodeus amarus', source: 'Sander lucioperca', target: 'Rhodeus amarus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Sander lucioperca&targetTaxon=Rhodeus amarus', label: 'preysOn'}},
+{data: {id: 'Sander luciopercaLeucaspius delineatus', source: 'Sander lucioperca', target: 'Leucaspius delineatus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Sander lucioperca&targetTaxon=Leucaspius delineatus', label: 'preysOn'}},
+{data: {id: 'Sander luciopercaAnguilla anguilla', source: 'Sander lucioperca', target: 'Anguilla anguilla', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Sander lucioperca&targetTaxon=Anguilla anguilla', label: 'eats'}},
+{data: {id: 'Sander luciopercaCarassius carassius', source: 'Sander lucioperca', target: 'Carassius carassius', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Sander lucioperca&targetTaxon=Carassius carassius', label: 'eats'}},
+{data: {id: 'Sander luciopercaBlicca bjoerkna', source: 'Sander lucioperca', target: 'Blicca bjoerkna', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Sander lucioperca&targetTaxon=Blicca bjoerkna', label: 'eats'}},
+{data: {id: 'Silurus glanisCobitis taenia', source: 'Silurus glanis', target: 'Cobitis taenia', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Silurus glanis&targetTaxon=Cobitis taenia', label: 'preysOn'}},
+{data: {id: 'Silurus glanisSander lucioperca', source: 'Silurus glanis', target: 'Sander lucioperca', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Silurus glanis&targetTaxon=Sander lucioperca', label: 'preysOn'}},
+{data: {id: 'Silurus glanisRutilus rutilus', source: 'Silurus glanis', target: 'Rutilus rutilus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Silurus glanis&targetTaxon=Rutilus rutilus', label: 'eats'}},
+{data: {id: 'Silurus glanisScardinius erythrophthalmus', source: 'Silurus glanis', target: 'Scardinius erythrophthalmus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Silurus glanis&targetTaxon=Scardinius erythrophthalmus', label: 'eats'}},
+{data: {id: 'Pelecanus onocrotalusCobitis taenia', source: 'Pelecanus onocrotalus', target: 'Cobitis taenia', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Pelecanus onocrotalus&targetTaxon=Cobitis taenia', label: 'eats'}},
+{data: {id: 'Pelecanus onocrotalusScardinius erythrophthalmus', source: 'Pelecanus onocrotalus', target: 'Scardinius erythrophthalmus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Pelecanus onocrotalus&targetTaxon=Scardinius erythrophthalmus', label: 'eats'}},
+{data: {id: 'Pseudorasbora parvaDicrotendipes nervosus', source: 'Pseudorasbora parva', target: 'Dicrotendipes nervosus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Pseudorasbora parva&targetTaxon=Dicrotendipes nervosus', label: 'eats'}},
+{data: {id: 'Esox luciusSander lucioperca', source: 'Esox lucius', target: 'Sander lucioperca', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Esox lucius&targetTaxon=Sander lucioperca', label: 'eats'}},
+{data: {id: 'Esox luciusRutilus rutilus', source: 'Esox lucius', target: 'Rutilus rutilus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Esox lucius&targetTaxon=Rutilus rutilus', label: 'eats'}},
+{data: {id: 'Esox luciusScardinius erythrophthalmus', source: 'Esox lucius', target: 'Scardinius erythrophthalmus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Esox lucius&targetTaxon=Scardinius erythrophthalmus', label: 'preysOn'}},
+{data: {id: 'Perca fluviatilisSander lucioperca', source: 'Perca fluviatilis', target: 'Sander lucioperca', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Perca fluviatilis&targetTaxon=Sander lucioperca', label: 'eats'}},
+{data: {id: 'Anguilla anguillaSander lucioperca', source: 'Anguilla anguilla', target: 'Sander lucioperca', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Anguilla anguilla&targetTaxon=Sander lucioperca', label: 'eats'}},
+{data: {id: 'Anguilla anguillaRutilus rutilus', source: 'Anguilla anguilla', target: 'Rutilus rutilus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Anguilla anguilla&targetTaxon=Rutilus rutilus', label: 'eats'}},
+{data: {id: 'Salmo truttaSander lucioperca', source: 'Salmo trutta', target: 'Sander lucioperca', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Salmo trutta&targetTaxon=Sander lucioperca', label: 'eats'}},
+{data: {id: 'Salmo truttaRutilus rutilus', source: 'Salmo trutta', target: 'Rutilus rutilus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Salmo trutta&targetTaxon=Rutilus rutilus', label: 'eats'}},
+{data: {id: 'Leuciscus idusRutilus rutilus', source: 'Leuciscus idus', target: 'Rutilus rutilus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Leuciscus idus&targetTaxon=Rutilus rutilus', label: 'eats'}},
+{data: {id: 'Lota lotaRutilus rutilus', source: 'Lota lota', target: 'Rutilus rutilus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Lota lota&targetTaxon=Rutilus rutilus', label: 'preysOn'}},
+{data: {id: 'Squalius cephalusRutilus rutilus', source: 'Squalius cephalus', target: 'Rutilus rutilus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Squalius cephalus&targetTaxon=Rutilus rutilus', label: 'preysOn'}},
+{data: {id: 'Lampetra fluviatilisRutilus rutilus', source: 'Lampetra fluviatilis', target: 'Rutilus rutilus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Lampetra fluviatilis&targetTaxon=Rutilus rutilus', label: 'eats'}},
+{data: {id: 'Ardea cinereaRutilus rutilus', source: 'Ardea cinerea', target: 'Rutilus rutilus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Ardea cinerea&targetTaxon=Rutilus rutilus', label: 'preysOn'}},
+{data: {id: 'Ardea cinereaScardinius erythrophthalmus', source: 'Ardea cinerea', target: 'Scardinius erythrophthalmus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Ardea cinerea&targetTaxon=Scardinius erythrophthalmus', label: 'eats'}},
+{data: {id: 'Egretta garzettaRutilus rutilus', source: 'Egretta garzetta', target: 'Rutilus rutilus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Egretta garzetta&targetTaxon=Rutilus rutilus', label: 'eats'}},
+{data: {id: 'Egretta garzettaScardinius erythrophthalmus', source: 'Egretta garzetta', target: 'Scardinius erythrophthalmus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Egretta garzetta&targetTaxon=Scardinius erythrophthalmus', label: 'eats'}},
+{data: {id: 'Platichthys flesusRutilus rutilus', source: 'Platichthys flesus', target: 'Rutilus rutilus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Platichthys flesus&targetTaxon=Rutilus rutilus', label: 'eats'}},
+{data: {id: 'Threskiornis aethiopicusRutilus rutilus', source: 'Threskiornis aethiopicus', target: 'Rutilus rutilus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Threskiornis aethiopicus&targetTaxon=Rutilus rutilus', label: 'eats'}},
+{data: {id: 'Rutilus rutilusSericostoma personatum', source: 'Rutilus rutilus', target: 'Sericostoma personatum', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Sericostoma personatum', label: 'eats'}},
+{data: {id: 'Rutilus rutilusPlectrocnemia conspersa', source: 'Rutilus rutilus', target: 'Plectrocnemia conspersa', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Plectrocnemia conspersa', label: 'eats'}},
+{data: {id: 'Rutilus rutilusHydropsyche siltalai', source: 'Rutilus rutilus', target: 'Hydropsyche siltalai', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Hydropsyche siltalai', label: 'eats'}},
+{data: {id: 'Rutilus rutilusHydropsyche pellucidula', source: 'Rutilus rutilus', target: 'Hydropsyche pellucidula', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Hydropsyche pellucidula', label: 'eats'}},
+{data: {id: 'Rutilus rutilusHydropsyche instabilis', source: 'Rutilus rutilus', target: 'Hydropsyche instabilis', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Hydropsyche instabilis', label: 'eats'}},
+{data: {id: 'Rutilus rutilusAsellus aquaticus', source: 'Rutilus rutilus', target: 'Asellus aquaticus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Asellus aquaticus', label: 'eats'}},
+{data: {id: 'Rutilus rutilusSigara lateralis', source: 'Rutilus rutilus', target: 'Sigara lateralis', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Sigara lateralis', label: 'eats'}},
+{data: {id: 'Rutilus rutilusPolycentropus flavomaculatus', source: 'Rutilus rutilus', target: 'Polycentropus flavomaculatus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Polycentropus flavomaculatus', label: 'eats'}},
+{data: {id: 'Rutilus rutilusHydropsyche fulvipes', source: 'Rutilus rutilus', target: 'Hydropsyche fulvipes', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Hydropsyche fulvipes', label: 'eats'}},
+{data: {id: 'Rutilus rutilusHalesus radiatus', source: 'Rutilus rutilus', target: 'Halesus radiatus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Halesus radiatus', label: 'eats'}},
+{data: {id: 'Rutilus rutilusChaetopteryx villosa', source: 'Rutilus rutilus', target: 'Chaetopteryx villosa', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Chaetopteryx villosa', label: 'eats'}},
+{data: {id: 'Rutilus rutilusRhyacophila dorsalis', source: 'Rutilus rutilus', target: 'Rhyacophila dorsalis', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Rhyacophila dorsalis', label: 'eats'}},
+{data: {id: 'Rutilus rutilusChydorus sphaericus', source: 'Rutilus rutilus', target: 'Chydorus sphaericus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Chydorus sphaericus', label: 'eats'}},
+{data: {id: 'Rutilus rutilusPleuroxus aduncus', source: 'Rutilus rutilus', target: 'Pleuroxus aduncus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Pleuroxus aduncus', label: 'eats'}},
+{data: {id: 'Rutilus rutilusPicripleuroxus denticulatus', source: 'Rutilus rutilus', target: 'Picripleuroxus denticulatus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Picripleuroxus denticulatus', label: 'eats'}},
+{data: {id: 'Rutilus rutilusAlona guttata', source: 'Rutilus rutilus', target: 'Alona guttata', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Alona guttata', label: 'eats'}},
+{data: {id: 'Rutilus rutilusAlona affinis', source: 'Rutilus rutilus', target: 'Alona affinis', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Alona affinis', label: 'eats'}},
+{data: {id: 'Rutilus rutilusAcroperus harpae', source: 'Rutilus rutilus', target: 'Acroperus harpae', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Acroperus harpae', label: 'eats'}},
+{data: {id: 'Rutilus rutilusEurycercus lamellatus', source: 'Rutilus rutilus', target: 'Eurycercus lamellatus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Eurycercus lamellatus', label: 'eats'}},
+{data: {id: 'Rutilus rutilusScapholeberis mucronata', source: 'Rutilus rutilus', target: 'Scapholeberis mucronata', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Scapholeberis mucronata', label: 'eats'}},
+{data: {id: 'Rutilus rutilusBosmina longirostris', source: 'Rutilus rutilus', target: 'Bosmina longirostris', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Bosmina longirostris', label: 'eats'}},
+{data: {id: 'Rutilus rutilusDaphnia ambigua', source: 'Rutilus rutilus', target: 'Daphnia ambigua', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Daphnia ambigua', label: 'eats'}},
+{data: {id: 'Rutilus rutilusLemna trisulca', source: 'Rutilus rutilus', target: 'Lemna trisulca', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Lemna trisulca', label: 'eats'}},
+{data: {id: 'Rutilus rutilusPotamogeton pusillus', source: 'Rutilus rutilus', target: 'Potamogeton pusillus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Potamogeton pusillus', label: 'eats'}},
+{data: {id: 'Rutilus rutilusRhithropanopeus harrisii', source: 'Rutilus rutilus', target: 'Rhithropanopeus harrisii', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Rhithropanopeus harrisii', label: 'eats'}},
+{data: {id: 'Rutilus rutilusDreissena polymorpha', source: 'Rutilus rutilus', target: 'Dreissena polymorpha', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Dreissena polymorpha', label: 'eats'}},
+{data: {id: 'Rutilus rutilusChelicorophium curvispinum', source: 'Rutilus rutilus', target: 'Chelicorophium curvispinum', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Chelicorophium curvispinum', label: 'eats'}},
+{data: {id: 'Rutilus rutilusEurytemora affinis', source: 'Rutilus rutilus', target: 'Eurytemora affinis', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Eurytemora affinis', label: 'eats'}},
+{data: {id: 'Rutilus rutilusDaphnia pulex', source: 'Rutilus rutilus', target: 'Daphnia pulex', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rutilus rutilus&targetTaxon=Daphnia pulex', label: 'eats'}},
+{data: {id: 'Ardea albaScardinius erythrophthalmus', source: 'Ardea alba', target: 'Scardinius erythrophthalmus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Ardea alba&targetTaxon=Scardinius erythrophthalmus', label: 'preysOn'}},
+{data: {id: 'Scardinius erythrophthalmusScapholeberis rammneri', source: 'Scardinius erythrophthalmus', target: 'Scapholeberis rammneri', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Scardinius erythrophthalmus&targetTaxon=Scapholeberis rammneri', label: 'eats'}},
+], style: [ 
+        { 
+            selector: 'node', 
+            style: { 
+                shape: 'circle', 
+                'background-color': 'yellow', 
+                label: 'data(id)', 
+                'text-valign': 'center', 
+                'font-family': 'helvetica', 
+                'font-style': 'italic', 
+                'font-size': '8px', 
+                'border-width': '0.5', 
+                'border-color': 'black', 
+                'width': 'mapData(occnum, 0, 400, 3, 200)', 
+                'height': 'mapData(occnum, 0, 400, 3, 200)' 
+            } 
+        },  
+        {  
+            selector: 'edge',  
+            style: {  
+                label: 'data(label)', 
+                'font-family': 'helvetica', 
+                'font-size': '6px', 
+                'color': 'blue', 
+                'curve-style': 'bezier', 
+                'target-arrow-shape': 'triangle',  
+                'width': '1' 
+                } 
+         },  
+         {  
+              selector: '[kingdom = "Plantae"]',   
+              css: {  
+                'background-color': 'lightgreen'  
+                 }  
+        }, 
+        {  
+              selector: '[kingdom = "Animalia"]',   
+              css: {  
+                'background-color': 'lightblue'  
+                 }  
+        }, 
+        {  
+              selector: ':selected',   
+              css: {  
+                'line-color': 'red',  
+                'shape': 'square',  
+                'background-color': 'red'  
+                 }  
+        }], 
+layout:  { 
+            name: 'cose-bilkent', padding: 1, animate: true, gravity: 30, animationDuration: 3000 
+     } 
+} 
+); 
+cy.userZoomingEnabled( true ); 
+    cy.getElementById('Channa argus').select(); 
+    document.write('<br />Degree of node <em>Channa argus (Cantor, 1842)</em> = '+cy.getElementById('Channa argus').degree()); 
+    cy.on('tap', 'node', function(){ 
+        try { // your browser may block popups 
+              window.open( this.data('href') ); 
+            } catch(e){ // fall back on url change 
+        window.location.href = this.data('href'); 
+    } 
+}); 
+    cy.on('tap', 'edge', function(){  
+        try { // your browser may block popups  
+              window.open( this.data('href') );  
+            } catch(e){ // fall back on url change  
+        window.location.href = this.data('href'); 
+    } 
+}); 
+</script> 
+</ul>         <br />         <br />         <a href='https://github.com/AgentschapPlantentuinMeise/interactias'><img src='../images/Octocat.jpg' alt='GitHub logo' width='20'>Source code</a>         </body>         </html>

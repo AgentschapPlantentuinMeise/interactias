@@ -12,9 +12,9 @@ Invasive in Belgium | Native
 *[Impatiens glandulifera](https://agentschapplantentuinmeise.github.io/interactias/docs/Impatiens%20glanduliferaBelgium.html)* (Himalayan balsam) | *[Fraxinus excelsior](https://agentschapplantentuinmeise.github.io/interactias/docs/Fraxinus%20excelsiorBelgium.html)* (European Ash)
 *[Phytolacca americana](https://agentschapplantentuinmeise.github.io/interactias/docs/Phytolacca%20americanaBelgium.html)* (American pokeweed) | *[Vespa crabro](https://agentschapplantentuinmeise.github.io/interactias/docs/Vespa%20crabroBelgium.html)* (yellow-legged hornet) |
 *[Vespa velutina](https://agentschapplantentuinmeise.github.io/interactias/docs/Vespa%20velutinaBelgium.html)* (yellow-legged hornet)  | *[Capreolus capreolus](https://agentschapplantentuinmeise.github.io/interactias/docs/Capreolus%20capreolusBelgium.html)* (roe deer)
-*[Ailanthus altissima](https://agentschapplantentuinmeise.github.io/interactias/docs/Ailanthus%20altissimaBelgium.html)* ()
-*[Hydrocotyle ranunculoides](https://agentschapplantentuinmeise.github.io/interactias/docs/Hydrocotyle%20ranunculoidesBelgium.html)* ()
-*[Cydalima perspectalis](https://agentschapplantentuinmeise.github.io/interactias/docs/Cydalima%20perspectalisBelgium.html)* (box tree moth)
+*[Ailanthus altissima](https://agentschapplantentuinmeise.github.io/interactias/docs/Ailanthus%20altissimaBelgium.html)* (tree of heaven) |
+*[Hydrocotyle ranunculoides](https://agentschapplantentuinmeise.github.io/interactias/docs/Hydrocotyle%20ranunculoidesBelgium.html)* (floating pennywort) |
+*[Cydalima perspectalis](https://agentschapplantentuinmeise.github.io/interactias/docs/Cydalima%20perspectalisBelgium.html)* (box tree moth) |
 
 
 | Possibly invasive |
@@ -54,7 +54,7 @@ Invasive in Belgium | Native
 *[Solenopsis richteri](https://agentschapplantentuinmeise.github.io/interactias/docs/Solenopsis%20richteriBelgium.html)* (black imported fire ant)
 *[Threskiornis aethiopicus](https://agentschapplantentuinmeise.github.io/interactias/docs/Threskiornis%20aethiopicusBelgium.html)* (African sacred ibis)
 *[Wasmannia auropunctata](https://agentschapplantentuinmeise.github.io/interactias/docs/Wasmannia%20auropunctataBelgium.html)* (electric ant) 
-*[Xenopus laevis](https://agentschapplantentuinmeise.github.io/interactias/docs/Xenopus%20laevisBelgium.html)* ()
+*[Xenopus laevis](https://agentschapplantentuinmeise.github.io/interactias/docs/Xenopus%20laevisBelgium.html)* (African clawed frog)
 
 
 In addition to an HTML output the script generates a .dot file. This format can be opened directly by the network visualization tool Gephi (https://gephi.org/).

@@ -7,20 +7,60 @@ InteractIAS has many uses, but was specifically developed to inform invasive spe
 Interactions between species are the most important way that invasive species impact other biodiversity. Ecosystem models are not yet sophisticated enough to interpret complex interaction networks, so we must rely on expert opinion to evaluate the potential risks of a new invasive species. Yet experts in the country where the species is invasive are not likely to have expertise in a species that may come from another continent. Therefore, we need tools to support risk assessors do their job and support their conclusions.
 
 ## Example outputs
-Invasive in Belgium | Possibly invasive | Native
------------- | ------------- | -------------
-*[Impatiens glandulifera](https://agentschapplantentuinmeise.github.io/interactias/docs/Impatiens%20glanduliferaBelgium.html)* (Himalayan balsam) | *[Muntiacus reevesi](https://agentschapplantentuinmeise.github.io/interactias/docs/Muntiacus%20reevesiBelgium.html)* (Reeves's muntjac) | *[Fraxinus excelsior](https://agentschapplantentuinmeise.github.io/interactias/docs/Fraxinus%20excelsiorBelgium.html)* (European Ash)
-*[Phytolacca americana](https://agentschapplantentuinmeise.github.io/interactias/docs/Phytolacca%20americanaBelgium.html)* (American pokeweed) | *[Wasmannia auropunctata](https://agentschapplantentuinmeise.github.io/interactias/docs/Wasmannia%20auropunctataBelgium.html)* (electric ant) | *[Vespa crabro](https://agentschapplantentuinmeise.github.io/interactias/docs/Vespa%20crabroBelgium.html)* (yellow-legged hornet) |
-*[Vespa velutina](https://agentschapplantentuinmeise.github.io/interactias/docs/Vespa%20velutinaBelgium.html)* (yellow-legged hornet)  | *[Ameiurus nebulosus](https://agentschapplantentuinmeise.github.io/interactias/docs/Ameiurus%20nebulosusBelgium.html)* (brown bullhead) |
-— | *[Ameiurus melas](https://agentschapplantentuinmeise.github.io/interactias/docs/Ameiurus%20melasBelgium.html)* (black bullhead) |
-— | *[Boccardia proboscidea](https://agentschapplantentuinmeise.github.io/interactias/docs/Boccardia%20proboscideaBelgium.html)* |
-— | *[Channa argus](https://agentschapplantentuinmeise.github.io/interactias/docs/Channa%20argusBelgium.html)* (northern snakehead) |
-— | *[Gambusia affinis](https://agentschapplantentuinmeise.github.io/interactias/docs/Gambusia%20affinisBelgium.html)* (western mosquitofish) |
-— | *[Procambarus clarkii](https://agentschapplantentuinmeise.github.io/interactias/docs/Procambarus%20clarkiiBelgium.html)* (Louisiana crawfish) |
-— | *[Perna viridis](https://agentschapplantentuinmeise.github.io/interactias/docs/Perna%20viridisBelgium.html)* (Asian green mussel) |
-— | *[Pueraria montana](https://agentschapplantentuinmeise.github.io/interactias/docs/Pueraria%20montanaBelgium.html)* (Kudzu) |
-— | *[Threskiornis aethiopicus](https://agentschapplantentuinmeise.github.io/interactias/docs/Threskiornis%20aethiopicusBelgium.html)* (African sacred ibis) | 
-— | *[Solenopsis richteri](https://agentschapplantentuinmeise.github.io/interactias/docs/Solenopsis%20richteriBelgium.html)* (black imported fire ant) |
+Invasive in Belgium | Native
+------------ | -------------
+*[Impatiens glandulifera](https://agentschapplantentuinmeise.github.io/interactias/docs/Impatiens%20glanduliferaBelgium.html)* (Himalayan balsam) | *[Fraxinus excelsior](https://agentschapplantentuinmeise.github.io/interactias/docs/Fraxinus%20excelsiorBelgium.html)* (European Ash)
+*[Phytolacca americana](https://agentschapplantentuinmeise.github.io/interactias/docs/Phytolacca%20americanaBelgium.html)* (American pokeweed) | *[Vespa crabro](https://agentschapplantentuinmeise.github.io/interactias/docs/Vespa%20crabroBelgium.html)* (yellow-legged hornet) |
+*[Vespa velutina](https://agentschapplantentuinmeise.github.io/interactias/docs/Vespa%20velutinaBelgium.html)* (yellow-legged hornet)  | *[Capreolus capreolus](https://agentschapplantentuinmeise.github.io/interactias/docs/Capreolus%20capreolusBelgium.html)* (roe deer)
+
+
+
+| Possibly invasive |
+| ------------- |
+*[Ailanthus altissima](https://agentschapplantentuinmeise.github.io/interactias/docs/Ailanthus%20altissimaBelgium.html)* ()
+*[Alternanthera philoxeroides](https://agentschapplantentuinmeise.github.io/interactias/docs/Alternanthera%20philoxeroidesBelgium.html)* ()
+*[Ameiurus melas](https://agentschapplantentuinmeise.github.io/interactias/docs/Ameiurus%20melasBelgium.html)* (black bullhead)
+*[Ameiurus nebulosus](https://agentschapplantentuinmeise.github.io/interactias/docs/Ameiurus%20nebulosusBelgium.html)* (brown bullhead)
+*[Asclepias syriaca](https://agentschapplantentuinmeise.github.io/interactias/docs/AAsclepias%20syriacaBelgium.html)* ()
+*[Axis axis](https://agentschapplantentuinmeise.github.io/interactias/docs/Axis%20axisBelgium.html)* ()
+*[Boccardia proboscidea](https://agentschapplantentuinmeise.github.io/interactias/docs/Boccardia%20proboscideaBelgium.html)*
+*[Cabomba carolinianaBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Callosciurus erythraeusBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Callosciurus finlaysoniiBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Cardiospermum grandiflorumBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Castor canadensisBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Channa argus](https://agentschapplantentuinmeise.github.io/interactias/docs/Channa%20argusBelgium.html)* (northern snakehead)
+*[Cydalima perspectalisBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Equus ferusBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Fundulus heteroclitusBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Gambusia affinis](https://agentschapplantentuinmeise.github.io/interactias/docs/Gambusia%20affinisBelgium.html)* (western mosquitofish)
+*[Gunnera tinctoriaBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Hemigrapsus sanguineusBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Humulus scandensBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Hydrocotyle ranunculoidesBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Lagarosiphon majorBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Lampropeltis getulaBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Ludwigia grandifloraBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Lysichiton americanusBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Morone americanaBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Muntiacus reevesi](https://agentschapplantentuinmeise.github.io/interactias/docs/Muntiacus%20reevesiBelgium.html)* (Reeves's muntjac)
+*[Pennisetum setaceumBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Perna viridis](https://agentschapplantentuinmeise.github.io/interactias/docs/Perna%20viridisBelgium.html)* (Asian green mussel)
+*[Persicaria perfoliataBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Pistia stratiotesBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Procambarus clarkii](https://agentschapplantentuinmeise.github.io/interactias/docs/Procambarus%20clarkiiBelgium.html)* (Louisiana crawfish)
+*[Psorophora ciliataBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Pueraria montana](https://agentschapplantentuinmeise.github.io/interactias/docs/Pueraria%20montanaBelgium.html)* (Kudzu)
+*[Pycnonotus caferBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Rapana venosaBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Salvinia molestaBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Solenopsis geminataBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[Solenopsis invictaBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+*[*[Solenopsis richteri](https://agentschapplantentuinmeise.github.io/interactias/docs/Solenopsis%20richteriBelgium.html)* (black imported fire ant) |
+*[*[Threskiornis aethiopicus](https://agentschapplantentuinmeise.github.io/interactias/docs/Threskiornis%20aethiopicusBelgium.html)* (African sacred ibis) | 
+*[Wasmannia auropunctata](https://agentschapplantentuinmeise.github.io/interactias/docs/Wasmannia%20auropunctataBelgium.html)* (electric ant) 
+*[Xenopus laevisBelgium.html](https://agentschapplantentuinmeise.github.io/interactias/docs/
+
 
 In addition to an HTML output the script generates a .dot file. This format can be opened directly by the network visualization tool Gephi (https://gephi.org/).
 

@@ -7,7 +7,7 @@ InteractIAS has many uses, but was specifically developed to inform invasive spe
 Interactions between species are the most important way that invasive species impact other biodiversity. Ecosystem models are not yet sophisticated enough to interpret complex interaction networks, so we must rely on expert opinion to evaluate the potential risks of a new invasive species. Yet experts in the country where the species is invasive are not likely to have expertise in a species that may come from another continent. Therefore, we need tools to support risk assessors do their job and support their conclusions.
 
 ## Example outputs
-Invasive in Belgium | Native
+Invasive in Belgium | Native to Belgium
 ------------ | -------------
 *[Impatiens glandulifera](https://agentschapplantentuinmeise.github.io/interactias/docs/Impatiens%20glanduliferaBelgium.html)* (Himalayan balsam) | *[Fraxinus excelsior](https://agentschapplantentuinmeise.github.io/interactias/docs/Fraxinus%20excelsiorBelgium.html)* (European Ash)
 *[Phytolacca americana](https://agentschapplantentuinmeise.github.io/interactias/docs/Phytolacca%20americanaBelgium.html)* (American pokeweed) | *[Vespa crabro](https://agentschapplantentuinmeise.github.io/interactias/docs/Vespa%20crabroBelgium.html)* (yellow-legged hornet) |
@@ -17,7 +17,7 @@ Invasive in Belgium | Native
 *[Cydalima perspectalis](https://agentschapplantentuinmeise.github.io/interactias/docs/Cydalima%20perspectalisBelgium.html)* (box tree moth) |
 
 
-| Possibly invasive |
+| Under investigation |
 | ------------- |
 *[Alternanthera philoxeroides](https://agentschapplantentuinmeise.github.io/interactias/docs/Alternanthera%20philoxeroidesBelgium.html)* (alligator weed)
 *[Ameiurus melas](https://agentschapplantentuinmeise.github.io/interactias/docs/Ameiurus%20melasBelgium.html)* (black bullhead)

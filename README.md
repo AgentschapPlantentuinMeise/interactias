@@ -22,7 +22,7 @@ Invasive in Belgium | Native to Belgium
 *[Alternanthera philoxeroides](https://agentschapplantentuinmeise.github.io/interactias/docs/Alternanthera%20philoxeroidesBelgium.html)* (alligator weed)
 *[Ameiurus melas](https://agentschapplantentuinmeise.github.io/interactias/docs/Ameiurus%20melasBelgium.html)* (black bullhead)
 *[Ameiurus nebulosus](https://agentschapplantentuinmeise.github.io/interactias/docs/Ameiurus%20nebulosusBelgium.html)* (brown bullhead)
-*[Asclepias syriaca](https://agentschapplantentuinmeise.github.io/interactias/docs/AAsclepias%20syriacaBelgium.html)* (common milkweed)
+*[Asclepias syriaca](https://agentschapplantentuinmeise.github.io/interactias/docs/Asclepias%20syriacaBelgium.html)* (common milkweed)
 *[Axis axis](https://agentschapplantentuinmeise.github.io/interactias/docs/Axis%20axisBelgium.html)* (spotted deer)
 *[Boccardia proboscidea](https://agentschapplantentuinmeise.github.io/interactias/docs/Boccardia%20proboscideaBelgium.html)* ()
 *[Cabomba caroliniana](https://agentschapplantentuinmeise.github.io/interactias/docs/Cabomba%20carolinianaBelgium.html)* (Carolina fanwort)

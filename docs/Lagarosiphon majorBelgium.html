@@ -1,0 +1,75 @@
+ <!DOCTYPE html> <html> <head> <script src='cytoscape.min.js'></script> <script src='https://unpkg.com/layout-base/layout-base.js'></script> <script src='https://unpkg.com/cose-base/cose-base.js'></script> <script src='cytoscape-cose-bilkent.js'></script> </head> <style>#cy {width: 90%; height: 90%; position: absolute; top: 50px; left: 150px;}.red {color: red; font-style: bold;} .green {color: green; font-style: bold;} .blue {color: red; font-style: bold;} body {font-family: 'times; font-size: 6px;}</style> <body> <h1><em font-style: italic;>Lagarosiphon major</em> in Belgium</h1><p>No interacting species have been found for Lagarosiphon major in Belgium.<br /><p>All <a href='https://www.globalbioticinteractions.org/'>GloBI</a> interaction records that <em>Lagarosiphon major</em> has with other taxa</p><p>All <a href='https://www.globalbioticinteractions.org/'>GloBI</a> interaction records that other taxa have with <em>Lagarosiphon major</em></p><table><th>Interaction</th><th>number</th><tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=eats&targetTaxon=Lagarosiphon%20major>eats</a></td><td>17</td>
+</table> <div id='cy'></div> <script> var cy = cytoscape({   container: document.getElementById('cy'), 
+   elements: [ ], style: [ 
+        { 
+            selector: 'node', 
+            style: { 
+                shape: 'circle', 
+                'background-color': 'yellow', 
+                label: 'data(id)', 
+                'text-valign': 'center', 
+                'font-family': 'helvetica', 
+                'font-style': 'italic', 
+                'font-size': '8px', 
+                'border-width': '0.5', 
+                'border-color': 'black', 
+                'width': 'mapData(occnum, 0, 400, 3, 200)', 
+                'height': 'mapData(occnum, 0, 400, 3, 200)' 
+            } 
+        },  
+        {  
+            selector: 'edge',  
+            style: {  
+                label: 'data(label)', 
+                'font-family': 'helvetica', 
+                'font-size': '6px', 
+                'color': 'blue', 
+                'curve-style': 'bezier', 
+                'target-arrow-shape': 'triangle',  
+                'width': '1' 
+                } 
+         },  
+         {  
+              selector: '[kingdom = "Plantae"]',   
+              css: {  
+                'background-color': 'lightgreen'  
+                 }  
+        }, 
+        {  
+              selector: '[kingdom = "Animalia"]',   
+              css: {  
+                'background-color': 'lightblue'  
+                 }  
+        }, 
+        {  
+              selector: ':selected',   
+              css: {  
+                'line-color': 'red',  
+                'shape': 'square',  
+                'background-color': 'red'  
+                 }  
+        }], 
+layout:  { 
+            name: 'cose-bilkent', padding: 1, animate: true, gravity: 30, animationDuration: 3000 
+     } 
+} 
+); 
+cy.userZoomingEnabled( true ); 
+    cy.getElementById('Lagarosiphon major').select(); 
+    document.write('<br />Degree of node <em>Lagarosiphon major (Ridl.) Moss</em> = '+cy.getElementById('Lagarosiphon major').degree()); 
+    cy.on('tap', 'node', function(){ 
+        try { // your browser may block popups 
+              window.open( this.data('href') ); 
+            } catch(e){ // fall back on url change 
+        window.location.href = this.data('href'); 
+    } 
+}); 
+    cy.on('tap', 'edge', function(){  
+        try { // your browser may block popups  
+              window.open( this.data('href') );  
+            } catch(e){ // fall back on url change  
+        window.location.href = this.data('href'); 
+    } 
+}); 
+</script> 
+</ul>         <br />         <a href='https://github.com/AgentschapPlantentuinMeise/interactias'><img src='../images/Octocat.jpg' alt='GitHub logo' width='10'>Source code</a>         </body>         </html>

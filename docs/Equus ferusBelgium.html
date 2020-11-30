@@ -1,0 +1,223 @@
+ <!DOCTYPE html> <html> <head> <script src='cytoscape.min.js'></script> <script src='https://unpkg.com/layout-base/layout-base.js'></script> <script src='https://unpkg.com/cose-base/cose-base.js'></script> <script src='cytoscape-cose-bilkent.js'></script> </head> <style>#cy {width: 90%; height: 90%; position: absolute; top: 50px; left: 150px;}.red {color: red; font-style: bold;} .green {color: green; font-style: bold;} .blue {color: blue; font-style: bold;} .brown {color: brown; font-style: bold;} table, th, td {border: 1px solid black;} body {font-family: 'times; font-size: 6px;}</style> <body> <h1><em font-style: italic;>Equus ferus</em> in Belgium</h1><p>Nodes and edges can be moved and if clicked, open a tab with species or interaction details</p><p>The target species is the <SPAN CLASS='red'>red node</SPAN>. <em>Plantae</em> are <SPAN CLASS='green'>green</SPAN>, <em>Animalia</em> are <SPAN CLASS='blue'>blue</SPAN> and everything else is <SPAN CLASS='brown'>brown</SPAN></p><p>Node area is proportional to the 1 km<sup>2</sup> occupancy</p><p>Below is a table of all <a href='https://www.globalbioticinteractions.org/'>GloBI</a> interaction records that other taxa have with <em>Equus ferus</em></p><table><th>Interaction</th><th>number</th><tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=eats&targetTaxon=Equus%20ferus>eats</a></td><td>8</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=ectoparasiteOf&targetTaxon=Equus%20ferus>ectoparasiteOf</a></td><td>2</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=endoparasiteOf&targetTaxon=Equus%20ferus>endoparasiteOf</a></td><td>10</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=hasHost&targetTaxon=Equus%20ferus>hasHost</a></td><td>13</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=interactsWith&targetTaxon=Equus%20ferus>interactsWith</a></td><td>188</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=livesInsideOf&targetTaxon=Equus%20ferus>livesInsideOf</a></td><td>2</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=livesUnder&targetTaxon=Equus%20ferus>livesUnder</a></td><td>10</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=parasiteOf&targetTaxon=Equus%20ferus>parasiteOf</a></td><td>8</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=pathogenOf&targetTaxon=Equus%20ferus>pathogenOf</a></td><td>72</td>
+</table> <div id='cy'></div> <script> var cy = cytoscape({   container: document.getElementById('cy'), 
+   elements: [ { data: { id: 'Typhaeus typhoeus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/4994273', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Podops inuncta', kingdom: 'Animalia', href: 'https://www.gbif.org/species/4485704', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Ctenocephalides felis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1419472', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Procyon lotor', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5218786', occnum: 31.622776601683796 }, selectable: false,},
+{ data: { id: 'Canis lupus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5219173', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Felis catus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2435035', occnum: 40.0 }, selectable: false,},
+{ data: { id: 'Oryctolagus cuniculus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2436940', occnum: 72.11102550927978 }, selectable: false,},
+{ data: { id: 'Araniella cucurbitina', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2158384', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Sciurus carolinensis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5219681', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Vulpes vulpes', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5219243', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Bathyphantes parvulus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2134110', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Enoplognatha ovata', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2158077', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Micrargus subaequalis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2135276', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Ocypus brunnipes', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5746165', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Carabus nemoralis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/8056040', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Centromerita bicolor', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2138915', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Robertus neglectus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2155886', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Alopecosa pulverulenta', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2147438', occnum: 26.457513110645905 }, selectable: false,},
+{ data: { id: 'Agalenatea redii', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2160943', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Xysticus acerbus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2165222', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Robertus arundineti', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2155881', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Enoplognatha thoracica', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2158075', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Cicindela campestris', kingdom: 'Animalia', href: 'https://www.gbif.org/species/4480485', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Platynus assimilis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/8137203', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Xysticus cristatus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2165052', occnum: 20.0 }, selectable: false,},
+{ data: { id: 'Diplocephalus latifrons', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2137859', occnum: 14.142135623730951 }, selectable: false,},
+{ data: { id: 'Pterostichus melanarius', kingdom: 'Animalia', href: 'https://www.gbif.org/species/7856746', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Tenuiphantes tenuis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2135959', occnum: 24.49489742783178 }, selectable: false,},
+{ data: { id: 'Leptorhoptrum robustum', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2134514', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Trochosa ruricola', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2145852', occnum: 20.0 }, selectable: false,},
+{ data: { id: 'Porrhomma microphthalmum', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2135388', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Synema globosum', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5171516', occnum: 14.142135623730951 }, selectable: false,},
+{ data: { id: 'Tetragnatha extensa', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2151859', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Robertus lividus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2155895', occnum: 20.0 }, selectable: false,},
+{ data: { id: 'Asthenargus paganus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2137594', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Araeoncus humilis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2134131', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Troxochrus scabriculus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2134295', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Coelotes terrestris', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2141379', occnum: 20.0 }, selectable: false,},
+{ data: { id: 'Bathyphantes gracilis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2134068', occnum: 28.284271247461902 }, selectable: false,},
+{ data: { id: 'Philonthus succicola', kingdom: 'Animalia', href: 'https://www.gbif.org/species/4437073', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Xysticus ulmi', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2165228', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Larinioides cornutus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2159204', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Diplostyla concolor', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2134314', occnum: 22.360679774997898 }, selectable: false,},
+{ data: { id: 'Agrypnus murinus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/4428942', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Mangora acalypha', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2159061', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Poecilus versicolor', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5753720', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Agyneta affinis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/8064249', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Equus ferus', href: 'https://www.gbif.org/species/4409270', occnum: 0.0 }, selectable: true,},
+{ data: { id: 'Ondatra zibethicus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5219858', occnum: 26.457513110645905 }, selectable: false,},
+{ data: { id: 'Rattus norvegicus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2439261', occnum: 50.99019513592785 }, selectable: false,},
+{ data: { id: 'Lepus europaeus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/7952072', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Felis silvestris', kingdom: 'Animalia', href: 'https://www.gbif.org/species/7964291', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Trisetum flavescens', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2704389', occnum: 26.457513110645905 }, selectable: false,},
+{ data: { id: 'Poa trivialis', kingdom: 'Plantae', href: 'https://www.gbif.org/species/8300875', occnum: 61.64414002968976 }, selectable: false,},
+{ data: { id: 'Poa pratensis', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2704178', occnum: 50.0 }, selectable: false,},
+{ data: { id: 'Phleum pratense', kingdom: 'Plantae', href: 'https://www.gbif.org/species/9014945', occnum: 53.85164807134504 }, selectable: false,},
+{ data: { id: 'Holcus lanatus', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2706164', occnum: 76.15773105863909 }, selectable: false,},
+{ data: { id: 'Festuca rubra', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2704922', occnum: 67.82329983125268 }, selectable: false,},
+{ data: { id: 'Dactylis glomerata', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2705308', occnum: 72.11102550927978 }, selectable: false,},
+{ data: { id: 'Cynosurus cristatus', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2704395', occnum: 48.98979485566356 }, selectable: false,},
+{ data: { id: 'Bromus hordeaceus', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2703777', occnum: 61.64414002968976 }, selectable: false,},
+{ data: { id: 'Bromus erectus', kingdom: 'Plantae', href: 'https://www.gbif.org/species/7647071', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Martes foina', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5218887', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Strix aluco', kingdom: 'Animalia', href: 'https://www.gbif.org/species/9282206', occnum: 78.74007874011811 }, selectable: false,},
+{ data: { id: 'Apodemus sylvaticus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2437760', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Ardea cinerea', kingdom: 'Animalia', href: 'https://www.gbif.org/species/9797180', occnum: 100.0 }, selectable: false,},
+{ data: { id: 'Rattus rattus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2439270', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Canus lupus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5219173', occnum: 0.0 }, selectable: false,},
+{data: {id: 'Typhaeus typhoeusEquus ferus', source: 'Typhaeus typhoeus', target: 'Equus ferus', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Typhaeus typhoeus&targetTaxon=Equus ferus', label: 'interactsWith'}},
+{data: {id: 'Typhaeus typhoeusOryctolagus cuniculus', source: 'Typhaeus typhoeus', target: 'Oryctolagus cuniculus', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Typhaeus typhoeus&targetTaxon=Oryctolagus cuniculus', label: 'interactsWith'}},
+{data: {id: 'Podops inunctaEquus ferus', source: 'Podops inuncta', target: 'Equus ferus', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Podops inuncta&targetTaxon=Equus ferus', label: 'interactsWith'}},
+{data: {id: 'Podops inunctaOryctolagus cuniculus', source: 'Podops inuncta', target: 'Oryctolagus cuniculus', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Podops inuncta&targetTaxon=Oryctolagus cuniculus', label: 'interactsWith'}},
+{data: {id: 'Podops inunctaTrisetum flavescens', source: 'Podops inuncta', target: 'Trisetum flavescens', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Podops inuncta&targetTaxon=Trisetum flavescens', label: 'eats'}},
+{data: {id: 'Podops inunctaPoa trivialis', source: 'Podops inuncta', target: 'Poa trivialis', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Podops inuncta&targetTaxon=Poa trivialis', label: 'eats'}},
+{data: {id: 'Podops inunctaPoa pratensis', source: 'Podops inuncta', target: 'Poa pratensis', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Podops inuncta&targetTaxon=Poa pratensis', label: 'eats'}},
+{data: {id: 'Podops inunctaPhleum pratense', source: 'Podops inuncta', target: 'Phleum pratense', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Podops inuncta&targetTaxon=Phleum pratense', label: 'eats'}},
+{data: {id: 'Podops inunctaHolcus lanatus', source: 'Podops inuncta', target: 'Holcus lanatus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Podops inuncta&targetTaxon=Holcus lanatus', label: 'eats'}},
+{data: {id: 'Podops inunctaFestuca rubra', source: 'Podops inuncta', target: 'Festuca rubra', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Podops inuncta&targetTaxon=Festuca rubra', label: 'eats'}},
+{data: {id: 'Podops inunctaDactylis glomerata', source: 'Podops inuncta', target: 'Dactylis glomerata', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Podops inuncta&targetTaxon=Dactylis glomerata', label: 'eats'}},
+{data: {id: 'Podops inunctaCynosurus cristatus', source: 'Podops inuncta', target: 'Cynosurus cristatus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Podops inuncta&targetTaxon=Cynosurus cristatus', label: 'eats'}},
+{data: {id: 'Podops inunctaBromus hordeaceus', source: 'Podops inuncta', target: 'Bromus hordeaceus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Podops inuncta&targetTaxon=Bromus hordeaceus', label: 'eats'}},
+{data: {id: 'Podops inunctaBromus erectus', source: 'Podops inuncta', target: 'Bromus erectus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Podops inuncta&targetTaxon=Bromus erectus', label: 'eats'}},
+{data: {id: 'Ctenocephalides felisEquus ferus', source: 'Ctenocephalides felis', target: 'Equus ferus', href: 'https://www.globalbioticinteractions.org/?interactionType=parasiteOf&sourceTaxon=Ctenocephalides felis&targetTaxon=Equus ferus', label: 'parasiteOf'}},
+{data: {id: 'Ctenocephalides felisCanis lupus', source: 'Ctenocephalides felis', target: 'Canis lupus', href: 'https://www.globalbioticinteractions.org/?interactionType=parasiteOf&sourceTaxon=Ctenocephalides felis&targetTaxon=Canis lupus', label: 'parasiteOf'}},
+{data: {id: 'Ctenocephalides felisFelis catus', source: 'Ctenocephalides felis', target: 'Felis catus', href: 'https://www.globalbioticinteractions.org/?interactionType=hasHost&sourceTaxon=Ctenocephalides felis&targetTaxon=Felis catus', label: 'hasHost'}},
+{data: {id: 'Ctenocephalides felisVulpes vulpes', source: 'Ctenocephalides felis', target: 'Vulpes vulpes', href: 'https://www.globalbioticinteractions.org/?interactionType=hasHost&sourceTaxon=Ctenocephalides felis&targetTaxon=Vulpes vulpes', label: 'hasHost'}},
+{data: {id: 'Ctenocephalides felisMartes foina', source: 'Ctenocephalides felis', target: 'Martes foina', href: 'https://www.globalbioticinteractions.org/?interactionType=parasiteOf&sourceTaxon=Ctenocephalides felis&targetTaxon=Martes foina', label: 'parasiteOf'}},
+{data: {id: 'Ctenocephalides felisFelis silvestris', source: 'Ctenocephalides felis', target: 'Felis silvestris', href: 'https://www.globalbioticinteractions.org/?interactionType=parasiteOf&sourceTaxon=Ctenocephalides felis&targetTaxon=Felis silvestris', label: 'parasiteOf'}},
+{data: {id: 'Ctenocephalides felisStrix aluco', source: 'Ctenocephalides felis', target: 'Strix aluco', href: 'https://www.globalbioticinteractions.org/?interactionType=ectoparasiteOf&sourceTaxon=Ctenocephalides felis&targetTaxon=Strix aluco', label: 'ectoparasiteOf'}},
+{data: {id: 'Ctenocephalides felisOryctolagus cuniculus', source: 'Ctenocephalides felis', target: 'Oryctolagus cuniculus', href: 'https://www.globalbioticinteractions.org/?interactionType=parasiteOf&sourceTaxon=Ctenocephalides felis&targetTaxon=Oryctolagus cuniculus', label: 'parasiteOf'}},
+{data: {id: 'Ctenocephalides felisApodemus sylvaticus', source: 'Ctenocephalides felis', target: 'Apodemus sylvaticus', href: 'https://www.globalbioticinteractions.org/?interactionType=ectoparasiteOf&sourceTaxon=Ctenocephalides felis&targetTaxon=Apodemus sylvaticus', label: 'ectoparasiteOf'}},
+{data: {id: 'Ctenocephalides felisRattus norvegicus', source: 'Ctenocephalides felis', target: 'Rattus norvegicus', href: 'https://www.globalbioticinteractions.org/?interactionType=parasiteOf&sourceTaxon=Ctenocephalides felis&targetTaxon=Rattus norvegicus', label: 'parasiteOf'}},
+{data: {id: 'Ctenocephalides felisArdea cinerea', source: 'Ctenocephalides felis', target: 'Ardea cinerea', href: 'https://www.globalbioticinteractions.org/?interactionType=ectoparasiteOf&sourceTaxon=Ctenocephalides felis&targetTaxon=Ardea cinerea', label: 'ectoparasiteOf'}},
+{data: {id: 'Ctenocephalides felisSciurus carolinensis', source: 'Ctenocephalides felis', target: 'Sciurus carolinensis', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Ctenocephalides felis&targetTaxon=Sciurus carolinensis', label: 'interactsWith'}},
+{data: {id: 'Ctenocephalides felisProcyon lotor', source: 'Ctenocephalides felis', target: 'Procyon lotor', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Ctenocephalides felis&targetTaxon=Procyon lotor', label: 'interactsWith'}},
+{data: {id: 'Ctenocephalides felisRattus rattus', source: 'Ctenocephalides felis', target: 'Rattus rattus', href: 'https://www.globalbioticinteractions.org/?interactionType=parasiteOf&sourceTaxon=Ctenocephalides felis&targetTaxon=Rattus rattus', label: 'parasiteOf'}},
+{data: {id: 'Ctenocephalides felisCanus lupus', source: 'Ctenocephalides felis', target: 'Canus lupus', href: 'https://www.globalbioticinteractions.org/?interactionType=hasHost&sourceTaxon=Ctenocephalides felis&targetTaxon=Canus lupus', label: 'hasHost'}},
+{data: {id: 'Ctenocephalides felisOndatra zibethicus', source: 'Ctenocephalides felis', target: 'Ondatra zibethicus', href: 'https://www.globalbioticinteractions.org/?interactionType=parasiteOf&sourceTaxon=Ctenocephalides felis&targetTaxon=Ondatra zibethicus', label: 'parasiteOf'}},
+{data: {id: 'Ctenocephalides felisLepus europaeus', source: 'Ctenocephalides felis', target: 'Lepus europaeus', href: 'https://www.globalbioticinteractions.org/?interactionType=parasiteOf&sourceTaxon=Ctenocephalides felis&targetTaxon=Lepus europaeus', label: 'parasiteOf'}},
+{data: {id: 'Canis lupusCtenocephalides felis', source: 'Canis lupus', target: 'Ctenocephalides felis', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Canis lupus&targetTaxon=Ctenocephalides felis', label: 'interactsWith'}},
+{data: {id: 'Felis catusCtenocephalides felis', source: 'Felis catus', target: 'Ctenocephalides felis', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Felis catus&targetTaxon=Ctenocephalides felis', label: 'interactsWith'}},
+{data: {id: 'Oryctolagus cuniculusTyphaeus typhoeus', source: 'Oryctolagus cuniculus', target: 'Typhaeus typhoeus', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Oryctolagus cuniculus&targetTaxon=Typhaeus typhoeus', label: 'interactsWith'}},
+{data: {id: 'Araniella cucurbitinaPodops inuncta', source: 'Araniella cucurbitina', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Araniella cucurbitina&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Bathyphantes parvulusPodops inuncta', source: 'Bathyphantes parvulus', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Bathyphantes parvulus&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Enoplognatha ovataPodops inuncta', source: 'Enoplognatha ovata', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Enoplognatha ovata&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Micrargus subaequalisPodops inuncta', source: 'Micrargus subaequalis', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Micrargus subaequalis&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Ocypus brunnipesPodops inuncta', source: 'Ocypus brunnipes', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Ocypus brunnipes&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Carabus nemoralisPodops inuncta', source: 'Carabus nemoralis', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Carabus nemoralis&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Centromerita bicolorPodops inuncta', source: 'Centromerita bicolor', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Centromerita bicolor&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Robertus neglectusPodops inuncta', source: 'Robertus neglectus', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Robertus neglectus&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Alopecosa pulverulentaPodops inuncta', source: 'Alopecosa pulverulenta', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Alopecosa pulverulenta&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Agalenatea rediiPodops inuncta', source: 'Agalenatea redii', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Agalenatea redii&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Xysticus acerbusPodops inuncta', source: 'Xysticus acerbus', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Xysticus acerbus&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Robertus arundinetiPodops inuncta', source: 'Robertus arundineti', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Robertus arundineti&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Enoplognatha thoracicaPodops inuncta', source: 'Enoplognatha thoracica', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Enoplognatha thoracica&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Cicindela campestrisPodops inuncta', source: 'Cicindela campestris', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Cicindela campestris&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Platynus assimilisPodops inuncta', source: 'Platynus assimilis', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Platynus assimilis&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Xysticus cristatusPodops inuncta', source: 'Xysticus cristatus', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Xysticus cristatus&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Diplocephalus latifronsPodops inuncta', source: 'Diplocephalus latifrons', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Diplocephalus latifrons&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Pterostichus melanariusPodops inuncta', source: 'Pterostichus melanarius', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Pterostichus melanarius&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Tenuiphantes tenuisPodops inuncta', source: 'Tenuiphantes tenuis', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Tenuiphantes tenuis&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Leptorhoptrum robustumPodops inuncta', source: 'Leptorhoptrum robustum', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Leptorhoptrum robustum&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Trochosa ruricolaPodops inuncta', source: 'Trochosa ruricola', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Trochosa ruricola&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Porrhomma microphthalmumPodops inuncta', source: 'Porrhomma microphthalmum', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Porrhomma microphthalmum&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Synema globosumPodops inuncta', source: 'Synema globosum', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Synema globosum&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Tetragnatha extensaPodops inuncta', source: 'Tetragnatha extensa', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Tetragnatha extensa&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Robertus lividusPodops inuncta', source: 'Robertus lividus', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Robertus lividus&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Asthenargus paganusPodops inuncta', source: 'Asthenargus paganus', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Asthenargus paganus&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Araeoncus humilisPodops inuncta', source: 'Araeoncus humilis', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Araeoncus humilis&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Troxochrus scabriculusPodops inuncta', source: 'Troxochrus scabriculus', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Troxochrus scabriculus&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Coelotes terrestrisPodops inuncta', source: 'Coelotes terrestris', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Coelotes terrestris&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Bathyphantes gracilisPodops inuncta', source: 'Bathyphantes gracilis', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Bathyphantes gracilis&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Philonthus succicolaPodops inuncta', source: 'Philonthus succicola', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Philonthus succicola&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Xysticus ulmiPodops inuncta', source: 'Xysticus ulmi', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Xysticus ulmi&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Larinioides cornutusPodops inuncta', source: 'Larinioides cornutus', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Larinioides cornutus&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Diplostyla concolorPodops inuncta', source: 'Diplostyla concolor', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Diplostyla concolor&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Agrypnus murinusPodops inuncta', source: 'Agrypnus murinus', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Agrypnus murinus&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Mangora acalyphaPodops inuncta', source: 'Mangora acalypha', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Mangora acalypha&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Poecilus versicolorPodops inuncta', source: 'Poecilus versicolor', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Poecilus versicolor&targetTaxon=Podops inuncta', label: 'preysOn'}},
+{data: {id: 'Agyneta affinisPodops inuncta', source: 'Agyneta affinis', target: 'Podops inuncta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Agyneta affinis&targetTaxon=Podops inuncta', label: 'preysOn'}},
+], style: [ 
+        { 
+            selector: 'node', 
+            style: { 
+                shape: 'circle', 
+                'background-color': 'yellow', 
+                label: 'data(id)', 
+                'text-valign': 'center', 
+                'font-family': 'helvetica', 
+                'font-style': 'italic', 
+                'font-size': '8px', 
+                'border-width': '0.5', 
+                'border-color': 'black', 
+                'width': 'mapData(occnum, 0, 400, 3, 200)', 
+                'height': 'mapData(occnum, 0, 400, 3, 200)' 
+            } 
+        },  
+        {  
+            selector: 'edge',  
+            style: {  
+                label: 'data(label)', 
+                'font-family': 'helvetica', 
+                'font-size': '6px', 
+                'color': 'blue', 
+                'curve-style': 'bezier', 
+                'target-arrow-shape': 'triangle',  
+                'width': '1' 
+                } 
+         },  
+         {  
+              selector: '[kingdom = "Plantae"]',   
+              css: {  
+                'background-color': 'lightgreen'  
+                 }  
+        }, 
+        {  
+              selector: '[kingdom = "Animalia"]',   
+              css: {  
+                'background-color': 'lightblue'  
+                 }  
+        }, 
+        {  
+              selector: ':selected',   
+              css: {  
+                'line-color': 'red',  
+                'shape': 'square',  
+                'background-color': 'red'  
+                 }  
+        }], 
+layout:  { 
+            name: 'cose-bilkent', padding: 1, animate: true, gravity: 30, animationDuration: 3000 
+     } 
+} 
+); 
+cy.userZoomingEnabled( true ); 
+    cy.getElementById('Equus ferus').select(); 
+    document.write('<br />Degree of node <em>Equus ferus Boddaert, 1785</em> = '+cy.getElementById('Equus ferus').degree()); 
+    cy.on('tap', 'node', function(){ 
+        try { // your browser may block popups 
+              window.open( this.data('href') ); 
+            } catch(e){ // fall back on url change 
+        window.location.href = this.data('href'); 
+    } 
+}); 
+    cy.on('tap', 'edge', function(){  
+        try { // your browser may block popups  
+              window.open( this.data('href') );  
+            } catch(e){ // fall back on url change  
+        window.location.href = this.data('href'); 
+    } 
+}); 
+</script> 
+</ul>         <br />         <br />         <a href='https://github.com/AgentschapPlantentuinMeise/interactias'><img src='../images/Octocat.jpg' alt='GitHub logo' width='20'>Source code</a>         </body>         </html>

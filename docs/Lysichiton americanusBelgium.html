@@ -1,0 +1,146 @@
+ <!DOCTYPE html> <html> <head> <script src='cytoscape.min.js'></script> <script src='https://unpkg.com/layout-base/layout-base.js'></script> <script src='https://unpkg.com/cose-base/cose-base.js'></script> <script src='cytoscape-cose-bilkent.js'></script> </head> <style>#cy {width: 90%; height: 90%; position: absolute; top: 50px; left: 150px;}body {font-family: 'times; font-size: 6px;}</style> <body> <h1><em font-style: italic;>Lysichiton americanus</em> in Belgium</h1><p>Nodes can be moved and if clicked on open a tab with species details<br /><p>The target species is red node. <em>Plantae</em> are green, <em>Animalia</em> are blue and everything else is brown<br /><p>Node area is proportional to the 1 km<sup>2</sup> occupancy<br /><p>All <a href='https://www.globalbioticinteractions.org/'>GloBI</a> interaction records that <em>Lysichiton americanus</em> has with other taxa</p><table><th>Interaction</th><th>number</th><tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Lysichiton%20americanus>interactsWith</a></td><td>5</td>
+</table><p>All <a href='https://www.globalbioticinteractions.org/'>GloBI</a> interaction records that other taxa have with <em>Lysichiton americanus</em></p><table><th>Interaction</th><th>number</th><tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=eats&targetTaxon=Lysichiton%20americanus>eats</a></td><td>1</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=interactsWith&targetTaxon=Lysichiton%20americanus>interactsWith</a></td><td>13</td>
+</table> <div id='cy'></div> <script> var cy = cytoscape({   container: document.getElementById('cy'), 
+   elements: [ { data: { id: 'Thuja plicata', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2684171', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Picea sitchensis', kingdom: 'Plantae', href: 'https://www.gbif.org/species/5284827', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Lysichiton americanus', href: 'https://www.gbif.org/species/2869311', occnum: 0.0 }, selectable: true,},
+{ data: { id: 'Abies grandis', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2685361', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Pseudotsuga menziesii', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2685796', occnum: 22.360679774997898 }, selectable: false,},
+{ data: { id: 'Tsuga heterophylla', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2687210', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Blepharidopterus angulatus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2009595', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Orgyia antiqua', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1819873', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Kleidocerys resedae', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2007673', occnum: 26.457513110645905 }, selectable: false,},
+{ data: { id: 'Rhopalosiphum padi', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2069580', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Equisetum variegatum', kingdom: 'Plantae', href: 'https://www.gbif.org/species/7758330', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Amanita muscaria', kingdom: 'Fungi', href: 'https://www.gbif.org/species/8671098', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Chamaecyparis lawsoniana', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2683866', occnum: 14.142135623730951 }, selectable: false,},
+{ data: { id: 'Brachycaudus helichrysi', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2078588', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Adelges abietis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2049661', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Rhynchospora alba', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2721119', occnum: 24.49489742783178 }, selectable: false,},
+{ data: { id: 'Ips typographus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5018723', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Sambucus racemosa', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2888723', occnum: 20.0 }, selectable: false,},
+{ data: { id: 'Claytonia sibirica', kingdom: 'Plantae', href: 'https://www.gbif.org/species/3084742', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Athyrium filix-femina', kingdom: 'Plantae', href: 'https://www.gbif.org/species/5275044', occnum: 60.0 }, selectable: false,},
+{ data: { id: 'Rubus spectabilis', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2993761', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Alnus incana', kingdom: 'Plantae', href: 'https://www.gbif.org/species/9148577', occnum: 38.72983346207417 }, selectable: false,},
+{ data: { id: 'Juniperus communis', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2684709', occnum: 17.32050807568877 }, selectable: false,},
+{ data: { id: 'Rubus idaeus', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2993094', occnum: 43.58898943540674 }, selectable: false,},
+{ data: { id: 'Dryopteris filix-mas', kingdom: 'Plantae', href: 'https://www.gbif.org/species/5275132', occnum: 74.83314773547883 }, selectable: false,},
+{ data: { id: 'Symphoricarpos albus', kingdom: 'Plantae', href: 'https://www.gbif.org/species/7523753', occnum: 43.58898943540674 }, selectable: false,},
+{ data: { id: 'Geum macrophyllum', kingdom: 'Plantae', href: 'https://www.gbif.org/species/5369784', occnum: 14.142135623730951 }, selectable: false,},
+{ data: { id: 'Haemorhous mexicanus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/8323485', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Loxia curvirostra', kingdom: 'Animalia', href: 'https://www.gbif.org/species/9629160', occnum: 76.81145747868608 }, selectable: false,},
+{data: {id: 'Thuja plicataLysichiton americanus', source: 'Thuja plicata', target: 'Lysichiton americanus', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Thuja plicata&targetTaxon=Lysichiton americanus', label: 'interactsWith'}},
+{data: {id: 'Thuja plicataAlnus incana', source: 'Thuja plicata', target: 'Alnus incana', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Thuja plicata&targetTaxon=Alnus incana', label: 'interactsWith'}},
+{data: {id: 'Thuja plicataJuniperus communis', source: 'Thuja plicata', target: 'Juniperus communis', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Thuja plicata&targetTaxon=Juniperus communis', label: 'interactsWith'}},
+{data: {id: 'Thuja plicataChamaecyparis lawsoniana', source: 'Thuja plicata', target: 'Chamaecyparis lawsoniana', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Thuja plicata&targetTaxon=Chamaecyparis lawsoniana', label: 'interactsWith'}},
+{data: {id: 'Thuja plicataRubus idaeus', source: 'Thuja plicata', target: 'Rubus idaeus', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Thuja plicata&targetTaxon=Rubus idaeus', label: 'interactsWith'}},
+{data: {id: 'Thuja plicataAthyrium filix-femina', source: 'Thuja plicata', target: 'Athyrium filix-femina', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Thuja plicata&targetTaxon=Athyrium filix-femina', label: 'interactsWith'}},
+{data: {id: 'Thuja plicataDryopteris filix-mas', source: 'Thuja plicata', target: 'Dryopteris filix-mas', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Thuja plicata&targetTaxon=Dryopteris filix-mas', label: 'interactsWith'}},
+{data: {id: 'Thuja plicataSymphoricarpos albus', source: 'Thuja plicata', target: 'Symphoricarpos albus', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Thuja plicata&targetTaxon=Symphoricarpos albus', label: 'interactsWith'}},
+{data: {id: 'Thuja plicataGeum macrophyllum', source: 'Thuja plicata', target: 'Geum macrophyllum', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Thuja plicata&targetTaxon=Geum macrophyllum', label: 'interactsWith'}},
+{data: {id: 'Thuja plicataRubus spectabilis', source: 'Thuja plicata', target: 'Rubus spectabilis', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Thuja plicata&targetTaxon=Rubus spectabilis', label: 'interactsWith'}},
+{data: {id: 'Picea sitchensisLysichiton americanus', source: 'Picea sitchensis', target: 'Lysichiton americanus', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Picea sitchensis&targetTaxon=Lysichiton americanus', label: 'interactsWith'}},
+{data: {id: 'Picea sitchensisThuja plicata', source: 'Picea sitchensis', target: 'Thuja plicata', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Picea sitchensis&targetTaxon=Thuja plicata', label: 'interactsWith'}},
+{data: {id: 'Picea sitchensisSambucus racemosa', source: 'Picea sitchensis', target: 'Sambucus racemosa', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Picea sitchensis&targetTaxon=Sambucus racemosa', label: 'interactsWith'}},
+{data: {id: 'Picea sitchensisClaytonia sibirica', source: 'Picea sitchensis', target: 'Claytonia sibirica', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Picea sitchensis&targetTaxon=Claytonia sibirica', label: 'interactsWith'}},
+{data: {id: 'Picea sitchensisPseudotsuga menziesii', source: 'Picea sitchensis', target: 'Pseudotsuga menziesii', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Picea sitchensis&targetTaxon=Pseudotsuga menziesii', label: 'interactsWith'}},
+{data: {id: 'Picea sitchensisChamaecyparis lawsoniana', source: 'Picea sitchensis', target: 'Chamaecyparis lawsoniana', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Picea sitchensis&targetTaxon=Chamaecyparis lawsoniana', label: 'interactsWith'}},
+{data: {id: 'Picea sitchensisAthyrium filix-femina', source: 'Picea sitchensis', target: 'Athyrium filix-femina', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Picea sitchensis&targetTaxon=Athyrium filix-femina', label: 'interactsWith'}},
+{data: {id: 'Picea sitchensisRubus spectabilis', source: 'Picea sitchensis', target: 'Rubus spectabilis', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Picea sitchensis&targetTaxon=Rubus spectabilis', label: 'interactsWith'}},
+{data: {id: 'Picea sitchensisHaemorhous mexicanus', source: 'Picea sitchensis', target: 'Haemorhous mexicanus', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Picea sitchensis&targetTaxon=Haemorhous mexicanus', label: 'interactsWith'}},
+{data: {id: 'Picea sitchensisLoxia curvirostra', source: 'Picea sitchensis', target: 'Loxia curvirostra', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Picea sitchensis&targetTaxon=Loxia curvirostra', label: 'interactsWith'}},
+{data: {id: 'Abies grandisThuja plicata', source: 'Abies grandis', target: 'Thuja plicata', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Abies grandis&targetTaxon=Thuja plicata', label: 'interactsWith'}},
+{data: {id: 'Abies grandisPicea sitchensis', source: 'Abies grandis', target: 'Picea sitchensis', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Abies grandis&targetTaxon=Picea sitchensis', label: 'interactsWith'}},
+{data: {id: 'Pseudotsuga menziesiiThuja plicata', source: 'Pseudotsuga menziesii', target: 'Thuja plicata', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Pseudotsuga menziesii&targetTaxon=Thuja plicata', label: 'interactsWith'}},
+{data: {id: 'Pseudotsuga menziesiiPicea sitchensis', source: 'Pseudotsuga menziesii', target: 'Picea sitchensis', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Pseudotsuga menziesii&targetTaxon=Picea sitchensis', label: 'interactsWith'}},
+{data: {id: 'Tsuga heterophyllaThuja plicata', source: 'Tsuga heterophylla', target: 'Thuja plicata', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Tsuga heterophylla&targetTaxon=Thuja plicata', label: 'interactsWith'}},
+{data: {id: 'Tsuga heterophyllaPicea sitchensis', source: 'Tsuga heterophylla', target: 'Picea sitchensis', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Tsuga heterophylla&targetTaxon=Picea sitchensis', label: 'interactsWith'}},
+{data: {id: 'Blepharidopterus angulatusThuja plicata', source: 'Blepharidopterus angulatus', target: 'Thuja plicata', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Blepharidopterus angulatus&targetTaxon=Thuja plicata', label: 'interactsWith'}},
+{data: {id: 'Orgyia antiquaThuja plicata', source: 'Orgyia antiqua', target: 'Thuja plicata', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Orgyia antiqua&targetTaxon=Thuja plicata', label: 'eats'}},
+{data: {id: 'Orgyia antiquaPicea sitchensis', source: 'Orgyia antiqua', target: 'Picea sitchensis', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Orgyia antiqua&targetTaxon=Picea sitchensis', label: 'eats'}},
+{data: {id: 'Kleidocerys resedaeThuja plicata', source: 'Kleidocerys resedae', target: 'Thuja plicata', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Kleidocerys resedae&targetTaxon=Thuja plicata', label: 'interactsWith'}},
+{data: {id: 'Rhopalosiphum padiThuja plicata', source: 'Rhopalosiphum padi', target: 'Thuja plicata', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Rhopalosiphum padi&targetTaxon=Thuja plicata', label: 'interactsWith'}},
+{data: {id: 'Rhopalosiphum padiPicea sitchensis', source: 'Rhopalosiphum padi', target: 'Picea sitchensis', href: 'https://www.globalbioticinteractions.org/?interactionType=coOccursWith&sourceTaxon=Rhopalosiphum padi&targetTaxon=Picea sitchensis', label: 'coOccursWith'}},
+{data: {id: 'Equisetum variegatumThuja plicata', source: 'Equisetum variegatum', target: 'Thuja plicata', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Equisetum variegatum&targetTaxon=Thuja plicata', label: 'interactsWith'}},
+{data: {id: 'Equisetum variegatumPicea sitchensis', source: 'Equisetum variegatum', target: 'Picea sitchensis', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Equisetum variegatum&targetTaxon=Picea sitchensis', label: 'interactsWith'}},
+{data: {id: 'Amanita muscariaPicea sitchensis', source: 'Amanita muscaria', target: 'Picea sitchensis', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Amanita muscaria&targetTaxon=Picea sitchensis', label: 'interactsWith'}},
+{data: {id: 'Chamaecyparis lawsonianaPicea sitchensis', source: 'Chamaecyparis lawsoniana', target: 'Picea sitchensis', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Chamaecyparis lawsoniana&targetTaxon=Picea sitchensis', label: 'interactsWith'}},
+{data: {id: 'Brachycaudus helichrysiPicea sitchensis', source: 'Brachycaudus helichrysi', target: 'Picea sitchensis', href: 'https://www.globalbioticinteractions.org/?interactionType=hasHost&sourceTaxon=Brachycaudus helichrysi&targetTaxon=Picea sitchensis', label: 'hasHost'}},
+{data: {id: 'Adelges abietisPicea sitchensis', source: 'Adelges abietis', target: 'Picea sitchensis', href: 'https://www.globalbioticinteractions.org/?interactionType=hasHost&sourceTaxon=Adelges abietis&targetTaxon=Picea sitchensis', label: 'hasHost'}},
+{data: {id: 'Rhynchospora albaPicea sitchensis', source: 'Rhynchospora alba', target: 'Picea sitchensis', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Rhynchospora alba&targetTaxon=Picea sitchensis', label: 'interactsWith'}},
+{data: {id: 'Ips typographusPicea sitchensis', source: 'Ips typographus', target: 'Picea sitchensis', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Ips typographus&targetTaxon=Picea sitchensis', label: 'eats'}},
+], style: [ 
+        { 
+            selector: 'node', 
+            style: { 
+                shape: 'circle', 
+                'background-color': 'yellow', 
+                label: 'data(id)', 
+                'text-valign': 'center', 
+                'font-family': 'helvetica', 
+                'font-style': 'italic', 
+                'font-size': '8px', 
+                'border-width': '0.5', 
+                'border-color': 'black', 
+                'width': 'mapData(occnum, 0, 400, 3, 200)', 
+                'height': 'mapData(occnum, 0, 400, 3, 200)' 
+            } 
+        },  
+        {  
+            selector: 'edge',  
+            style: {  
+                label: 'data(label)', 
+                'font-family': 'helvetica', 
+                'font-size': '6px', 
+                'color': 'blue', 
+                'curve-style': 'bezier', 
+                'target-arrow-shape': 'triangle',  
+                'width': '1' 
+                } 
+         },  
+         {  
+              selector: '[kingdom = "Plantae"]',   
+              css: {  
+                'background-color': 'lightgreen'  
+                 }  
+        }, 
+        {  
+              selector: '[kingdom = "Animalia"]',   
+              css: {  
+                'background-color': 'lightblue'  
+                 }  
+        }, 
+        {  
+              selector: ':selected',   
+              css: {  
+                'line-color': 'red',  
+                'shape': 'square',  
+                'background-color': 'red'  
+                 }  
+        }], 
+layout:  { 
+            name: 'cose-bilkent', padding: 1, animate: true, gravity: 30, animationDuration: 3000 
+     } 
+} 
+); 
+cy.userZoomingEnabled( true ); 
+    cy.getElementById('Lysichiton americanus').select(); 
+    document.write('<br />Degree of node <em>Lysichiton americanus Hultén & H.St.John</em> = '+cy.getElementById('Lysichiton americanus').degree()); 
+    cy.on('tap', 'node', function(){ 
+        try { // your browser may block popups 
+              window.open( this.data('href') ); 
+            } catch(e){ // fall back on url change 
+        window.location.href = this.data('href'); 
+    } 
+}); 
+    cy.on('tap', 'edge', function(){  
+        try { // your browser may block popups  
+              window.open( this.data('href') );  
+            } catch(e){ // fall back on url change  
+        window.location.href = this.data('href'); 
+    } 
+}); 
+</script> 
+</ul>         </body>         </html>

@@ -1,0 +1,162 @@
+ <!DOCTYPE html> <html> <head> <script src='cytoscape.min.js'></script> <script src='https://unpkg.com/layout-base/layout-base.js'></script> <script src='https://unpkg.com/cose-base/cose-base.js'></script> <script src='cytoscape-cose-bilkent.js'></script> </head> <style>#cy {width: 90%; height: 90%; position: absolute; top: 50px; left: 150px;}.red {color: red; font-style: bold;} .green {color: green; font-style: bold;} .blue {color: blue; font-style: bold;} .brown {color: brown; font-style: bold;} table, th, td {border: 1px solid black;} body {font-family: 'times; font-size: 6px;}</style> <body> <h1><em font-style: italic;>Xenopus laevis</em> in Belgium</h1><p>Nodes and edges can be moved and if clicked, open a tab with species or interaction details</p><p>The target species is the <SPAN CLASS='red'>red node</SPAN>. <em>Plantae</em> are <SPAN CLASS='green'>green</SPAN>, <em>Animalia</em> are <SPAN CLASS='blue'>blue</SPAN> and everything else is <SPAN CLASS='brown'>brown</SPAN></p><p>Node area is proportional to the 1 km<sup>2</sup> occupancy</p><p>Below is a table of all <a href='https://www.globalbioticinteractions.org/'>GloBI</a> interaction records that <em>Xenopus laevis</em> has with other taxa</p><table><th>Interaction</th><th>number</th><tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Xenopus%20laevis>interactsWith</a></td><td>43</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Xenopus%20laevis>preysOn</a></td><td>1</td>
+</table><p>Below is a table of all <a href='https://www.globalbioticinteractions.org/'>GloBI</a> interaction records that other taxa have with <em>Xenopus laevis</em></p><table><th>Interaction</th><th>number</th><tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=eats&targetTaxon=Xenopus%20laevis>eats</a></td><td>8</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=endoparasiteOf&targetTaxon=Xenopus%20laevis>endoparasiteOf</a></td><td>17</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=hasHost&targetTaxon=Xenopus%20laevis>hasHost</a></td><td>37</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=interactsWith&targetTaxon=Xenopus%20laevis>interactsWith</a></td><td>21</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=parasiteOf&targetTaxon=Xenopus%20laevis>parasiteOf</a></td><td>15</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=pathogenOf&targetTaxon=Xenopus%20laevis>pathogenOf</a></td><td>1</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=preysOn&targetTaxon=Xenopus%20laevis>preysOn</a></td><td>12</td>
+</table> <div id='cy'></div> <script> var cy = cytoscape({   container: document.getElementById('cy'), 
+   elements: [ { data: { id: 'Podilymbus podiceps', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2482077', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Ardea alba', kingdom: 'Animalia', href: 'https://www.gbif.org/species/9752617', occnum: 87.74964387392123 }, selectable: false,},
+{ data: { id: 'Nycticorax nycticorax', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2480863', occnum: 28.284271247461902 }, selectable: false,},
+{ data: { id: 'Bostrychia hagedash', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5229203', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Bubulcus ibis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2480830', occnum: 30.0 }, selectable: false,},
+{ data: { id: 'Xenopus laevis', href: 'https://www.gbif.org/species/5217334', occnum: 0.0 }, selectable: true,},
+{ data: { id: 'Haliaeetus leucocephalus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2480446', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Falco peregrinus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2481047', occnum: 83.66600265340756 }, selectable: false,},
+{ data: { id: 'Rattus norvegicus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2439261', occnum: 50.99019513592785 }, selectable: false,},
+{ data: { id: 'Procyon lotor', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5218786', occnum: 31.622776601683796 }, selectable: false,},
+{ data: { id: 'Threskiornis aethiopicus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2480764', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Ondatra zibethicus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5219858', occnum: 26.457513110645905 }, selectable: false,},
+{ data: { id: 'Lithobates catesbeianus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2427091', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Pimephales promelas', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2367742', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Procambarus clarkii', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2227300', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Scardinius erythrophthalmus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2362635', occnum: 31.622776601683796 }, selectable: false,},
+{ data: { id: 'Hirundo rustica', kingdom: 'Animalia', href: 'https://www.gbif.org/species/9515886', occnum: 100.0 }, selectable: false,},
+{ data: { id: 'Carassius auratus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/4286942', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Cyprinus carpio', kingdom: 'Animalia', href: 'https://www.gbif.org/species/4286975', occnum: 31.622776601683796 }, selectable: false,},
+{ data: { id: 'Athalia lugens', kingdom: 'Animalia', href: 'https://www.gbif.org/species/4490911', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Eristalis tenax', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1541217', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Mantis religiosa', kingdom: 'Animalia', href: 'https://www.gbif.org/species/6258028', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Mus musculus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/7429082', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Forficula auricularia', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1419845', occnum: 30.0 }, selectable: false,},
+{ data: { id: 'Labidura riparia', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1419912', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Vespula germanica', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1311649', occnum: 24.49489742783178 }, selectable: false,},
+{ data: { id: 'Gryllotalpa gryllotalpa', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1716128', occnum: 17.32050807568877 }, selectable: false,},
+{ data: { id: 'Scymnus schmidti', kingdom: 'Animalia', href: 'https://www.gbif.org/species/8583563', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Oryctes nasicornis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/4995700', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Ocypus olens', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5746121', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Dytiscus marginalis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/1038064', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Crocidura russula', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2435654', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Apodemus sylvaticus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2437760', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Erithacus rubecula', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2492462', occnum: 99.498743710662 }, selectable: false,},
+{ data: { id: 'Barbus barbus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5739539', occnum: 0.0 }, selectable: false,},
+{data: {id: 'Podilymbus podicepsXenopus laevis', source: 'Podilymbus podiceps', target: 'Xenopus laevis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Podilymbus podiceps&targetTaxon=Xenopus laevis', label: 'preysOn'}},
+{data: {id: 'Podilymbus podicepsPimephales promelas', source: 'Podilymbus podiceps', target: 'Pimephales promelas', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Podilymbus podiceps&targetTaxon=Pimephales promelas', label: 'preysOn'}},
+{data: {id: 'Podilymbus podicepsProcambarus clarkii', source: 'Podilymbus podiceps', target: 'Procambarus clarkii', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Podilymbus podiceps&targetTaxon=Procambarus clarkii', label: 'eats'}},
+{data: {id: 'Podilymbus podicepsLithobates catesbeianus', source: 'Podilymbus podiceps', target: 'Lithobates catesbeianus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Podilymbus podiceps&targetTaxon=Lithobates catesbeianus', label: 'eats'}},
+{data: {id: 'Ardea albaXenopus laevis', source: 'Ardea alba', target: 'Xenopus laevis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Ardea alba&targetTaxon=Xenopus laevis', label: 'preysOn'}},
+{data: {id: 'Ardea albaPimephales promelas', source: 'Ardea alba', target: 'Pimephales promelas', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Ardea alba&targetTaxon=Pimephales promelas', label: 'preysOn'}},
+{data: {id: 'Ardea albaOndatra zibethicus', source: 'Ardea alba', target: 'Ondatra zibethicus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Ardea alba&targetTaxon=Ondatra zibethicus', label: 'eats'}},
+{data: {id: 'Ardea albaProcambarus clarkii', source: 'Ardea alba', target: 'Procambarus clarkii', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Ardea alba&targetTaxon=Procambarus clarkii', label: 'eats'}},
+{data: {id: 'Ardea albaLithobates catesbeianus', source: 'Ardea alba', target: 'Lithobates catesbeianus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Ardea alba&targetTaxon=Lithobates catesbeianus', label: 'eats'}},
+{data: {id: 'Ardea albaScardinius erythrophthalmus', source: 'Ardea alba', target: 'Scardinius erythrophthalmus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Ardea alba&targetTaxon=Scardinius erythrophthalmus', label: 'preysOn'}},
+{data: {id: 'Nycticorax nycticoraxXenopus laevis', source: 'Nycticorax nycticorax', target: 'Xenopus laevis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Nycticorax nycticorax&targetTaxon=Xenopus laevis', label: 'preysOn'}},
+{data: {id: 'Nycticorax nycticoraxCarassius auratus', source: 'Nycticorax nycticorax', target: 'Carassius auratus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Nycticorax nycticorax&targetTaxon=Carassius auratus', label: 'preysOn'}},
+{data: {id: 'Nycticorax nycticoraxLithobates catesbeianus', source: 'Nycticorax nycticorax', target: 'Lithobates catesbeianus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Nycticorax nycticorax&targetTaxon=Lithobates catesbeianus', label: 'eats'}},
+{data: {id: 'Bostrychia hagedashXenopus laevis', source: 'Bostrychia hagedash', target: 'Xenopus laevis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Bostrychia hagedash&targetTaxon=Xenopus laevis', label: 'preysOn'}},
+{data: {id: 'Bubulcus ibisXenopus laevis', source: 'Bubulcus ibis', target: 'Xenopus laevis', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Bubulcus ibis&targetTaxon=Xenopus laevis', label: 'eats'}},
+{data: {id: 'Bubulcus ibisHirundo rustica', source: 'Bubulcus ibis', target: 'Hirundo rustica', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Bubulcus ibis&targetTaxon=Hirundo rustica', label: 'preysOn'}},
+{data: {id: 'Bubulcus ibisAthalia lugens', source: 'Bubulcus ibis', target: 'Athalia lugens', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Bubulcus ibis&targetTaxon=Athalia lugens', label: 'eats'}},
+{data: {id: 'Bubulcus ibisEristalis tenax', source: 'Bubulcus ibis', target: 'Eristalis tenax', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Bubulcus ibis&targetTaxon=Eristalis tenax', label: 'eats'}},
+{data: {id: 'Bubulcus ibisMantis religiosa', source: 'Bubulcus ibis', target: 'Mantis religiosa', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Bubulcus ibis&targetTaxon=Mantis religiosa', label: 'eats'}},
+{data: {id: 'Bubulcus ibisMus musculus', source: 'Bubulcus ibis', target: 'Mus musculus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Bubulcus ibis&targetTaxon=Mus musculus', label: 'eats'}},
+{data: {id: 'Bubulcus ibisForficula auricularia', source: 'Bubulcus ibis', target: 'Forficula auricularia', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Bubulcus ibis&targetTaxon=Forficula auricularia', label: 'eats'}},
+{data: {id: 'Bubulcus ibisLabidura riparia', source: 'Bubulcus ibis', target: 'Labidura riparia', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Bubulcus ibis&targetTaxon=Labidura riparia', label: 'eats'}},
+{data: {id: 'Bubulcus ibisVespula germanica', source: 'Bubulcus ibis', target: 'Vespula germanica', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Bubulcus ibis&targetTaxon=Vespula germanica', label: 'eats'}},
+{data: {id: 'Bubulcus ibisGryllotalpa gryllotalpa', source: 'Bubulcus ibis', target: 'Gryllotalpa gryllotalpa', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Bubulcus ibis&targetTaxon=Gryllotalpa gryllotalpa', label: 'eats'}},
+{data: {id: 'Bubulcus ibisScymnus schmidti', source: 'Bubulcus ibis', target: 'Scymnus schmidti', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Bubulcus ibis&targetTaxon=Scymnus schmidti', label: 'eats'}},
+{data: {id: 'Bubulcus ibisOryctes nasicornis', source: 'Bubulcus ibis', target: 'Oryctes nasicornis', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Bubulcus ibis&targetTaxon=Oryctes nasicornis', label: 'eats'}},
+{data: {id: 'Bubulcus ibisOcypus olens', source: 'Bubulcus ibis', target: 'Ocypus olens', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Bubulcus ibis&targetTaxon=Ocypus olens', label: 'eats'}},
+{data: {id: 'Bubulcus ibisDytiscus marginalis', source: 'Bubulcus ibis', target: 'Dytiscus marginalis', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Bubulcus ibis&targetTaxon=Dytiscus marginalis', label: 'eats'}},
+{data: {id: 'Bubulcus ibisCrocidura russula', source: 'Bubulcus ibis', target: 'Crocidura russula', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Bubulcus ibis&targetTaxon=Crocidura russula', label: 'eats'}},
+{data: {id: 'Bubulcus ibisApodemus sylvaticus', source: 'Bubulcus ibis', target: 'Apodemus sylvaticus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Bubulcus ibis&targetTaxon=Apodemus sylvaticus', label: 'eats'}},
+{data: {id: 'Bubulcus ibisErithacus rubecula', source: 'Bubulcus ibis', target: 'Erithacus rubecula', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Bubulcus ibis&targetTaxon=Erithacus rubecula', label: 'eats'}},
+{data: {id: 'Bubulcus ibisBarbus barbus', source: 'Bubulcus ibis', target: 'Barbus barbus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Bubulcus ibis&targetTaxon=Barbus barbus', label: 'eats'}},
+{data: {id: 'Bubulcus ibisCyprinus carpio', source: 'Bubulcus ibis', target: 'Cyprinus carpio', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Bubulcus ibis&targetTaxon=Cyprinus carpio', label: 'eats'}},
+{data: {id: 'Bubulcus ibisLithobates catesbeianus', source: 'Bubulcus ibis', target: 'Lithobates catesbeianus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Bubulcus ibis&targetTaxon=Lithobates catesbeianus', label: 'eats'}},
+{data: {id: 'Bubulcus ibisProcambarus clarkii', source: 'Bubulcus ibis', target: 'Procambarus clarkii', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Bubulcus ibis&targetTaxon=Procambarus clarkii', label: 'eats'}},
+{data: {id: 'Xenopus laevisBostrychia hagedash', source: 'Xenopus laevis', target: 'Bostrychia hagedash', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Xenopus laevis&targetTaxon=Bostrychia hagedash', label: 'preysOn'}},
+{data: {id: 'Haliaeetus leucocephalusPodilymbus podiceps', source: 'Haliaeetus leucocephalus', target: 'Podilymbus podiceps', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Haliaeetus leucocephalus&targetTaxon=Podilymbus podiceps', label: 'eats'}},
+{data: {id: 'Haliaeetus leucocephalusArdea alba', source: 'Haliaeetus leucocephalus', target: 'Ardea alba', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Haliaeetus leucocephalus&targetTaxon=Ardea alba', label: 'eats'}},
+{data: {id: 'Haliaeetus leucocephalusBubulcus ibis', source: 'Haliaeetus leucocephalus', target: 'Bubulcus ibis', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Haliaeetus leucocephalus&targetTaxon=Bubulcus ibis', label: 'eats'}},
+{data: {id: 'Falco peregrinusPodilymbus podiceps', source: 'Falco peregrinus', target: 'Podilymbus podiceps', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Falco peregrinus&targetTaxon=Podilymbus podiceps', label: 'eats'}},
+{data: {id: 'Rattus norvegicusPodilymbus podiceps', source: 'Rattus norvegicus', target: 'Podilymbus podiceps', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rattus norvegicus&targetTaxon=Podilymbus podiceps', label: 'eats'}},
+{data: {id: 'Procyon lotorPodilymbus podiceps', source: 'Procyon lotor', target: 'Podilymbus podiceps', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Procyon lotor&targetTaxon=Podilymbus podiceps', label: 'eats'}},
+{data: {id: 'Procyon lotorArdea alba', source: 'Procyon lotor', target: 'Ardea alba', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Procyon lotor&targetTaxon=Ardea alba', label: 'eats'}},
+{data: {id: 'Threskiornis aethiopicusBubulcus ibis', source: 'Threskiornis aethiopicus', target: 'Bubulcus ibis', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Threskiornis aethiopicus&targetTaxon=Bubulcus ibis', label: 'eats'}},
+], style: [ 
+        { 
+            selector: 'node', 
+            style: { 
+                shape: 'circle', 
+                'background-color': 'yellow', 
+                label: 'data(id)', 
+                'text-valign': 'center', 
+                'font-family': 'helvetica', 
+                'font-style': 'italic', 
+                'font-size': '8px', 
+                'border-width': '0.5', 
+                'border-color': 'black', 
+                'width': 'mapData(occnum, 0, 400, 3, 200)', 
+                'height': 'mapData(occnum, 0, 400, 3, 200)' 
+            } 
+        },  
+        {  
+            selector: 'edge',  
+            style: {  
+                label: 'data(label)', 
+                'font-family': 'helvetica', 
+                'font-size': '6px', 
+                'color': 'blue', 
+                'curve-style': 'bezier', 
+                'target-arrow-shape': 'triangle',  
+                'width': '1' 
+                } 
+         },  
+         {  
+              selector: '[kingdom = "Plantae"]',   
+              css: {  
+                'background-color': 'lightgreen'  
+                 }  
+        }, 
+        {  
+              selector: '[kingdom = "Animalia"]',   
+              css: {  
+                'background-color': 'lightblue'  
+                 }  
+        }, 
+        {  
+              selector: ':selected',   
+              css: {  
+                'line-color': 'red',  
+                'shape': 'square',  
+                'background-color': 'red'  
+                 }  
+        }], 
+layout:  { 
+            name: 'cose-bilkent', padding: 1, animate: true, gravity: 30, animationDuration: 3000 
+     } 
+} 
+); 
+cy.userZoomingEnabled( true ); 
+    cy.getElementById('Xenopus laevis').select(); 
+    document.write('<br />Degree of node <em>Xenopus laevis (Daudin, 1802)</em> = '+cy.getElementById('Xenopus laevis').degree()); 
+    cy.on('tap', 'node', function(){ 
+        try { // your browser may block popups 
+              window.open( this.data('href') ); 
+            } catch(e){ // fall back on url change 
+        window.location.href = this.data('href'); 
+    } 
+}); 
+    cy.on('tap', 'edge', function(){  
+        try { // your browser may block popups  
+              window.open( this.data('href') );  
+            } catch(e){ // fall back on url change  
+        window.location.href = this.data('href'); 
+    } 
+}); 
+</script> 
+</ul>         <br />         <br />         <a href='https://github.com/AgentschapPlantentuinMeise/interactias'><img src='../images/Octocat.jpg' alt='GitHub logo' width='20'>Source code</a>         </body>         </html>

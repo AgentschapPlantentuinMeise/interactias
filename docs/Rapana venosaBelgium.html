@@ -1,0 +1,79 @@
+ <!DOCTYPE html> <html> <head> <script src='cytoscape.min.js'></script> <script src='https://unpkg.com/layout-base/layout-base.js'></script> <script src='https://unpkg.com/cose-base/cose-base.js'></script> <script src='cytoscape-cose-bilkent.js'></script> </head> <style>#cy {width: 90%; height: 90%; position: absolute; top: 50px; left: 150px;}.red {color: red; font-style: bold;} .green {color: green; font-style: bold;} .blue {color: blue; font-style: bold;} .brown {color: brown; font-style: bold;} table, th, td {border: 1px solid black;} body {font-family: 'times; font-size: 6px;}</style> <body> <h1><em font-style: italic;>Rapana venosa</em> in Belgium</h1><p>No interacting species have been found for Rapana venosa in Belgium.</p><p>Below is a table of all <a href='https://www.globalbioticinteractions.org/'>GloBI</a> interaction records that <em>Rapana venosa</em> has with other taxa</p><table><th>Interaction</th><th>number</th><tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Rapana%20venosa>eats</a></td><td>12</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Rapana%20venosa>interactsWith</a></td><td>12</td>
+</table><p>Below is a table of all <a href='https://www.globalbioticinteractions.org/'>GloBI</a> interaction records that other taxa have with <em>Rapana venosa</em></p><table><th>Interaction</th><th>number</th><tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=eats&targetTaxon=Rapana%20venosa>eats</a></td><td>2</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=interactsWith&targetTaxon=Rapana%20venosa>interactsWith</a></td><td>3</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=preysOn&targetTaxon=Rapana%20venosa>preysOn</a></td><td>1</td>
+</table> <div id='cy'></div> <script> var cy = cytoscape({   container: document.getElementById('cy'), 
+   elements: [ ], style: [ 
+        { 
+            selector: 'node', 
+            style: { 
+                shape: 'circle', 
+                'background-color': 'yellow', 
+                label: 'data(id)', 
+                'text-valign': 'center', 
+                'font-family': 'helvetica', 
+                'font-style': 'italic', 
+                'font-size': '8px', 
+                'border-width': '0.5', 
+                'border-color': 'black', 
+                'width': 'mapData(occnum, 0, 400, 3, 200)', 
+                'height': 'mapData(occnum, 0, 400, 3, 200)' 
+            } 
+        },  
+        {  
+            selector: 'edge',  
+            style: {  
+                label: 'data(label)', 
+                'font-family': 'helvetica', 
+                'font-size': '6px', 
+                'color': 'blue', 
+                'curve-style': 'bezier', 
+                'target-arrow-shape': 'triangle',  
+                'width': '1' 
+                } 
+         },  
+         {  
+              selector: '[kingdom = "Plantae"]',   
+              css: {  
+                'background-color': 'lightgreen'  
+                 }  
+        }, 
+        {  
+              selector: '[kingdom = "Animalia"]',   
+              css: {  
+                'background-color': 'lightblue'  
+                 }  
+        }, 
+        {  
+              selector: ':selected',   
+              css: {  
+                'line-color': 'red',  
+                'shape': 'square',  
+                'background-color': 'red'  
+                 }  
+        }], 
+layout:  { 
+            name: 'cose-bilkent', padding: 1, animate: true, gravity: 30, animationDuration: 3000 
+     } 
+} 
+); 
+cy.userZoomingEnabled( true ); 
+    cy.getElementById('Rapana venosa').select(); 
+    document.write('<br />Degree of node <em>Rapana venosa (Valenciennes, 1846)</em> = '+cy.getElementById('Rapana venosa').degree()); 
+    cy.on('tap', 'node', function(){ 
+        try { // your browser may block popups 
+              window.open( this.data('href') ); 
+            } catch(e){ // fall back on url change 
+        window.location.href = this.data('href'); 
+    } 
+}); 
+    cy.on('tap', 'edge', function(){  
+        try { // your browser may block popups  
+              window.open( this.data('href') );  
+            } catch(e){ // fall back on url change  
+        window.location.href = this.data('href'); 
+    } 
+}); 
+</script> 
+</ul>         <br />         <br />         <a href='https://github.com/AgentschapPlantentuinMeise/interactias'><img src='../images/Octocat.jpg' alt='GitHub logo' width='20'>Source code</a>         </body>         </html>

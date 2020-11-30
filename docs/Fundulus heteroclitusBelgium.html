@@ -1,0 +1,212 @@
+ <!DOCTYPE html> <html> <head> <script src='cytoscape.min.js'></script> <script src='https://unpkg.com/layout-base/layout-base.js'></script> <script src='https://unpkg.com/cose-base/cose-base.js'></script> <script src='cytoscape-cose-bilkent.js'></script> </head> <style>#cy {width: 90%; height: 90%; position: absolute; top: 50px; left: 150px;}.red {color: red; font-style: bold;} .green {color: green; font-style: bold;} .blue {color: blue; font-style: bold;} .brown {color: brown; font-style: bold;} table, th, td {border: 1px solid black;} body {font-family: 'times; font-size: 6px;}</style> <body> <h1><em font-style: italic;>Fundulus heteroclitus</em> in Belgium</h1><p>Nodes and edges can be moved and if clicked, open a tab with species or interaction details</p><p>The target species is the <SPAN CLASS='red'>red node</SPAN>. <em>Plantae</em> are <SPAN CLASS='green'>green</SPAN>, <em>Animalia</em> are <SPAN CLASS='blue'>blue</SPAN> and everything else is <SPAN CLASS='brown'>brown</SPAN></p><p>Node area is proportional to the 1 km<sup>2</sup> occupancy</p><p>Below is a table of all <a href='https://www.globalbioticinteractions.org/'>GloBI</a> interaction records that <em>Fundulus heteroclitus</em> has with other taxa</p><table><th>Interaction</th><th>number</th><tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Fundulus%20heteroclitus>eats</a></td><td>23</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Fundulus%20heteroclitus>interactsWith</a></td><td>27</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Fundulus%20heteroclitus>preysOn</a></td><td>40</td>
+</table><p>Below is a table of all <a href='https://www.globalbioticinteractions.org/'>GloBI</a> interaction records that other taxa have with <em>Fundulus heteroclitus</em></p><table><th>Interaction</th><th>number</th><tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=eats&targetTaxon=Fundulus%20heteroclitus>eats</a></td><td>22</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=endoparasiteOf&targetTaxon=Fundulus%20heteroclitus>endoparasiteOf</a></td><td>10</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=hasHost&targetTaxon=Fundulus%20heteroclitus>hasHost</a></td><td>143</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=interactsWith&targetTaxon=Fundulus%20heteroclitus>interactsWith</a></td><td>9</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=parasiteOf&targetTaxon=Fundulus%20heteroclitus>parasiteOf</a></td><td>117</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=preysOn&targetTaxon=Fundulus%20heteroclitus>preysOn</a></td><td>4</td>
+</table> <div id='cy'></div> <script> var cy = cytoscape({   container: document.getElementById('cy'), 
+   elements: [ { data: { id: 'Fundulus heteroclitus', href: 'https://www.gbif.org/species/5712056', occnum: 0.0 }, selectable: true,},
+{ data: { id: 'Nemopsis bachei', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2266561', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Mnemiopsis leidyi', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2501248', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Streblospio benedicti', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2321343', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Spiophanes bombyx', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2321057', occnum: 17.32050807568877 }, selectable: false,},
+{ data: { id: 'Recurvirostra avosetta', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2480259', occnum: 45.8257569495584 }, selectable: false,},
+{ data: { id: 'Haematopus ostralegus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/7788295', occnum: 83.66600265340756 }, selectable: false,},
+{ data: { id: 'Pleuronectes platessa', kingdom: 'Animalia', href: 'https://www.gbif.org/species/7700106', occnum: 17.32050807568877 }, selectable: false,},
+{ data: { id: 'Pagurus bernhardus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2224231', occnum: 14.142135623730951 }, selectable: false,},
+{ data: { id: 'Crangon crangon', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2222188', occnum: 17.32050807568877 }, selectable: false,},
+{ data: { id: 'Carcinus maenas', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5178595', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Eteone longa', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5195171', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Nephtys hombergii', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2317011', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Scolelepis squamata', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2321131', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Polydora cornuta', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5197747', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Raja clavata', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5216024', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Liparis liparis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5712338', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Gadus morhua', kingdom: 'Animalia', href: 'https://www.gbif.org/species/8084280', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Himantopus himantopus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5229126', occnum: 31.622776601683796 }, selectable: false,},
+{ data: { id: 'Hediste diversicolor', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2316416', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Glycera tridactyla', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5195560', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Eteone flava', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5195187', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Anas platyrhynchos', kingdom: 'Animalia', href: 'https://www.gbif.org/species/9761484', occnum: 97.97958971132712 }, selectable: false,},
+{ data: { id: 'Calidris alpina', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2481759', occnum: 50.0 }, selectable: false,},
+{ data: { id: 'Charadrius hiaticula', kingdom: 'Animalia', href: 'https://www.gbif.org/species/9566659', occnum: 46.9041575982343 }, selectable: false,},
+{ data: { id: 'Pluvialis squatarola', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2480327', occnum: 33.166247903553995 }, selectable: false,},
+{ data: { id: 'Pluvialis apricaria', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2480332', occnum: 53.85164807134504 }, selectable: false,},
+{ data: { id: 'Numenius arquata', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2481792', occnum: 74.16198487095663 }, selectable: false,},
+{ data: { id: 'Limosa lapponica', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2481681', occnum: 28.284271247461902 }, selectable: false,},
+{ data: { id: 'Tringa erythropus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2481725', occnum: 44.721359549995796 }, selectable: false,},
+{ data: { id: 'Tringa totanus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2481714', occnum: 63.24555320336759 }, selectable: false,},
+{ data: { id: 'Tringa nebularia', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2481726', occnum: 63.24555320336759 }, selectable: false,},
+{ data: { id: 'Pholis gunnellus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5210421', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Pomatoschistus microps', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2379280', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Heteromastus filiformis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5197090', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Merlangius merlangus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2415788', occnum: 14.142135623730951 }, selectable: false,},
+{ data: { id: 'Trachurus trachurus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5210473', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Mullus surmuletus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2396862', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Eutrigla gurnardus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2336597', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Arnoglossus laterna', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2408554', occnum: 14.142135623730951 }, selectable: false,},
+{ data: { id: 'Limanda limanda', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5213960', occnum: 17.32050807568877 }, selectable: false,},
+{ data: { id: 'Platichthys flesus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2409330', occnum: 17.32050807568877 }, selectable: false,},
+{ data: { id: 'Microstomus kitt', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5214022', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Solea solea', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5214139', occnum: 17.32050807568877 }, selectable: false,},
+{ data: { id: 'Scyliorhinus canicula', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2418684', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Gaidropsarus vulgaris', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2415581', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Callionymus lyra', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2386906', occnum: 14.142135623730951 }, selectable: false,},
+{ data: { id: 'Taurulus bubalis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2334227', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Gobius niger', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2375526', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Parablennius gattorugine', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2395767', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Liocarcinus depurator', kingdom: 'Animalia', href: 'https://www.gbif.org/species/9577510', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Hyas coarctatus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2226649', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Aphrodita aculeata', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5194803', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Eumida sanguinea', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2311915', occnum: 10.0 }, selectable: false,},
+{data: {id: 'Fundulus heteroclitusStreblospio benedicti', source: 'Fundulus heteroclitus', target: 'Streblospio benedicti', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Fundulus heteroclitus&targetTaxon=Streblospio benedicti', label: 'preysOn'}},
+{data: {id: 'Fundulus heteroclitusSpiophanes bombyx', source: 'Fundulus heteroclitus', target: 'Spiophanes bombyx', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Fundulus heteroclitus&targetTaxon=Spiophanes bombyx', label: 'preysOn'}},
+{data: {id: 'Fundulus heteroclitusScolelepis squamata', source: 'Fundulus heteroclitus', target: 'Scolelepis squamata', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Fundulus heteroclitus&targetTaxon=Scolelepis squamata', label: 'preysOn'}},
+{data: {id: 'Fundulus heteroclitusPolydora cornuta', source: 'Fundulus heteroclitus', target: 'Polydora cornuta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Fundulus heteroclitus&targetTaxon=Polydora cornuta', label: 'preysOn'}},
+{data: {id: 'Fundulus heteroclitusHeteromastus filiformis', source: 'Fundulus heteroclitus', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Fundulus heteroclitus&targetTaxon=Heteromastus filiformis', label: 'preysOn'}},
+{data: {id: 'Fundulus heteroclitusEumida sanguinea', source: 'Fundulus heteroclitus', target: 'Eumida sanguinea', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Fundulus heteroclitus&targetTaxon=Eumida sanguinea', label: 'preysOn'}},
+{data: {id: 'Nemopsis bacheiStreblospio benedicti', source: 'Nemopsis bachei', target: 'Streblospio benedicti', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Nemopsis bachei&targetTaxon=Streblospio benedicti', label: 'preysOn'}},
+{data: {id: 'Nemopsis bacheiSpiophanes bombyx', source: 'Nemopsis bachei', target: 'Spiophanes bombyx', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Nemopsis bachei&targetTaxon=Spiophanes bombyx', label: 'preysOn'}},
+{data: {id: 'Nemopsis bacheiScolelepis squamata', source: 'Nemopsis bachei', target: 'Scolelepis squamata', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Nemopsis bachei&targetTaxon=Scolelepis squamata', label: 'preysOn'}},
+{data: {id: 'Nemopsis bacheiPolydora cornuta', source: 'Nemopsis bachei', target: 'Polydora cornuta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Nemopsis bachei&targetTaxon=Polydora cornuta', label: 'preysOn'}},
+{data: {id: 'Nemopsis bacheiHeteromastus filiformis', source: 'Nemopsis bachei', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Nemopsis bachei&targetTaxon=Heteromastus filiformis', label: 'preysOn'}},
+{data: {id: 'Nemopsis bacheiEumida sanguinea', source: 'Nemopsis bachei', target: 'Eumida sanguinea', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Nemopsis bachei&targetTaxon=Eumida sanguinea', label: 'preysOn'}},
+{data: {id: 'Mnemiopsis leidyiStreblospio benedicti', source: 'Mnemiopsis leidyi', target: 'Streblospio benedicti', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Mnemiopsis leidyi&targetTaxon=Streblospio benedicti', label: 'preysOn'}},
+{data: {id: 'Mnemiopsis leidyiSpiophanes bombyx', source: 'Mnemiopsis leidyi', target: 'Spiophanes bombyx', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Mnemiopsis leidyi&targetTaxon=Spiophanes bombyx', label: 'preysOn'}},
+{data: {id: 'Mnemiopsis leidyiScolelepis squamata', source: 'Mnemiopsis leidyi', target: 'Scolelepis squamata', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Mnemiopsis leidyi&targetTaxon=Scolelepis squamata', label: 'preysOn'}},
+{data: {id: 'Mnemiopsis leidyiPolydora cornuta', source: 'Mnemiopsis leidyi', target: 'Polydora cornuta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Mnemiopsis leidyi&targetTaxon=Polydora cornuta', label: 'preysOn'}},
+{data: {id: 'Mnemiopsis leidyiHeteromastus filiformis', source: 'Mnemiopsis leidyi', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Mnemiopsis leidyi&targetTaxon=Heteromastus filiformis', label: 'preysOn'}},
+{data: {id: 'Mnemiopsis leidyiEumida sanguinea', source: 'Mnemiopsis leidyi', target: 'Eumida sanguinea', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Mnemiopsis leidyi&targetTaxon=Eumida sanguinea', label: 'preysOn'}},
+{data: {id: 'Recurvirostra avosettaScolelepis squamata', source: 'Recurvirostra avosetta', target: 'Scolelepis squamata', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Recurvirostra avosetta&targetTaxon=Scolelepis squamata', label: 'preysOn'}},
+{data: {id: 'Recurvirostra avosettaPolydora cornuta', source: 'Recurvirostra avosetta', target: 'Polydora cornuta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Recurvirostra avosetta&targetTaxon=Polydora cornuta', label: 'preysOn'}},
+{data: {id: 'Recurvirostra avosettaHeteromastus filiformis', source: 'Recurvirostra avosetta', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Recurvirostra avosetta&targetTaxon=Heteromastus filiformis', label: 'preysOn'}},
+{data: {id: 'Haematopus ostralegusScolelepis squamata', source: 'Haematopus ostralegus', target: 'Scolelepis squamata', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Haematopus ostralegus&targetTaxon=Scolelepis squamata', label: 'preysOn'}},
+{data: {id: 'Pleuronectes platessaScolelepis squamata', source: 'Pleuronectes platessa', target: 'Scolelepis squamata', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Pleuronectes platessa&targetTaxon=Scolelepis squamata', label: 'preysOn'}},
+{data: {id: 'Pleuronectes platessaPolydora cornuta', source: 'Pleuronectes platessa', target: 'Polydora cornuta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Pleuronectes platessa&targetTaxon=Polydora cornuta', label: 'preysOn'}},
+{data: {id: 'Pleuronectes platessaEumida sanguinea', source: 'Pleuronectes platessa', target: 'Eumida sanguinea', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Pleuronectes platessa&targetTaxon=Eumida sanguinea', label: 'preysOn'}},
+{data: {id: 'Pagurus bernhardusScolelepis squamata', source: 'Pagurus bernhardus', target: 'Scolelepis squamata', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Pagurus bernhardus&targetTaxon=Scolelepis squamata', label: 'preysOn'}},
+{data: {id: 'Pagurus bernhardusPolydora cornuta', source: 'Pagurus bernhardus', target: 'Polydora cornuta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Pagurus bernhardus&targetTaxon=Polydora cornuta', label: 'preysOn'}},
+{data: {id: 'Pagurus bernhardusHeteromastus filiformis', source: 'Pagurus bernhardus', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Pagurus bernhardus&targetTaxon=Heteromastus filiformis', label: 'preysOn'}},
+{data: {id: 'Crangon crangonScolelepis squamata', source: 'Crangon crangon', target: 'Scolelepis squamata', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Crangon crangon&targetTaxon=Scolelepis squamata', label: 'preysOn'}},
+{data: {id: 'Crangon crangonPolydora cornuta', source: 'Crangon crangon', target: 'Polydora cornuta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Crangon crangon&targetTaxon=Polydora cornuta', label: 'preysOn'}},
+{data: {id: 'Crangon crangonHeteromastus filiformis', source: 'Crangon crangon', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Crangon crangon&targetTaxon=Heteromastus filiformis', label: 'eats'}},
+{data: {id: 'Carcinus maenasScolelepis squamata', source: 'Carcinus maenas', target: 'Scolelepis squamata', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Carcinus maenas&targetTaxon=Scolelepis squamata', label: 'preysOn'}},
+{data: {id: 'Carcinus maenasPolydora cornuta', source: 'Carcinus maenas', target: 'Polydora cornuta', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Carcinus maenas&targetTaxon=Polydora cornuta', label: 'preysOn'}},
+{data: {id: 'Carcinus maenasHeteromastus filiformis', source: 'Carcinus maenas', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Carcinus maenas&targetTaxon=Heteromastus filiformis', label: 'eats'}},
+{data: {id: 'Eteone longaScolelepis squamata', source: 'Eteone longa', target: 'Scolelepis squamata', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Eteone longa&targetTaxon=Scolelepis squamata', label: 'preysOn'}},
+{data: {id: 'Nephtys hombergiiScolelepis squamata', source: 'Nephtys hombergii', target: 'Scolelepis squamata', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Nephtys hombergii&targetTaxon=Scolelepis squamata', label: 'preysOn'}},
+{data: {id: 'Nephtys hombergiiHeteromastus filiformis', source: 'Nephtys hombergii', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Nephtys hombergii&targetTaxon=Heteromastus filiformis', label: 'preysOn'}},
+{data: {id: 'Raja clavataHeteromastus filiformis', source: 'Raja clavata', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Raja clavata&targetTaxon=Heteromastus filiformis', label: 'preysOn'}},
+{data: {id: 'Liparis liparisHeteromastus filiformis', source: 'Liparis liparis', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Liparis liparis&targetTaxon=Heteromastus filiformis', label: 'preysOn'}},
+{data: {id: 'Gadus morhuaHeteromastus filiformis', source: 'Gadus morhua', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Gadus morhua&targetTaxon=Heteromastus filiformis', label: 'eats'}},
+{data: {id: 'Himantopus himantopusHeteromastus filiformis', source: 'Himantopus himantopus', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Himantopus himantopus&targetTaxon=Heteromastus filiformis', label: 'preysOn'}},
+{data: {id: 'Hediste diversicolorHeteromastus filiformis', source: 'Hediste diversicolor', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Hediste diversicolor&targetTaxon=Heteromastus filiformis', label: 'eats'}},
+{data: {id: 'Glycera tridactylaHeteromastus filiformis', source: 'Glycera tridactyla', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Glycera tridactyla&targetTaxon=Heteromastus filiformis', label: 'eats'}},
+{data: {id: 'Eteone flavaHeteromastus filiformis', source: 'Eteone flava', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Eteone flava&targetTaxon=Heteromastus filiformis', label: 'eats'}},
+{data: {id: 'Anas platyrhynchosHeteromastus filiformis', source: 'Anas platyrhynchos', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Anas platyrhynchos&targetTaxon=Heteromastus filiformis', label: 'preysOn'}},
+{data: {id: 'Calidris alpinaHeteromastus filiformis', source: 'Calidris alpina', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Calidris alpina&targetTaxon=Heteromastus filiformis', label: 'preysOn'}},
+{data: {id: 'Charadrius hiaticulaHeteromastus filiformis', source: 'Charadrius hiaticula', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Charadrius hiaticula&targetTaxon=Heteromastus filiformis', label: 'preysOn'}},
+{data: {id: 'Pluvialis squatarolaHeteromastus filiformis', source: 'Pluvialis squatarola', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Pluvialis squatarola&targetTaxon=Heteromastus filiformis', label: 'preysOn'}},
+{data: {id: 'Pluvialis apricariaHeteromastus filiformis', source: 'Pluvialis apricaria', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Pluvialis apricaria&targetTaxon=Heteromastus filiformis', label: 'preysOn'}},
+{data: {id: 'Numenius arquataHeteromastus filiformis', source: 'Numenius arquata', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Numenius arquata&targetTaxon=Heteromastus filiformis', label: 'preysOn'}},
+{data: {id: 'Limosa lapponicaHeteromastus filiformis', source: 'Limosa lapponica', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Limosa lapponica&targetTaxon=Heteromastus filiformis', label: 'preysOn'}},
+{data: {id: 'Tringa erythropusHeteromastus filiformis', source: 'Tringa erythropus', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Tringa erythropus&targetTaxon=Heteromastus filiformis', label: 'preysOn'}},
+{data: {id: 'Tringa totanusHeteromastus filiformis', source: 'Tringa totanus', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Tringa totanus&targetTaxon=Heteromastus filiformis', label: 'preysOn'}},
+{data: {id: 'Tringa nebulariaHeteromastus filiformis', source: 'Tringa nebularia', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Tringa nebularia&targetTaxon=Heteromastus filiformis', label: 'preysOn'}},
+{data: {id: 'Pholis gunnellusHeteromastus filiformis', source: 'Pholis gunnellus', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Pholis gunnellus&targetTaxon=Heteromastus filiformis', label: 'preysOn'}},
+{data: {id: 'Pholis gunnellusEumida sanguinea', source: 'Pholis gunnellus', target: 'Eumida sanguinea', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Pholis gunnellus&targetTaxon=Eumida sanguinea', label: 'preysOn'}},
+{data: {id: 'Pomatoschistus micropsHeteromastus filiformis', source: 'Pomatoschistus microps', target: 'Heteromastus filiformis', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Pomatoschistus microps&targetTaxon=Heteromastus filiformis', label: 'preysOn'}},
+{data: {id: 'Merlangius merlangusEumida sanguinea', source: 'Merlangius merlangus', target: 'Eumida sanguinea', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Merlangius merlangus&targetTaxon=Eumida sanguinea', label: 'preysOn'}},
+{data: {id: 'Trachurus trachurusEumida sanguinea', source: 'Trachurus trachurus', target: 'Eumida sanguinea', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Trachurus trachurus&targetTaxon=Eumida sanguinea', label: 'preysOn'}},
+{data: {id: 'Mullus surmuletusEumida sanguinea', source: 'Mullus surmuletus', target: 'Eumida sanguinea', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Mullus surmuletus&targetTaxon=Eumida sanguinea', label: 'preysOn'}},
+{data: {id: 'Eutrigla gurnardusEumida sanguinea', source: 'Eutrigla gurnardus', target: 'Eumida sanguinea', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Eutrigla gurnardus&targetTaxon=Eumida sanguinea', label: 'preysOn'}},
+{data: {id: 'Arnoglossus laternaEumida sanguinea', source: 'Arnoglossus laterna', target: 'Eumida sanguinea', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Arnoglossus laterna&targetTaxon=Eumida sanguinea', label: 'preysOn'}},
+{data: {id: 'Limanda limandaEumida sanguinea', source: 'Limanda limanda', target: 'Eumida sanguinea', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Limanda limanda&targetTaxon=Eumida sanguinea', label: 'preysOn'}},
+{data: {id: 'Platichthys flesusEumida sanguinea', source: 'Platichthys flesus', target: 'Eumida sanguinea', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Platichthys flesus&targetTaxon=Eumida sanguinea', label: 'preysOn'}},
+{data: {id: 'Microstomus kittEumida sanguinea', source: 'Microstomus kitt', target: 'Eumida sanguinea', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Microstomus kitt&targetTaxon=Eumida sanguinea', label: 'preysOn'}},
+{data: {id: 'Solea soleaEumida sanguinea', source: 'Solea solea', target: 'Eumida sanguinea', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Solea solea&targetTaxon=Eumida sanguinea', label: 'preysOn'}},
+{data: {id: 'Scyliorhinus caniculaEumida sanguinea', source: 'Scyliorhinus canicula', target: 'Eumida sanguinea', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Scyliorhinus canicula&targetTaxon=Eumida sanguinea', label: 'preysOn'}},
+{data: {id: 'Gaidropsarus vulgarisEumida sanguinea', source: 'Gaidropsarus vulgaris', target: 'Eumida sanguinea', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Gaidropsarus vulgaris&targetTaxon=Eumida sanguinea', label: 'preysOn'}},
+{data: {id: 'Callionymus lyraEumida sanguinea', source: 'Callionymus lyra', target: 'Eumida sanguinea', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Callionymus lyra&targetTaxon=Eumida sanguinea', label: 'preysOn'}},
+{data: {id: 'Taurulus bubalisEumida sanguinea', source: 'Taurulus bubalis', target: 'Eumida sanguinea', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Taurulus bubalis&targetTaxon=Eumida sanguinea', label: 'preysOn'}},
+{data: {id: 'Gobius nigerEumida sanguinea', source: 'Gobius niger', target: 'Eumida sanguinea', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Gobius niger&targetTaxon=Eumida sanguinea', label: 'preysOn'}},
+{data: {id: 'Parablennius gattorugineEumida sanguinea', source: 'Parablennius gattorugine', target: 'Eumida sanguinea', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Parablennius gattorugine&targetTaxon=Eumida sanguinea', label: 'preysOn'}},
+{data: {id: 'Liocarcinus depuratorEumida sanguinea', source: 'Liocarcinus depurator', target: 'Eumida sanguinea', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Liocarcinus depurator&targetTaxon=Eumida sanguinea', label: 'preysOn'}},
+{data: {id: 'Hyas coarctatusEumida sanguinea', source: 'Hyas coarctatus', target: 'Eumida sanguinea', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Hyas coarctatus&targetTaxon=Eumida sanguinea', label: 'preysOn'}},
+{data: {id: 'Aphrodita aculeataEumida sanguinea', source: 'Aphrodita aculeata', target: 'Eumida sanguinea', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Aphrodita aculeata&targetTaxon=Eumida sanguinea', label: 'preysOn'}},
+], style: [ 
+        { 
+            selector: 'node', 
+            style: { 
+                shape: 'circle', 
+                'background-color': 'yellow', 
+                label: 'data(id)', 
+                'text-valign': 'center', 
+                'font-family': 'helvetica', 
+                'font-style': 'italic', 
+                'font-size': '8px', 
+                'border-width': '0.5', 
+                'border-color': 'black', 
+                'width': 'mapData(occnum, 0, 400, 3, 200)', 
+                'height': 'mapData(occnum, 0, 400, 3, 200)' 
+            } 
+        },  
+        {  
+            selector: 'edge',  
+            style: {  
+                label: 'data(label)', 
+                'font-family': 'helvetica', 
+                'font-size': '6px', 
+                'color': 'blue', 
+                'curve-style': 'bezier', 
+                'target-arrow-shape': 'triangle',  
+                'width': '1' 
+                } 
+         },  
+         {  
+              selector: '[kingdom = "Plantae"]',   
+              css: {  
+                'background-color': 'lightgreen'  
+                 }  
+        }, 
+        {  
+              selector: '[kingdom = "Animalia"]',   
+              css: {  
+                'background-color': 'lightblue'  
+                 }  
+        }, 
+        {  
+              selector: ':selected',   
+              css: {  
+                'line-color': 'red',  
+                'shape': 'square',  
+                'background-color': 'red'  
+                 }  
+        }], 
+layout:  { 
+            name: 'cose-bilkent', padding: 1, animate: true, gravity: 30, animationDuration: 3000 
+     } 
+} 
+); 
+cy.userZoomingEnabled( true ); 
+    cy.getElementById('Fundulus heteroclitus').select(); 
+    document.write('<br />Degree of node <em>Fundulus heteroclitus (Linnaeus, 1766)</em> = '+cy.getElementById('Fundulus heteroclitus').degree()); 
+    cy.on('tap', 'node', function(){ 
+        try { // your browser may block popups 
+              window.open( this.data('href') ); 
+            } catch(e){ // fall back on url change 
+        window.location.href = this.data('href'); 
+    } 
+}); 
+    cy.on('tap', 'edge', function(){  
+        try { // your browser may block popups  
+              window.open( this.data('href') );  
+            } catch(e){ // fall back on url change  
+        window.location.href = this.data('href'); 
+    } 
+}); 
+</script> 
+</ul>         <br />         <br />         <a href='https://github.com/AgentschapPlantentuinMeise/interactias'><img src='../images/Octocat.jpg' alt='GitHub logo' width='20'>Source code</a>         </body>         </html>

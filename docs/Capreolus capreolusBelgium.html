@@ -1,0 +1,117 @@
+ <!DOCTYPE html> <html> <head> <script src='cytoscape.min.js'></script> <script src='https://unpkg.com/layout-base/layout-base.js'></script> <script src='https://unpkg.com/cose-base/cose-base.js'></script> <script src='cytoscape-cose-bilkent.js'></script> </head> <style>#cy {width: 90%; height: 90%; position: absolute; top: 50px; left: 150px;}.red {color: red; font-style: bold;} .green {color: green; font-style: bold;} .blue {color: blue; font-style: bold;} .brown {color: brown; font-style: bold;} table, th, td {border: 1px solid black;} body {font-family: 'times; font-size: 6px;}</style> <body> <h1><em font-style: italic;>Capreolus capreolus</em> in Belgium</h1><p>Nodes and edges can be moved and if clicked, open a tab with species or interaction details</p><p>The target species is the <SPAN CLASS='red'>red node</SPAN>. <em>Plantae</em> are <SPAN CLASS='green'>green</SPAN>, <em>Animalia</em> are <SPAN CLASS='blue'>blue</SPAN> and everything else is <SPAN CLASS='brown'>brown</SPAN></p><p>Node area is proportional to the 1 km<sup>2</sup> occupancy</p><p>Below is a table of all <a href='https://www.globalbioticinteractions.org/'>GloBI</a> interaction records that <em>Capreolus capreolus</em> has with other taxa</p><table><th>Interaction</th><th>number</th><tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Capreolus%20capreolus>interactsWith</a></td><td>6</td>
+</table><p>Below is a table of all <a href='https://www.globalbioticinteractions.org/'>GloBI</a> interaction records that other taxa have with <em>Capreolus capreolus</em></p><table><th>Interaction</th><th>number</th><tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=eats&targetTaxon=Capreolus%20capreolus>eats</a></td><td>2</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=ectoparasiteOf&targetTaxon=Capreolus%20capreolus>ectoparasiteOf</a></td><td>7</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=endoparasiteOf&targetTaxon=Capreolus%20capreolus>endoparasiteOf</a></td><td>6</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=hasHost&targetTaxon=Capreolus%20capreolus>hasHost</a></td><td>368</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=interactsWith&targetTaxon=Capreolus%20capreolus>interactsWith</a></td><td>13</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=parasiteOf&targetTaxon=Capreolus%20capreolus>parasiteOf</a></td><td>440</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=pathogenOf&targetTaxon=Capreolus%20capreolus>pathogenOf</a></td><td>11</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=preysOn&targetTaxon=Capreolus%20capreolus>preysOn</a></td><td>1</td>
+</table> <div id='cy'></div> <script> var cy = cytoscape({   container: document.getElementById('cy'), 
+   elements: [ { data: { id: 'Buteo buteo', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2480537', occnum: 100.0 }, selectable: false,},
+{ data: { id: 'Capreolus capreolus', href: 'https://www.gbif.org/species/5220126', occnum: 0.0 }, selectable: true,},
+{ data: { id: 'Oryctolagus cuniculus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2436940', occnum: 68.55654600401044 }, selectable: false,},
+{ data: { id: 'Rana temporaria', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2426805', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Turdus merula', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2490719', occnum: 97.97958971132712 }, selectable: false,},
+{ data: { id: 'Athene noctua', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2497266', occnum: 77.45966692414834 }, selectable: false,},
+{ data: { id: 'Strix aluco', kingdom: 'Animalia', href: 'https://www.gbif.org/species/9282206', occnum: 74.83314773547883 }, selectable: false,},
+{ data: { id: 'Apus apus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5228676', occnum: 83.66600265340756 }, selectable: false,},
+{ data: { id: 'Asio otus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2497306', occnum: 60.82762530298219 }, selectable: false,},
+{ data: { id: 'Tyto alba', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2497921', occnum: 62.44997998398398 }, selectable: false,},
+{ data: { id: 'Bubo bubo', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5959092', occnum: 17.32050807568877 }, selectable: false,},
+{ data: { id: 'Fulica atra', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2474377', occnum: 86.60254037844388 }, selectable: false,},
+{ data: { id: 'Pelophylax ridibundus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2426661', occnum: 28.284271247461902 }, selectable: false,},
+{ data: { id: 'Bufo bufo', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5217160', occnum: 0.0 }, selectable: false,},
+{ data: { id: 'Emberiza citrinella', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2491534', occnum: 64.03124237432849 }, selectable: false,},
+{ data: { id: 'Turdus philomelos', kingdom: 'Animalia', href: 'https://www.gbif.org/species/7901064', occnum: 93.27379053088816 }, selectable: false,},
+{ data: { id: 'Sylvia atricapilla', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2492956', occnum: 94.33981132056603 }, selectable: false,},
+{data: {id: 'Buteo buteoCapreolus capreolus', source: 'Buteo buteo', target: 'Capreolus capreolus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Buteo buteo&targetTaxon=Capreolus capreolus', label: 'eats'}},
+{data: {id: 'Buteo buteoTyto alba', source: 'Buteo buteo', target: 'Tyto alba', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Buteo buteo&targetTaxon=Tyto alba', label: 'interactsWith'}},
+{data: {id: 'Buteo buteoPelophylax ridibundus', source: 'Buteo buteo', target: 'Pelophylax ridibundus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Buteo buteo&targetTaxon=Pelophylax ridibundus', label: 'preysOn'}},
+{data: {id: 'Buteo buteoOryctolagus cuniculus', source: 'Buteo buteo', target: 'Oryctolagus cuniculus', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Buteo buteo&targetTaxon=Oryctolagus cuniculus', label: 'preysOn'}},
+{data: {id: 'Buteo buteoFulica atra', source: 'Buteo buteo', target: 'Fulica atra', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Buteo buteo&targetTaxon=Fulica atra', label: 'eats'}},
+{data: {id: 'Buteo buteoRana temporaria', source: 'Buteo buteo', target: 'Rana temporaria', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Buteo buteo&targetTaxon=Rana temporaria', label: 'preysOn'}},
+{data: {id: 'Buteo buteoBufo bufo', source: 'Buteo buteo', target: 'Bufo bufo', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Buteo buteo&targetTaxon=Bufo bufo', label: 'preysOn'}},
+{data: {id: 'Buteo buteoEmberiza citrinella', source: 'Buteo buteo', target: 'Emberiza citrinella', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Buteo buteo&targetTaxon=Emberiza citrinella', label: 'preysOn'}},
+{data: {id: 'Buteo buteoTurdus merula', source: 'Buteo buteo', target: 'Turdus merula', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Buteo buteo&targetTaxon=Turdus merula', label: 'preysOn'}},
+{data: {id: 'Buteo buteoTurdus philomelos', source: 'Buteo buteo', target: 'Turdus philomelos', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Buteo buteo&targetTaxon=Turdus philomelos', label: 'preysOn'}},
+{data: {id: 'Buteo buteoSylvia atricapilla', source: 'Buteo buteo', target: 'Sylvia atricapilla', href: 'https://www.globalbioticinteractions.org/?interactionType=preysOn&sourceTaxon=Buteo buteo&targetTaxon=Sylvia atricapilla', label: 'preysOn'}},
+{data: {id: 'Athene noctuaButeo buteo', source: 'Athene noctua', target: 'Buteo buteo', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Athene noctua&targetTaxon=Buteo buteo', label: 'interactsWith'}},
+{data: {id: 'Strix alucoButeo buteo', source: 'Strix aluco', target: 'Buteo buteo', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Strix aluco&targetTaxon=Buteo buteo', label: 'interactsWith'}},
+{data: {id: 'Apus apusButeo buteo', source: 'Apus apus', target: 'Buteo buteo', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Apus apus&targetTaxon=Buteo buteo', label: 'interactsWith'}},
+{data: {id: 'Asio otusButeo buteo', source: 'Asio otus', target: 'Buteo buteo', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Asio otus&targetTaxon=Buteo buteo', label: 'interactsWith'}},
+{data: {id: 'Tyto albaButeo buteo', source: 'Tyto alba', target: 'Buteo buteo', href: 'https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Tyto alba&targetTaxon=Buteo buteo', label: 'interactsWith'}},
+{data: {id: 'Bubo buboButeo buteo', source: 'Bubo bubo', target: 'Buteo buteo', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Bubo bubo&targetTaxon=Buteo buteo', label: 'eats'}},
+], style: [ 
+        { 
+            selector: 'node', 
+            style: { 
+                shape: 'circle', 
+                'background-color': 'yellow', 
+                label: 'data(id)', 
+                'text-valign': 'center', 
+                'font-family': 'helvetica', 
+                'font-style': 'italic', 
+                'font-size': '8px', 
+                'border-width': '0.5', 
+                'border-color': 'black', 
+                'width': 'mapData(occnum, 0, 400, 3, 200)', 
+                'height': 'mapData(occnum, 0, 400, 3, 200)' 
+            } 
+        },  
+        {  
+            selector: 'edge',  
+            style: {  
+                label: 'data(label)', 
+                'font-family': 'helvetica', 
+                'font-size': '6px', 
+                'color': 'blue', 
+                'curve-style': 'bezier', 
+                'target-arrow-shape': 'triangle',  
+                'width': '1' 
+                } 
+         },  
+         {  
+              selector: '[kingdom = "Plantae"]',   
+              css: {  
+                'background-color': 'lightgreen'  
+                 }  
+        }, 
+        {  
+              selector: '[kingdom = "Animalia"]',   
+              css: {  
+                'background-color': 'lightblue'  
+                 }  
+        }, 
+        {  
+              selector: ':selected',   
+              css: {  
+                'line-color': 'red',  
+                'shape': 'square',  
+                'background-color': 'red'  
+                 }  
+        }], 
+layout:  { 
+            name: 'cose-bilkent', padding: 1, animate: true, gravity: 30, animationDuration: 3000 
+     } 
+} 
+); 
+cy.userZoomingEnabled( true ); 
+    cy.getElementById('Capreolus capreolus').select(); 
+    document.write('<br />Degree of node <em>Capreolus capreolus (Linnaeus, 1758)</em> = '+cy.getElementById('Capreolus capreolus').degree()); 
+    cy.on('tap', 'node', function(){ 
+        try { // your browser may block popups 
+              window.open( this.data('href') ); 
+            } catch(e){ // fall back on url change 
+        window.location.href = this.data('href'); 
+    } 
+}); 
+    cy.on('tap', 'edge', function(){  
+        try { // your browser may block popups  
+              window.open( this.data('href') );  
+            } catch(e){ // fall back on url change  
+        window.location.href = this.data('href'); 
+    } 
+}); 
+</script> 
+</ul>         <br />         <br />         <a href='https://github.com/AgentschapPlantentuinMeise/interactias'><img src='../images/Octocat.jpg' alt='GitHub logo' width='20'>Source code</a>         </body>         </html>

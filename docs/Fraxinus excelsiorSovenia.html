@@ -1,0 +1,202 @@
+ <!DOCTYPE html> <html> <head> <script src='cytoscape.min.js'></script> <script src='https://unpkg.com/layout-base/layout-base.js'></script> <script src='https://unpkg.com/cose-base/cose-base.js'></script> <script src='cytoscape-cose-bilkent.js'></script> </head> <style>#cy {width: 90%; height: 90%; position: absolute; top: 50px; left: 150px;}.red {color: red; font-style: bold;} .green {color: green; font-style: bold;} .blue {color: blue; font-style: bold;} .brown {color: brown; font-style: bold;} table, th, td {border: 1px solid black;} body {font-family: 'times; font-size: 6px;}</style> <body> <h1><em font-style: italic;>Fraxinus excelsior</em> in Sovenia</h1><p>Nodes and edges can be moved and if clicked, open a tab with species or interaction details</p><p>The target species is the <SPAN CLASS='red'>red node</SPAN>. <em>Plantae</em> are <SPAN CLASS='green'>green</SPAN>, <em>Animalia</em> are <SPAN CLASS='blue'>blue</SPAN> and everything else is <SPAN CLASS='brown'>brown</SPAN></p><p>Node area is proportional to the 1 km<sup>2</sup> occupancy</p><p>Below is a table of all <a href='https://www.globalbioticinteractions.org/'>GloBI</a> interaction records that <em>Fraxinus excelsior</em> has with other taxa</p><table><th>Interaction</th><th>number</th><tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=hasHost&sourceTaxon=Fraxinus%20excelsior>hasHost</a></td><td>34</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=interactsWith&sourceTaxon=Fraxinus%20excelsior>interactsWith</a></td><td>223</td>
+</table><p>Below is a table of all <a href='https://www.globalbioticinteractions.org/'>GloBI</a> interaction records that other taxa have with <em>Fraxinus excelsior</em></p><table><th>Interaction</th><th>number</th><tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=eats&targetTaxon=Fraxinus%20excelsior>eats</a></td><td>155</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=hasHost&targetTaxon=Fraxinus%20excelsior>hasHost</a></td><td>214</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=interactsWith&targetTaxon=Fraxinus%20excelsior>interactsWith</a></td><td>540</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=livesOn&targetTaxon=Fraxinus%20excelsior>livesOn</a></td><td>2</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=parasiteOf&targetTaxon=Fraxinus%20excelsior>parasiteOf</a></td><td>30</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=pathogenOf&targetTaxon=Fraxinus%20excelsior>pathogenOf</a></td><td>13</td>
+<tr><td><a target='_blank' href=https://www.globalbioticinteractions.org/?interactionType=preysOn&targetTaxon=Fraxinus%20excelsior>preysOn</a></td><td>18</td>
+</table> <div id='cy'></div> <script> var cy = cytoscape({   container: document.getElementById('cy'), 
+   elements: [ { data: { id: 'Hymenoscyphus fraxineus', kingdom: 'Fungi', href: 'https://www.gbif.org/species/8313437', occnum: 80.62257748298549 }, selectable: false,},
+{ data: { id: 'Heterobasidion annosum', kingdom: 'Fungi', href: 'https://www.gbif.org/species/2551968', occnum: 14.142135623730951 }, selectable: false,},
+{ data: { id: 'Auricularia auricula-judae', kingdom: 'Fungi', href: 'https://www.gbif.org/species/5249271', occnum: 17.32050807568877 }, selectable: false,},
+{ data: { id: 'Dorcus parallelipipedus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5743112', occnum: 20.0 }, selectable: false,},
+{ data: { id: 'Palomena prasina', kingdom: 'Animalia', href: 'https://www.gbif.org/species/4485776', occnum: 14.142135623730951 }, selectable: false,},
+{ data: { id: 'Phlyctis argena', kingdom: 'Fungi', href: 'https://www.gbif.org/species/8620875', occnum: 36.05551275463989 }, selectable: false,},
+{ data: { id: 'Fomitopsis pinicola', kingdom: 'Fungi', href: 'https://www.gbif.org/species/2542395', occnum: 31.622776601683796 }, selectable: false,},
+{ data: { id: 'Columba palumbus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2495455', occnum: 81.24038404635961 }, selectable: false,},
+{ data: { id: 'Lucanus cervus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5743122', occnum: 24.49489742783178 }, selectable: false,},
+{ data: { id: 'Fraxinus excelsior', href: 'https://www.gbif.org/species/3172358', occnum: 24.49489742783178 }, selectable: true,},
+{ data: { id: 'Acer campestre', kingdom: 'Plantae', href: 'https://www.gbif.org/species/3189863', occnum: 43.58898943540674 }, selectable: false,},
+{ data: { id: 'Armillaria mellea', kingdom: 'Fungi', href: 'https://www.gbif.org/species/2536891', occnum: 20.0 }, selectable: false,},
+{ data: { id: 'Accipiter gentilis', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2480589', occnum: 30.0 }, selectable: false,},
+{ data: { id: 'Accipiter nisus', kingdom: 'Animalia', href: 'https://www.gbif.org/species/2480637', occnum: 57.445626465380286 }, selectable: false,},
+{ data: { id: 'Bubo bubo', kingdom: 'Animalia', href: 'https://www.gbif.org/species/5959092', occnum: 14.142135623730951 }, selectable: false,},
+{ data: { id: 'Juniperus communis', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2684709', occnum: 34.64101615137754 }, selectable: false,},
+{ data: { id: 'Taxus baccata', kingdom: 'Plantae', href: 'https://www.gbif.org/species/5284517', occnum: 22.360679774997898 }, selectable: false,},
+{ data: { id: 'Prunus mahaleb', kingdom: 'Plantae', href: 'https://www.gbif.org/species/3022789', occnum: 28.284271247461902 }, selectable: false,},
+{ data: { id: 'Crataegus monogyna', kingdom: 'Plantae', href: 'https://www.gbif.org/species/9220780', occnum: 40.0 }, selectable: false,},
+{ data: { id: 'Hedera helix', kingdom: 'Plantae', href: 'https://www.gbif.org/species/8351737', occnum: 57.445626465380286 }, selectable: false,},
+{ data: { id: 'Sambucus nigra', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2888728', occnum: 44.721359549995796 }, selectable: false,},
+{ data: { id: 'Vitis vinifera', kingdom: 'Plantae', href: 'https://www.gbif.org/species/5372392', occnum: 26.457513110645905 }, selectable: false,},
+{ data: { id: 'Pinus sylvestris', kingdom: 'Plantae', href: 'https://www.gbif.org/species/5285637', occnum: 17.32050807568877 }, selectable: false,},
+{ data: { id: 'Carpinus betulus', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2875818', occnum: 43.58898943540674 }, selectable: false,},
+{ data: { id: 'Quercus robur', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2878688', occnum: 17.32050807568877 }, selectable: false,},
+{ data: { id: 'Corylus avellana', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2875979', occnum: 45.8257569495584 }, selectable: false,},
+{ data: { id: 'Sorbus aucuparia', kingdom: 'Plantae', href: 'https://www.gbif.org/species/3012167', occnum: 44.721359549995796 }, selectable: false,},
+{ data: { id: 'Acer pseudoplatanus', kingdom: 'Plantae', href: 'https://www.gbif.org/species/3189870', occnum: 54.772255750516614 }, selectable: false,},
+{ data: { id: 'Fagus sylvatica', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2882316', occnum: 77.45966692414834 }, selectable: false,},
+{ data: { id: 'Juglans regia', kingdom: 'Plantae', href: 'https://www.gbif.org/species/3054368', occnum: 30.0 }, selectable: false,},
+{ data: { id: 'Salix caprea', kingdom: 'Plantae', href: 'https://www.gbif.org/species/5372952', occnum: 20.0 }, selectable: false,},
+{ data: { id: 'Calluna vulgaris', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2882482', occnum: 22.360679774997898 }, selectable: false,},
+{ data: { id: 'Buddleja davidii', kingdom: 'Plantae', href: 'https://www.gbif.org/species/3173338', occnum: 34.64101615137754 }, selectable: false,},
+{ data: { id: 'Euonymus europaeus', kingdom: 'Plantae', href: 'https://www.gbif.org/species/3169131', occnum: 46.9041575982343 }, selectable: false,},
+{ data: { id: 'Ilex aquifolium', kingdom: 'Plantae', href: 'https://www.gbif.org/species/5414222', occnum: 28.284271247461902 }, selectable: false,},
+{ data: { id: 'Prunus spinosa', kingdom: 'Plantae', href: 'https://www.gbif.org/species/3023221', occnum: 43.58898943540674 }, selectable: false,},
+{ data: { id: 'Prunus laurocerasus', kingdom: 'Plantae', href: 'https://www.gbif.org/species/3021496', occnum: 58.309518948453004 }, selectable: false,},
+{ data: { id: 'Laburnum anagyroides', kingdom: 'Plantae', href: 'https://www.gbif.org/species/5356345', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Cornus sanguinea', kingdom: 'Plantae', href: 'https://www.gbif.org/species/3082234', occnum: 48.98979485566356 }, selectable: false,},
+{ data: { id: 'Clematis vitalba', kingdom: 'Plantae', href: 'https://www.gbif.org/species/3033558', occnum: 45.8257569495584 }, selectable: false,},
+{ data: { id: 'Aesculus hippocastanum', kingdom: 'Plantae', href: 'https://www.gbif.org/species/3189815', occnum: 20.0 }, selectable: false,},
+{ data: { id: 'Robinia pseudoacacia', kingdom: 'Plantae', href: 'https://www.gbif.org/species/5352251', occnum: 38.72983346207417 }, selectable: false,},
+{ data: { id: 'Malus pumila', kingdom: 'Plantae', href: 'https://www.gbif.org/species/3001093', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Ulmus glabra', kingdom: 'Plantae', href: 'https://www.gbif.org/species/5361866', occnum: 14.142135623730951 }, selectable: false,},
+{ data: { id: 'Populus tremula', kingdom: 'Plantae', href: 'https://www.gbif.org/species/3040249', occnum: 24.49489742783178 }, selectable: false,},
+{ data: { id: 'Prunus cerasifera', kingdom: 'Plantae', href: 'https://www.gbif.org/species/3021730', occnum: 22.360679774997898 }, selectable: false,},
+{ data: { id: 'Betula pendula', kingdom: 'Plantae', href: 'https://www.gbif.org/species/5331916', occnum: 26.457513110645905 }, selectable: false,},
+{ data: { id: 'Humulus lupulus', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2984535', occnum: 30.0 }, selectable: false,},
+{ data: { id: 'Rumex obtusifolius', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2889011', occnum: 31.622776601683796 }, selectable: false,},
+{ data: { id: 'Viburnum opulus', kingdom: 'Plantae', href: 'https://www.gbif.org/species/2888605', occnum: 47.958315233127195 }, selectable: false,},
+{ data: { id: 'Heracleum sphondylium', kingdom: 'Plantae', href: 'https://www.gbif.org/species/3034830', occnum: 28.284271247461902 }, selectable: false,},
+{ data: { id: 'Medicago sativa', kingdom: 'Plantae', href: 'https://www.gbif.org/species/9151957', occnum: 31.622776601683796 }, selectable: false,},
+{ data: { id: 'Potentilla indica', kingdom: 'Plantae', href: 'https://www.gbif.org/species/8591421', occnum: 10.0 }, selectable: false,},
+{ data: { id: 'Lactuca serriola', kingdom: 'Plantae', href: 'https://www.gbif.org/species/3140490', occnum: 22.360679774997898 }, selectable: false,},
+{ data: { id: 'Picea abies', kingdom: 'Plantae', href: 'https://www.gbif.org/species/5284884', occnum: 33.166247903553995 }, selectable: false,},
+{data: {id: 'Hymenoscyphus fraxineusFraxinus excelsior', source: 'Hymenoscyphus fraxineus', target: 'Fraxinus excelsior', href: 'https://www.globalbioticinteractions.org/?interactionType=pathogenOf&sourceTaxon=Hymenoscyphus fraxineus&targetTaxon=Fraxinus excelsior', label: 'pathogenOf'}},
+{data: {id: 'Heterobasidion annosumFraxinus excelsior', source: 'Heterobasidion annosum', target: 'Fraxinus excelsior', href: 'https://www.globalbioticinteractions.org/?interactionType=pathogenOf&sourceTaxon=Heterobasidion annosum&targetTaxon=Fraxinus excelsior', label: 'pathogenOf'}},
+{data: {id: 'Heterobasidion annosumPinus sylvestris', source: 'Heterobasidion annosum', target: 'Pinus sylvestris', href: 'https://www.globalbioticinteractions.org/?interactionType=pathogenOf&sourceTaxon=Heterobasidion annosum&targetTaxon=Pinus sylvestris', label: 'pathogenOf'}},
+{data: {id: 'Heterobasidion annosumSalix caprea', source: 'Heterobasidion annosum', target: 'Salix caprea', href: 'https://www.globalbioticinteractions.org/?interactionType=pathogenOf&sourceTaxon=Heterobasidion annosum&targetTaxon=Salix caprea', label: 'pathogenOf'}},
+{data: {id: 'Heterobasidion annosumFagus sylvatica', source: 'Heterobasidion annosum', target: 'Fagus sylvatica', href: 'https://www.globalbioticinteractions.org/?interactionType=pathogenOf&sourceTaxon=Heterobasidion annosum&targetTaxon=Fagus sylvatica', label: 'pathogenOf'}},
+{data: {id: 'Heterobasidion annosumAcer pseudoplatanus', source: 'Heterobasidion annosum', target: 'Acer pseudoplatanus', href: 'https://www.globalbioticinteractions.org/?interactionType=pathogenOf&sourceTaxon=Heterobasidion annosum&targetTaxon=Acer pseudoplatanus', label: 'pathogenOf'}},
+{data: {id: 'Heterobasidion annosumCalluna vulgaris', source: 'Heterobasidion annosum', target: 'Calluna vulgaris', href: 'https://www.globalbioticinteractions.org/?interactionType=pathogenOf&sourceTaxon=Heterobasidion annosum&targetTaxon=Calluna vulgaris', label: 'pathogenOf'}},
+{data: {id: 'Auricularia auricula-judaeFraxinus excelsior', source: 'Auricularia auricula-judae', target: 'Fraxinus excelsior', href: 'https://www.globalbioticinteractions.org/?interactionType=parasiteOf&sourceTaxon=Auricularia auricula-judae&targetTaxon=Fraxinus excelsior', label: 'parasiteOf'}},
+{data: {id: 'Auricularia auricula-judaeFagus sylvatica', source: 'Auricularia auricula-judae', target: 'Fagus sylvatica', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Auricularia auricula-judae&targetTaxon=Fagus sylvatica', label: 'eats'}},
+{data: {id: 'Auricularia auricula-judaeAcer campestre', source: 'Auricularia auricula-judae', target: 'Acer campestre', href: 'https://www.globalbioticinteractions.org/?interactionType=parasiteOf&sourceTaxon=Auricularia auricula-judae&targetTaxon=Acer campestre', label: 'parasiteOf'}},
+{data: {id: 'Auricularia auricula-judaeAcer pseudoplatanus', source: 'Auricularia auricula-judae', target: 'Acer pseudoplatanus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Auricularia auricula-judae&targetTaxon=Acer pseudoplatanus', label: 'eats'}},
+{data: {id: 'Auricularia auricula-judaeBuddleja davidii', source: 'Auricularia auricula-judae', target: 'Buddleja davidii', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Auricularia auricula-judae&targetTaxon=Buddleja davidii', label: 'eats'}},
+{data: {id: 'Auricularia auricula-judaeEuonymus europaeus', source: 'Auricularia auricula-judae', target: 'Euonymus europaeus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Auricularia auricula-judae&targetTaxon=Euonymus europaeus', label: 'eats'}},
+{data: {id: 'Auricularia auricula-judaeJuglans regia', source: 'Auricularia auricula-judae', target: 'Juglans regia', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Auricularia auricula-judae&targetTaxon=Juglans regia', label: 'eats'}},
+{data: {id: 'Auricularia auricula-judaeIlex aquifolium', source: 'Auricularia auricula-judae', target: 'Ilex aquifolium', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Auricularia auricula-judae&targetTaxon=Ilex aquifolium', label: 'eats'}},
+{data: {id: 'Auricularia auricula-judaeSambucus nigra', source: 'Auricularia auricula-judae', target: 'Sambucus nigra', href: 'https://www.globalbioticinteractions.org/?interactionType=hasHost&sourceTaxon=Auricularia auricula-judae&targetTaxon=Sambucus nigra', label: 'hasHost'}},
+{data: {id: 'Auricularia auricula-judaePrunus spinosa', source: 'Auricularia auricula-judae', target: 'Prunus spinosa', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Auricularia auricula-judae&targetTaxon=Prunus spinosa', label: 'eats'}},
+{data: {id: 'Auricularia auricula-judaePrunus laurocerasus', source: 'Auricularia auricula-judae', target: 'Prunus laurocerasus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Auricularia auricula-judae&targetTaxon=Prunus laurocerasus', label: 'eats'}},
+{data: {id: 'Auricularia auricula-judaeLaburnum anagyroides', source: 'Auricularia auricula-judae', target: 'Laburnum anagyroides', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Auricularia auricula-judae&targetTaxon=Laburnum anagyroides', label: 'eats'}},
+{data: {id: 'Auricularia auricula-judaeCornus sanguinea', source: 'Auricularia auricula-judae', target: 'Cornus sanguinea', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Auricularia auricula-judae&targetTaxon=Cornus sanguinea', label: 'eats'}},
+{data: {id: 'Auricularia auricula-judaeClematis vitalba', source: 'Auricularia auricula-judae', target: 'Clematis vitalba', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Auricularia auricula-judae&targetTaxon=Clematis vitalba', label: 'eats'}},
+{data: {id: 'Dorcus parallelipipedusFraxinus excelsior', source: 'Dorcus parallelipipedus', target: 'Fraxinus excelsior', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Dorcus parallelipipedus&targetTaxon=Fraxinus excelsior', label: 'eats'}},
+{data: {id: 'Dorcus parallelipipedusFagus sylvatica', source: 'Dorcus parallelipipedus', target: 'Fagus sylvatica', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Dorcus parallelipipedus&targetTaxon=Fagus sylvatica', label: 'eats'}},
+{data: {id: 'Dorcus parallelipipedusPrunus cerasifera', source: 'Dorcus parallelipipedus', target: 'Prunus cerasifera', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Dorcus parallelipipedus&targetTaxon=Prunus cerasifera', label: 'eats'}},
+{data: {id: 'Dorcus parallelipipedusUlmus glabra', source: 'Dorcus parallelipipedus', target: 'Ulmus glabra', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Dorcus parallelipipedus&targetTaxon=Ulmus glabra', label: 'eats'}},
+{data: {id: 'Dorcus parallelipipedusCarpinus betulus', source: 'Dorcus parallelipipedus', target: 'Carpinus betulus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Dorcus parallelipipedus&targetTaxon=Carpinus betulus', label: 'eats'}},
+{data: {id: 'Palomena prasinaFraxinus excelsior', source: 'Palomena prasina', target: 'Fraxinus excelsior', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Palomena prasina&targetTaxon=Fraxinus excelsior', label: 'eats'}},
+{data: {id: 'Palomena prasinaHeracleum sphondylium', source: 'Palomena prasina', target: 'Heracleum sphondylium', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Palomena prasina&targetTaxon=Heracleum sphondylium', label: 'eats'}},
+{data: {id: 'Palomena prasinaMedicago sativa', source: 'Palomena prasina', target: 'Medicago sativa', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Palomena prasina&targetTaxon=Medicago sativa', label: 'eats'}},
+{data: {id: 'Palomena prasinaCorylus avellana', source: 'Palomena prasina', target: 'Corylus avellana', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Palomena prasina&targetTaxon=Corylus avellana', label: 'eats'}},
+{data: {id: 'Palomena prasinaQuercus robur', source: 'Palomena prasina', target: 'Quercus robur', href: 'https://www.globalbioticinteractions.org/?interactionType=hasHost&sourceTaxon=Palomena prasina&targetTaxon=Quercus robur', label: 'hasHost'}},
+{data: {id: 'Palomena prasinaPopulus tremula', source: 'Palomena prasina', target: 'Populus tremula', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Palomena prasina&targetTaxon=Populus tremula', label: 'eats'}},
+{data: {id: 'Palomena prasinaPotentilla indica', source: 'Palomena prasina', target: 'Potentilla indica', href: 'https://www.globalbioticinteractions.org/?interactionType=hasHost&sourceTaxon=Palomena prasina&targetTaxon=Potentilla indica', label: 'hasHost'}},
+{data: {id: 'Palomena prasinaViburnum opulus', source: 'Palomena prasina', target: 'Viburnum opulus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Palomena prasina&targetTaxon=Viburnum opulus', label: 'eats'}},
+{data: {id: 'Palomena prasinaCrataegus monogyna', source: 'Palomena prasina', target: 'Crataegus monogyna', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Palomena prasina&targetTaxon=Crataegus monogyna', label: 'eats'}},
+{data: {id: 'Palomena prasinaRobinia pseudoacacia', source: 'Palomena prasina', target: 'Robinia pseudoacacia', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Palomena prasina&targetTaxon=Robinia pseudoacacia', label: 'eats'}},
+{data: {id: 'Palomena prasinaCarpinus betulus', source: 'Palomena prasina', target: 'Carpinus betulus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Palomena prasina&targetTaxon=Carpinus betulus', label: 'eats'}},
+{data: {id: 'Palomena prasinaLactuca serriola', source: 'Palomena prasina', target: 'Lactuca serriola', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Palomena prasina&targetTaxon=Lactuca serriola', label: 'eats'}},
+{data: {id: 'Phlyctis argenaFraxinus excelsior', source: 'Phlyctis argena', target: 'Fraxinus excelsior', href: 'https://www.globalbioticinteractions.org/?interactionType=hasHost&sourceTaxon=Phlyctis argena&targetTaxon=Fraxinus excelsior', label: 'hasHost'}},
+{data: {id: 'Fomitopsis pinicolaFraxinus excelsior', source: 'Fomitopsis pinicola', target: 'Fraxinus excelsior', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Fomitopsis pinicola&targetTaxon=Fraxinus excelsior', label: 'eats'}},
+{data: {id: 'Fomitopsis pinicolaPinus sylvestris', source: 'Fomitopsis pinicola', target: 'Pinus sylvestris', href: 'https://www.globalbioticinteractions.org/?interactionType=hasHost&sourceTaxon=Fomitopsis pinicola&targetTaxon=Pinus sylvestris', label: 'hasHost'}},
+{data: {id: 'Fomitopsis pinicolaPicea abies', source: 'Fomitopsis pinicola', target: 'Picea abies', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Fomitopsis pinicola&targetTaxon=Picea abies', label: 'eats'}},
+{data: {id: 'Fomitopsis pinicolaBetula pendula', source: 'Fomitopsis pinicola', target: 'Betula pendula', href: 'https://www.globalbioticinteractions.org/?interactionType=hasHost&sourceTaxon=Fomitopsis pinicola&targetTaxon=Betula pendula', label: 'hasHost'}},
+{data: {id: 'Fomitopsis pinicolaAesculus hippocastanum', source: 'Fomitopsis pinicola', target: 'Aesculus hippocastanum', href: 'https://www.globalbioticinteractions.org/?interactionType=hasHost&sourceTaxon=Fomitopsis pinicola&targetTaxon=Aesculus hippocastanum', label: 'hasHost'}},
+{data: {id: 'Columba palumbusFraxinus excelsior', source: 'Columba palumbus', target: 'Fraxinus excelsior', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Columba palumbus&targetTaxon=Fraxinus excelsior', label: 'eats'}},
+{data: {id: 'Columba palumbusSorbus aucuparia', source: 'Columba palumbus', target: 'Sorbus aucuparia', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Columba palumbus&targetTaxon=Sorbus aucuparia', label: 'eats'}},
+{data: {id: 'Lucanus cervusFraxinus excelsior', source: 'Lucanus cervus', target: 'Fraxinus excelsior', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Lucanus cervus&targetTaxon=Fraxinus excelsior', label: 'eats'}},
+{data: {id: 'Lucanus cervusCorylus avellana', source: 'Lucanus cervus', target: 'Corylus avellana', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Lucanus cervus&targetTaxon=Corylus avellana', label: 'eats'}},
+{data: {id: 'Lucanus cervusFagus sylvatica', source: 'Lucanus cervus', target: 'Fagus sylvatica', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Lucanus cervus&targetTaxon=Fagus sylvatica', label: 'eats'}},
+{data: {id: 'Acer campestreAuricularia auricula-judae', source: 'Acer campestre', target: 'Auricularia auricula-judae', href: 'https://www.globalbioticinteractions.org/?interactionType=parasiteOf&sourceTaxon=Acer campestre&targetTaxon=Auricularia auricula-judae', label: 'parasiteOf'}},
+{data: {id: 'Armillaria melleaHumulus lupulus', source: 'Armillaria mellea', target: 'Humulus lupulus', href: 'https://www.globalbioticinteractions.org/?interactionType=pathogenOf&sourceTaxon=Armillaria mellea&targetTaxon=Humulus lupulus', label: 'pathogenOf'}},
+{data: {id: 'Armillaria melleaMalus pumila', source: 'Armillaria mellea', target: 'Malus pumila', href: 'https://www.globalbioticinteractions.org/?interactionType=pathogenOf&sourceTaxon=Armillaria mellea&targetTaxon=Malus pumila', label: 'pathogenOf'}},
+{data: {id: 'Armillaria melleaJuglans regia', source: 'Armillaria mellea', target: 'Juglans regia', href: 'https://www.globalbioticinteractions.org/?interactionType=pathogenOf&sourceTaxon=Armillaria mellea&targetTaxon=Juglans regia', label: 'pathogenOf'}},
+{data: {id: 'Armillaria melleaVitis vinifera', source: 'Armillaria mellea', target: 'Vitis vinifera', href: 'https://www.globalbioticinteractions.org/?interactionType=pathogenOf&sourceTaxon=Armillaria mellea&targetTaxon=Vitis vinifera', label: 'pathogenOf'}},
+{data: {id: 'Armillaria melleaRumex obtusifolius', source: 'Armillaria mellea', target: 'Rumex obtusifolius', href: 'https://www.globalbioticinteractions.org/?interactionType=pathogenOf&sourceTaxon=Armillaria mellea&targetTaxon=Rumex obtusifolius', label: 'pathogenOf'}},
+{data: {id: 'Accipiter gentilisColumba palumbus', source: 'Accipiter gentilis', target: 'Columba palumbus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Accipiter gentilis&targetTaxon=Columba palumbus', label: 'eats'}},
+{data: {id: 'Accipiter nisusColumba palumbus', source: 'Accipiter nisus', target: 'Columba palumbus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Accipiter nisus&targetTaxon=Columba palumbus', label: 'eats'}},
+{data: {id: 'Bubo buboColumba palumbus', source: 'Bubo bubo', target: 'Columba palumbus', href: 'https://www.globalbioticinteractions.org/?interactionType=eats&sourceTaxon=Bubo bubo&targetTaxon=Columba palumbus', label: 'eats'}},
+{data: {id: 'Juniperus communisColumba palumbus', source: 'Juniperus communis', target: 'Columba palumbus', href: 'https://www.globalbioticinteractions.org/?interactionType=hasDispersalVector&sourceTaxon=Juniperus communis&targetTaxon=Columba palumbus', label: 'hasDispersalVector'}},
+{data: {id: 'Taxus baccataColumba palumbus', source: 'Taxus baccata', target: 'Columba palumbus', href: 'https://www.globalbioticinteractions.org/?interactionType=hasDispersalVector&sourceTaxon=Taxus baccata&targetTaxon=Columba palumbus', label: 'hasDispersalVector'}},
+{data: {id: 'Prunus mahalebColumba palumbus', source: 'Prunus mahaleb', target: 'Columba palumbus', href: 'https://www.globalbioticinteractions.org/?interactionType=hasDispersalVector&sourceTaxon=Prunus mahaleb&targetTaxon=Columba palumbus', label: 'hasDispersalVector'}},
+{data: {id: 'Crataegus monogynaColumba palumbus', source: 'Crataegus monogyna', target: 'Columba palumbus', href: 'https://www.globalbioticinteractions.org/?interactionType=hasDispersalVector&sourceTaxon=Crataegus monogyna&targetTaxon=Columba palumbus', label: 'hasDispersalVector'}},
+{data: {id: 'Hedera helixColumba palumbus', source: 'Hedera helix', target: 'Columba palumbus', href: 'https://www.globalbioticinteractions.org/?interactionType=hasDispersalVector&sourceTaxon=Hedera helix&targetTaxon=Columba palumbus', label: 'hasDispersalVector'}},
+{data: {id: 'Sambucus nigraColumba palumbus', source: 'Sambucus nigra', target: 'Columba palumbus', href: 'https://www.globalbioticinteractions.org/?interactionType=hasDispersalVector&sourceTaxon=Sambucus nigra&targetTaxon=Columba palumbus', label: 'hasDispersalVector'}},
+], style: [ 
+        { 
+            selector: 'node', 
+            style: { 
+                shape: 'circle', 
+                'background-color': 'yellow', 
+                label: 'data(id)', 
+                'text-valign': 'center', 
+                'font-family': 'helvetica', 
+                'font-style': 'italic', 
+                'font-size': '8px', 
+                'border-width': '0.5', 
+                'border-color': 'black', 
+                'width': 'mapData(occnum, 0, 400, 3, 200)', 
+                'height': 'mapData(occnum, 0, 400, 3, 200)' 
+            } 
+        },  
+        {  
+            selector: 'edge',  
+            style: {  
+                label: 'data(label)', 
+                'font-family': 'helvetica', 
+                'font-size': '6px', 
+                'color': 'blue', 
+                'curve-style': 'bezier', 
+                'target-arrow-shape': 'triangle',  
+                'width': '1' 
+                } 
+         },  
+         {  
+              selector: '[kingdom = "Plantae"]',   
+              css: {  
+                'background-color': 'lightgreen'  
+                 }  
+        }, 
+        {  
+              selector: '[kingdom = "Animalia"]',   
+              css: {  
+                'background-color': 'lightblue'  
+                 }  
+        }, 
+        {  
+              selector: ':selected',   
+              css: {  
+                'line-color': 'red',  
+                'shape': 'square',  
+                'background-color': 'red'  
+                 }  
+        }], 
+layout:  { 
+            name: 'cose-bilkent', padding: 1, animate: true, gravity: 30, animationDuration: 3000 
+     } 
+} 
+); 
+cy.userZoomingEnabled( true ); 
+    cy.getElementById('Fraxinus excelsior').select(); 
+    document.write('<br />Degree of node <em>Fraxinus excelsior L.</em> = '+cy.getElementById('Fraxinus excelsior').degree()); 
+    cy.on('tap', 'node', function(){ 
+        try { // your browser may block popups 
+              window.open( this.data('href') ); 
+            } catch(e){ // fall back on url change 
+        window.location.href = this.data('href'); 
+    } 
+}); 
+    cy.on('tap', 'edge', function(){  
+        try { // your browser may block popups  
+              window.open( this.data('href') );  
+            } catch(e){ // fall back on url change  
+        window.location.href = this.data('href'); 
+    } 
+}); 
+</script> 
+</ul>         <br />         <br />         <a href='https://github.com/AgentschapPlantentuinMeise/interactias'><img src='../images/Octocat.jpg' alt='GitHub logo' width='20'>Source code</a>         </body>         </html>

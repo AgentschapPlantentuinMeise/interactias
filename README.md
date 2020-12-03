@@ -16,6 +16,10 @@ Invasive in Belgium | Native to Belgium
 *[Hydrocotyle ranunculoides](https://agentschapplantentuinmeise.github.io/interactias/docs/Hydrocotyle%20ranunculoidesBelgium.html)* (floating pennywort) |
 *[Cydalima perspectalis](https://agentschapplantentuinmeise.github.io/interactias/docs/Cydalima%20perspectalisBelgium.html)* (box tree moth) |
 
+Belgium | Italy | Lithuania | Slovenia
+------------ | ------------- | ------------- | -------------
+*[Fraxinus excelsior](https://agentschapplantentuinmeise.github.io/interactias/docs/Fraxinus%20excelsiorBelgium.html)* | *[Fraxinus excelsior](https://agentschapplantentuinmeise.github.io/interactias/docs/Fraxinus%20excelsiorItaly.html)* | *[Fraxinus excelsior](https://agentschapplantentuinmeise.github.io/interactias/docs/Fraxinus%20excelsiorLithuania.html)* | *[Fraxinus excelsior](https://agentschapplantentuinmeise.github.io/interactias/docs/Fraxinus%20excelsiorBelgium.html)*
+
 
 | Under investigation |
 | ------------- |
